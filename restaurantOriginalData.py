@@ -19,7 +19,7 @@ def cleanFood(line):
 
 
 def readFeatures():
-    with open('data/features.txt', 'r') as featureIn:
+    with open('dataset/features.txt', 'r') as featureIn:
         return list(map(cleanFeatures, featureIn))
 
 def featureMap():
@@ -32,8 +32,8 @@ def featureMap():
 def readResturants():
     restaurants = []
     features = featureMap()
-    for file in glob.glob('data/*.txt'):
-        if not file == 'data/features.txt':
+    for file in glob.glob('dataset/*.txt'):
+        if not file == 'dataset/features.txt':
             with open(file, 'r') as fin:
                 for food in map(cleanFood, fin):
                     restaurants.append(Restaurant(file, food, features))

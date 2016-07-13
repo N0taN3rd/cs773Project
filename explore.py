@@ -53,13 +53,13 @@ class bcolors:
 def explore1():
     restaurants = []
     features = {}
-    print(glob.glob('data/*.txt'))
-    with open('data/features.txt', 'r') as featureIn:
+    print(glob.glob('dataset/*.txt'))
+    with open('dataset/features.txt', 'r') as featureIn:
         for line in map(cleanFeatures, featureIn):
             features[line[0]] = line[1]
 
-    for file in glob.glob('data/*.txt'):
-        if not file == 'data/features.txt':
+    for file in glob.glob('dataset/*.txt'):
+        if not file == 'dataset/features.txt':
             with open(file, 'r') as fin:
                 for food in map(cleanFood, fin):
                     restaurants.append(Restaurant(file, food, features))
@@ -116,7 +116,7 @@ def firstPassGrouping():
     clean = re.compile("[()\/']")
     split = re.compile("[/]")
     grams = []
-    with open('data/features.txt', 'r') as featureIn:
+    with open('dataset/features.txt', 'r') as featureIn:
         for line in map(cleanFeatures, featureIn):
             ws = []
             for w in tokenizer.tokenize(clean.sub(' ', line[1])):
@@ -230,13 +230,13 @@ def useOtherDataSet():
             knownCuisine.add(row['Rcuisine'])
 
     q1Cuisine = set()
-    with open('data/features.txt', 'r') as featureIn:
+    with open('dataset/features.txt', 'r') as featureIn:
         for line in map(cleanFeatures, featureIn):
             if line[1] in knownCuisine:
                 q1Cuisine.add(line[1])
                 print(line[1])
     #
-    with open('q1/q1Labels.json', 'r') as cin:
+    with open('notq1/q1Labels.json', 'r') as cin:
         labels = json.load(cin)
         labels["cuisine"] = sorted(list(q1Cuisine))
         print(labels)
@@ -304,13 +304,13 @@ if __name__ == '__main__':
     features = {}
     restaurants = []
 
-    with open('data/features.txt', 'r') as featureIn:
+    with open('dataset/features.txt', 'r') as featureIn:
         for line in map(cleanFeatures, featureIn):
             features[line[0]] = line[1]
             print(line[1])
 
-    for file in glob.glob('data/*.txt'):
-        if not file == 'data/features.txt':
+    for file in glob.glob('dataset/*.txt'):
+        if not file == 'dataset/features.txt':
             with open(file, 'r') as fin:
                 for food in map(cleanFood, fin):
                     restaurants.append(Restaurant(file, food, features))

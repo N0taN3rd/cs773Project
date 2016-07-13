@@ -2,6 +2,7 @@ import csv
 import glob
 import json
 import os
+import itertools
 from os import path
 import re
 import types
@@ -18,15 +19,15 @@ from functional import seq
 from sklearn.datasets import load_iris, load_boston
 from sklearn import tree
 
-
-
 from nltk.classify.util import names_demo, binary_names_demo_features
+
+
 #
 # def readResturants():
 #     restaurants = []
 #     features = featureMap()
-#     for file in glob.glob('data/*.txt'):
-#         if not file == 'data/features.txt':
+#     for file in glob.glob('dataset/*.txt'):
+#         if not file == 'dataset/features.txt':
 #             with open(file, 'r') as fin:
 #                 for food in map(cleanFood, fin):
 #                     restaurants.append(Restaurant(file, food, features))
@@ -168,7 +169,7 @@ def final2():
             if l.label == 'cuisine':
                 print(l, l.num)
 
-    with open('projectData/restaurants2.json', 'w+') as cc:
+    with open('projectData/restaurants.json', 'w+') as cc:
         json.dump(rs, cc, indent=2, sort_keys=True, default=lambda x: x.for_json())
 
 
@@ -193,7 +194,7 @@ def indexCityId():
     for r in rs:
         r.cid = indexCitiesName[r.city + r.id]
 
-    with open('projectData/restaurants2.json', 'w+') as cc:
+    with open('projectData/restaurants.json', 'w+') as cc:
         json.dump(rs, cc, indent=2, sort_keys=True, default=lambda x: x.for_json())
 
     with open('projectData/indexCityName.json', 'w+') as cc:
@@ -209,45 +210,102 @@ def write_arff(fname, features, datas):
 
         arff.write('\t@attribute f numeric\n')
         arff.write('@end features\n')
-        arff.write('@data\n')
+        arff.write('@dataset\n')
         for r in datas:
             arff.write(r.for_arff())
         arff.write('%%\n%s' % os.linesep)
 
 
+class DictList:
+    def __init__(self):
+        self.map = defaultdict(list)  # type: dict[list]
+
+    def __setitem__(self, key, value):
+        if type(value) == list:
+            self.map[key].extend(value)
+        else:
+            self.map[key].append(value)
+
+    def __getitem__(self, item):
+        return self.map[item]
+
+    def get(self, k, d=None):
+        return self.map.get(k, d)
+
+    def keys(self):
+        return self.map.keys()
+
+    def itemSet(self):
+        out = {}
+        for k, v in self.map.items():
+            out[k] = set(v)
+        return out
+
+    def itemSet_with_count(self):
+        out = {}
+        for k, v in self.map.items():
+            kCounter = Counter()
+            for vv in v:
+                kCounter[vv] += 1
+
+            out[k] = set(v), kCounter
+        return out
+
+    def items(self):
+        return self.map.items()
+
+
+def orderIncreasing(groupedLabels):
+    ordered = []
+    for k, v in groupedLabels.items():
+        ordered.append((k, v, len(v)))
+    return sorted(ordered, key=lambda x: x[2], reverse=True)
+
+
+def q2():
+    rs = getResturants()
+    headers = ['cuisine', 'atmosphere', 'occasion', 'price', 'style']
+    cuisineGrouped = defaultdict(DictList)  # type: dict[DictList]
+    cuisineFilter = ['Indian', 'Mexican', 'Italian', 'French', 'American']
+    with open('q2/cuisineCharactersUnique.csv', 'w+') as cOut:
+        cOut.write('cuisine,atmosphere,occasion,price,style\n')
+        finalOut = []
+        for r in filter(lambda x: x.hasLabelValue(('cuisine', cuisineFilter)), rs):
+            print(r.name_city)
+            rLabelCount = r.label_count(lambda x: x[0] != 'cuisine')
+            glables = r.group_labels_for_label('cuisine', cuisineFilter)
+            lkey = glables[0]
+            grouped = glables[1]
+            listOfLabels = []
+            if len(lkey) == 1:
+                key = lkey[0]
+                for l in ['atmosphere', 'occasion', 'price', 'style']:
+                    ll = grouped.get(l)
+                    if ll is None:
+                        listOfLabels.append(['none'])
+                    else:
+                        listOfLabels.append(ll)
+                print(list(itertools.product(*listOfLabels)))
+                for product in itertools.product(*listOfLabels):
+                    finalOut.append ((key,product[0],product[1],product[2],product[3]))
+            else:
+                # for key in lkey:
+                for l in ['atmosphere', 'occasion', 'price', 'style']:
+                    ll = grouped.get(l)
+                    if ll is None:
+                        listOfLabels.append(['none'])
+                    else:
+                        listOfLabels.append(ll)
+                for product in itertools.product(*listOfLabels):
+                    for key in lkey:
+                        finalOut.append((key, product[0], product[1], product[2], product[3]))
+                print(list(itertools.product(*listOfLabels)))
+            print('----------------------------------------')
+        for entry in set(finalOut):
+            print(entry)
+            cOut.write('%s,%s,%s,%s,%s\n'%(entry[0],entry[1],entry[2],entry[3],entry[4]))
+
 if __name__ == '__main__':
     print("hi")
 
-    # with open('projectData/ii.csv','w+') as o:
-    #     o.write('restaurant,features%s'%os.linesep)
-    #     rs = getResturants() # type: list[Restaurant]
-    #
-    #     for r in filter(lambda x: x.hasLabelValue(('cuisine',['Indian', 'Mexican', 'Italian', 'French',
-    # 'American'])),rs):
-    #         o.write(r.for_csv())
-
-    # with open('projectData/reducedFeatures.json','r') as rin:
-    #     rfs = json.load(rin)
-    #
-    # with open('projectData/labels2.json', 'r') as rin:
-    #         labs = json.load(rin)
-    #
-    # print(labs)
-    nums = []
-    rs = getResturants()  # type: list[Restaurant]
-
-    rests = []
-    labs = []
-
-
-    for r in filter(lambda x: x.hasLabelValue(('cuisine', ['Indian', 'Mexican', 'Italian', 'French', 'American'])), rs):
-        re,lab = r.for_np()
-        print(r.for_json())
-        rests.append(re)
-        labs.append(lab)
-
-    np_resturants = np.array(rests)
-    # np_labels = np.array(labs)
-    # dt = DecisionTreeClassifier()#min_samples_split=20, random_state=99)
-    # dt.fit(np_resturants,np_labels)
-
+    q2()
