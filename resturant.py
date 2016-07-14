@@ -9,7 +9,7 @@ class Label:
     def __init__(self, num, label, val):
         self.num = num  # type: str
         self.label = label  # type: str
-        self.val = val  # type: str
+        self.val = val#'_'.join(val.split(' '))  # type: str
 
     def __eq__(self, other):
         if isinstance(other, str):
@@ -127,7 +127,7 @@ class Restaurant:
 
 
 def getResturants() -> List[Restaurant]:
-    with open('projectData/restaurants.json', 'r') as cc:
+    with open('q1/restaurants.json', 'r') as cc:
         rs = json.load(cc)
     restaurants = []
     for r in rs:  # num, label, val

@@ -10,9 +10,6 @@ import string
 from sklearn.feature_extraction.text import CountVectorizer
 import numpy as np
 from collections import defaultdict, Counter
-import Orange
-import pandas
-from orangecontrib import associate
 
 
 
@@ -275,7 +272,7 @@ def q2():
     headers = ['cuisine', 'atmosphere', 'occasion', 'price', 'style']
     cuisineGrouped = defaultdict(DictList)  # type: dict[DictList]
     cuisineFilter = ['Indian', 'Mexican', 'Italian', 'French', 'American']
-    with open('q2/cuisineCharactersUnique.csv', 'w+') as cOut:
+    with open('q2/cuisineCharactersUnique3.csv', 'w+') as cOut:
         cOut.write('cuisine,atmosphere,occasion,price,style\n')
         finalOut = []
         for r in filter(lambda x: x.hasLabelValue(('cuisine', cuisineFilter)), rs):
@@ -322,5 +319,4 @@ def pandaCsv():
 
 if __name__ == '__main__':
     print("hi")
-    pandaCsv()
-    # q2()
+    q2()
