@@ -10,6 +10,13 @@ import string
 from sklearn.feature_extraction.text import CountVectorizer
 import numpy as np
 from collections import defaultdict, Counter
+import Orange
+import pandas
+from orangecontrib import associate
+
+
+
+
 
 from sklearn.tree import DecisionTreeClassifier
 
@@ -20,6 +27,7 @@ from sklearn.datasets import load_iris, load_boston
 from sklearn import tree
 
 from nltk.classify.util import names_demo, binary_names_demo_features
+
 
 
 #
@@ -305,7 +313,14 @@ def q2():
             print(entry)
             cOut.write('%s,%s,%s,%s,%s\n'%(entry[0],entry[1],entry[2],entry[3],entry[4]))
 
+
+
+def pandaCsv():
+    with open('q2/cuisineCharacters.csv', 'r') as csvIN:
+        table = pandas.read_csv(csvIN)
+    print(table)
+
 if __name__ == '__main__':
     print("hi")
-
-    q2()
+    pandaCsv()
+    # q2()
