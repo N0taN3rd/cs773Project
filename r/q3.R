@@ -28,10 +28,9 @@ lhs = c(
 
 
 test <- function(data,...) {
-  print( lazyeval::all_dots(.dots, ..., all_named = TRUE))
   lzy <- lazyeval::lazy_dots(...)[[1]]
-  # dist <- data %>% distinct(...) %>% mutate(side=paste(lzy$expr,...,sep='='))
-  # print(dist)
+  dist <- data %>% distinct(...) %>% mutate(side=paste(lzy$expr,lazyeval::lazy(lzy),sep='='))
+  print(dist)
 }
 test(s1,atmosphere)
 # 
