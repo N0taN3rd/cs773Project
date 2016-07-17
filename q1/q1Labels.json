@@ -84,7 +84,6 @@
     "Filipino",
     "Fountain and Ice Cream",
     "French",
-    "Game",
     "German",
     "Greek",
     "Guatemalan",
@@ -389,6 +388,7 @@
     "over $50": "169"
   },
   "occasion": [
+    "Game",
     "After Hours Dining",
     "Catering for Special Events",
     "Dancing",

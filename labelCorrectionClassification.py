@@ -4,7 +4,7 @@ import os
 if __name__ == '__main__':
     print('hi')
     out = []
-    fixCuisine = ['Indian','Argentinean','Nicaraguan','Russian','Venezuelan' ]
+    fixCuisine = ['Game']
     with open(os.path.join(os.getcwd(), 'q1/q1Labels.json'), 'r') as lin:
         labels = json.load(lin)
 
@@ -15,14 +15,15 @@ if __name__ == '__main__':
             labs = r['labels']
             for l in labs:
                 val = l['val']
-                if val in cuisine:
-                    l['label'] = 'cuisine'
+                if val == 'Game':
+                    print(val)
+                    l['label'] = 'occasion'
                     # if l['label'] != 'cuisine':
                     #     print('%s is in corrected cuisine and currently is in %s' % (val, l['label']))
-                if val in style:
-                    l['label'] = 'style'
-                    # if l['label'] != 'style':
-                    #     print('%s is in corrected style and currently is in %s'%(val,l['label']))
+                # if val in style:
+                #     l['label'] = 'style'
+                #     # if l['label'] != 'style':
+                #     #     print('%s is in corrected style and currently is in %s'%(val,l['label']))
             r['labels'] = labs
             out.append(r)
     with open(os.path.join(os.getcwd(), 'q1/restaurants.json'), 'w+') as rout:

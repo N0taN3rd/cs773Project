@@ -2,37 +2,29 @@
 library(dplyr)
 cwd <- getwd()
 setwd(cwd)
-
+  
 #sink to redirect stdout to file
 
 source(file=file.path(cwd,'r/ruleFunctions.R'))
 
-s1 <- read.csv('q2/cuisineCharactersUnique3.csv')
+q3Data <- read.csv('q3/restaurantsq3.csv')
 
+cuisine_appearance <- q3Data %>% distinct(cuisine) %>% transmute(side = paste('cuisine',cuisine,sep='=')) 
+atmosphere_appearance <- q3Data %>% distinct(atmosphere) %>% transmute(side = paste('atmosphere',atmosphere,sep='='))
+occasion_appearance <- q3Data %>% distinct(occasion) %>% transmute(side = paste('occasion',occasion,sep='=')) 
+price_appearance <- q3Data %>% distinct(price) %>% transmute(side = paste('price',price,sep='='))
+style_appearance <- q3Data %>% distinct(style) %>% transmute(side = paste('style',style,sep='=')) 
 
-
-# rhs = c(
-#   'cuisine=American',
-#   'cuisine=French',
-#   'cuisine=Indian',
-#   'cuisine=Mexican',
-#   'cuisine=Italian'
-# )
-
-rhs = c(
-  ''
-)
-lhs = c(
-  'atmosphere'
-)
-
-
-test <- function(data,...) {
-  lzy <- lazyeval::lazy_dots(...)[[1]]
-  dist <- data %>% distinct(...) %>% mutate(side=paste(lzy$expr,lazyeval::lazy(lzy),sep='='))
-  print(dist)
+q3A <- function(){
+  q3A_lh <- unlist(c(cuisine_appearance$side, atmosphere_appearance$side),use.names = F)
+  q3A_rh <- unlist(c(occasion_appearance$side, price_appearance,style_appearance$side),use.names = F)
+  q3Arules <- ruleGen.apriori(q3Data,lH=q3A_lh,  rH=q3A_rh)
+  inspect(q3Arules)
 }
-test(s1,atmosphere)
+
+q3A()
+
+
 # 
 # distinct(s1,as.name('atmosphere'))
 # 

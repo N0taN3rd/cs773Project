@@ -311,12 +311,44 @@ def q2():
             cOut.write('%s,%s,%s,%s,%s\n'%(entry[0],entry[1],entry[2],entry[3],entry[4]))
 
 
+def q3():
+    rs = getResturants()
+    finalOut = []
+    labels = ['atmosphere', 'occasion', 'price', 'style']
+    onlyQuisine = set()
+    with open('q3/restaurantsq3.csv','w+') as rout:
+        rout.write('cuisine,atmosphere,occasion,price,style\n')
+        for r in rs:
+            print(r)
+            listOfLabels = []
+            grouped = r.group_labels()
+            cuisine = grouped.get('cuisine',None)
+            if cuisine is not None:
+                print(cuisine)
+                for l in labels:
+                    ll = grouped.get(l)
+                    if ll is None:
+                        listOfLabels.append(['none'])
+                    else:
+                        listOfLabels.append(ll)
 
-def pandaCsv():
-    with open('q2/cuisineCharacters.csv', 'r') as csvIN:
-        table = pandas.read_csv(csvIN)
-    print(table)
+                if isinstance(cuisine,list):
+                    for product in itertools.product(*listOfLabels):
+                        for c in cuisine:
+                            finalOut.append((c, product[0], product[1], product[2], product[3]))
+                else:
+                    for product in itertools.product(*listOfLabels):
+                        finalOut.append((cuisine, product[0], product[1], product[2], product[3]))
+        for entry in finalOut:
+            rout.write('%s,%s,%s,%s,%s\n' % (entry[0], entry[1], entry[2], entry[3], entry[4]))
+            # for l in labels:
+            #     ll = grouped.get(l)
+            #     if ll is None:
+            #         listOfLabels.append(['none'])
+            #     else:
+            #         listOfLabels.append(ll)
+
 
 if __name__ == '__main__':
     print("hi")
-    q2()
+    q3()

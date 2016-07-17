@@ -31,6 +31,9 @@ class Label:
     def for_csv(self):
         return self.num
 
+    def for_csv2(self):
+        return self.val
+
     def for_json(self):
         return {'num': self.num, 'label': self.label, 'val': self.val}
 

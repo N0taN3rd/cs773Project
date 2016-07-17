@@ -83,7 +83,6 @@
     "Filipino",
     "Fountain and Ice Cream",
     "French",
-    "Game",
     "German",
     "Greek",
     "Hamburgers & Beer",
@@ -133,6 +132,7 @@
     "Wine and Beer"
   ],
   "occasion": [
+    "Game",
     "After Hours Dining",
     "Catering for Special Events",
     "Dancing",

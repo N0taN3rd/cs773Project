@@ -4,15 +4,6 @@ library(C50)
 library(dplyr)
 
 
-ruleGen.ruleSubset <- function(data,...) {
-  args <- as.list(match.call())
-  print(eval(args$col, data))
-  dist <- data %>% distinct(...) %>%  mutate(side = paste('#(col)',...,sep='='))
-  print(dist)
- # sub <- data %>% distinct('#(col)') %>% mutate(side = paste('#(col)','#(col)',sep='=')) 
- # sub$side
-}
-
 ruleGen.c50 <- function(d, form, trialNum = 4, winnow = FALSE) {
   C5.0(
     formula = form,
@@ -24,7 +15,7 @@ ruleGen.c50 <- function(d, form, trialNum = 4, winnow = FALSE) {
 }
 
 ruleGen.apriori <-
-  function(data, minLen = 2, maxLen = 15, sup = 0.005,
+  function(data, minLen = 2, maxLen = 30, sup = 0.005,
            conf = 0.005, targ = 'rules', rH=NULL, lH = NULL) {
     appear <- NULL
     lhNull <- is.null(lH)
