@@ -1,10 +1,11 @@
 library(caret)
 library(arules)
 library(C50)
-library(dplyr)
 
-
-ruleGen.c50 <- function(d, form, trialNum = 4, winnow = FALSE) {
+ruleGen.c50 <- function(d,
+                        form,
+                        trialNum = 4,
+                        winnow = FALSE) {
   C5.0(
     formula = form,
     data = d,
@@ -15,21 +16,22 @@ ruleGen.c50 <- function(d, form, trialNum = 4, winnow = FALSE) {
 }
 
 ruleGen.apriori <-
-  function(data, minLen = 2, maxLen = 30, sup = 0.005,
-           conf = 0.005, targ = 'rules', rH=NULL, lH = NULL) {
+  function(data, minLen = 2, maxLen = 50,
+           sup = 0.005, conf = 0.005, targ = 'rules',
+           rH = NULL, lH = NULL, deflt = 'lhs') {
     appear <- NULL
     lhNull <- is.null(lH)
     rhNull <- is.null(rH)
     if (!lhNull && !rhNull) {
       appear <- list(rhs = rH,
                      lhs = lH,
-                     default = 'lhs')
-    } else if(!lhNull && rhNull) {
+                     default = deflt)
+    } else if (!lhNull && rhNull) {
       appear <- list(lhs = lH,
-                     default = 'lhs')
+                     default = deflt)
     } else {
       appear <- list(rhs = rH,
-                     default = 'lhs')
+                     default = deflt)
     }
     
     apriori(
