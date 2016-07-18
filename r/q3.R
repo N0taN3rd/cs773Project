@@ -1,35 +1,47 @@
 #!/usr/bin/Rscript
 
-library(arules)
 cwd <- getwd()
 setwd(cwd)
 
-#sink to redirect stdout to file
+source(file=file.path(cwd,'r','ruleFunctions.R'))
+source(file=file.path(cwd,'r','helpers.R'))
 
-q3Data <- read.csv('q3/restaurantsq3.csv')
+q3DataList <- helpers.q3()
 
 
+#### Q3.A
+a_rules <- ruleGen.rules_apriori_lh(q3DataList$q3Data,q3DataList$ca)
 
-# minLen = 2, maxLen = 50,
-# sup = 0.005, conf = 0.005, targ = 'rules',
-# rH = NULL, lH = NULL, deflt = 'lhs')
-q3A <- function(){
-  q3A_lh <- unlist(c(cuisine_atmosphere$s1, cuisine_atmosphere$s2),use.names = F)
-  q3Arules <- apriori(q3Data,
-    parameter = list(
-      minlen = 2,
-      maxlen = 30,
-      supp = 0.0005,
-      confidence = 0.0005,
-      target = "rules"
-    ),
-    appearance = list(lhs=q3A_lh,default='rhs'),
-    control = list(verbose = F, filter = 0)
-  )
-  inspect(q3Arules)
-}
+grouped = helpers.group_by_lhs(a_rules)
 
-q3A()
+
+#### Q3.B
+
+b_rules <- ruleGen.rules_apriori_lh(q3DataList$q3Data,q3DataList$ap)
+
+# rlhs <- q3A_rules@rhs
+# inspect(q3A_rules)
+# 
+# inspect(subset(q3A_rules, subset = rhs %pin% "style"))
+
+
+# q3Data <- q3DataList$q3Data
+# 
+# cuisine_atmosphere <- q3DataList$ca
+# cuisine_occasion <- q3DataList$co
+# cuisine_price  <- q3DataList$cp
+# cuisine_style  <- q3DataList$cs
+# 
+# atmosphere_occasion <- q3DataList$ao
+# atmosphere_price <- q3DataList$ap 
+# atmosphere_style <- q3DataList$as
+# 
+# occasion_price <- q3DataList$op
+# occasion_style <- q3DataList$os
+# 
+# style_price <- q3DataList$sp
+
+
 
 
 #
