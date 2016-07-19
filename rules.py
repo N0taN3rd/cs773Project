@@ -10,13 +10,7 @@ import string
 from sklearn.feature_extraction.text import CountVectorizer
 import numpy as np
 from collections import defaultdict, Counter
-
-
-
-
-
 from sklearn.tree import DecisionTreeClassifier
-
 from restaurantOriginalData import readResturants, featureMap
 from resturant import Restaurant, Label, getResturants
 from functional import seq
@@ -351,4 +345,9 @@ def q3():
 
 if __name__ == '__main__':
     print("hi")
-    q3()
+    # q3()
+    rs = getResturants()
+    for r in rs:
+        for l in r.labels:
+            if 'Decor' in l.val:
+                print(l.val)

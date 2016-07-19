@@ -1,12 +1,71 @@
 library(dplyr)
 library(tidyr)
+library(purrr)
+library(stringr)
 library(foreach)
+library(iterators)
 
 setwd(getwd())
 
+helpers.filter_df <- function(data,...) {
+  data %>% filter(...)
+}
+
+helpers.unqiue_all <- function(data) {
+ 
+  ucuisine <- data %>% select(cuisine) %>% distinct 
+  uatmosphere <- data %>% select(atmosphere) %>% distinct
+  uoccasion <- data %>% select(occasion) %>% distinct
+  uprice <- data %>% select(price) %>% distinct
+  ustyle <- data %>% select(style) %>% distinct
+  
+  list(
+   c = ucuisine,
+   a = uatmosphere,
+   o = uoccasion,
+   p = uprice,
+   s = ustyle
+  )
+}
+
+helpers.test <- function(d,sides,...) {
+  # it <- sides %>% by_row(function(r)
+  #   c(str_trim(r$s1, side = c(
+  #     "both", "left", "right"
+  #   )), str_trim(r$s2, side = c(
+  #     "both", "left", "right"
+  #   ))), .to = 'rdf')
+  # 
+   foreach(r = iter(sides,by='row'),.combine = c) %do% {
+    print(d %>% select(cuisine == r$s1 & atmosphere == r$s2))
+    pair <- c(r$s1,r$s2)
+    1
+  }
+  # View(it)
+}
+
+
+
+
+helpers.s1_to_groupedS2 <- function(d,sides,rulesFun) {
+  sides %>% group_by(s1) %>% summarise(s2 = list(s2)) %>% 
+    by_row(function(r) unlist(list(r$s1,r$s2)), .to='lhs') %>% 
+    by_row(function(r)  do.call(rulesFun,list(data=d,lH = r$lhs, deflt = 'rhs' )), .to='rdf')
+}
+
+
+helpers.s1_s2_pairs <- function(sides) {
+  sides %>% mutate(lhs1 = paste(s1,s2,sep=','),lhs2 = paste(s2,s1,sep=','))
+}
+
+
+helpers.pair_count <- function(df) {
+  df %>% summarise()
+}
+
 helpers.q3 <- function(write = F, filter = NULL) {
   data <-
-    read.csv('q3/restaurantsq3.csv') 
+    read.csv(file.path('q3','restaurantsq3.csv')) 
   
   filter <- !is.null(filter)
   
@@ -84,9 +143,17 @@ helpers.q3 <- function(write = F, filter = NULL) {
     transmute(s1 = paste('style', style, sep = '='),
               s2 = paste('price', price, sep = '='))
   
+  decor_price <-
+    data %>% select(atmosphere, price) %>% distinct  %>%
+    filter(atmosphere != 'none' &
+             price != 'none' & grepl('Decor', atmosphere)) %>%
+    transmute(
+      s1 = paste('atmosphere', atmosphere, sep = '='),
+      s2 = paste('price', price, sep = '=')
+    )
+  
   if (write) {
-    cwd <- getwd()
-    dataForR <- file.path(cwd, 'r_data')
+    dataForR <- file.path('..', 'r_data')
     dir.create(dataForR, showWarnings = F)
     
     write.csv(
@@ -158,6 +225,13 @@ helpers.q3 <- function(write = F, filter = NULL) {
       fileEncoding = 'utf8',
       row.names = F
     )
+    
+    write.csv(
+      decor_price,
+      file = file.path(dataForR, 'q3_decor_price.csv'),
+      fileEncoding = 'utf8',
+      row.names = F
+    )
   }
   
   list(
@@ -171,7 +245,32 @@ helpers.q3 <- function(write = F, filter = NULL) {
     as = atmosphere_style,
     op = occasion_price,
     os = occasion_style,
-    sp = style_price
+    sp = style_price,
+    dp = decor_price
+  )
+}
+
+
+helpers.pair_count <- function(df) {
+  ldf <- df %>% transmute(
+    cuisine = levels(unique(cuisine)),
+    atmosphere = levels(unique(atmosphere)),
+    occasion = levels(unique(occasion)),
+    price = levels(unique(price)),
+    style = levels(unique(style))
+  )
+  
+  list(
+      cuisine_atmosphere = df %>% select(cuisine, atmosphere) %>% group_by(cuisine, atmosphere) %>% tally(sort = TRUE),
+      cuisine_occasion = df %>% select(cuisine, occasion) %>% group_by(cuisine, occasion) %>% tally(sort = TRUE),
+      cuisine_price = df %>% select(cuisine, price) %>% group_by(cuisine, price) %>% tally(sort = TRUE),
+      cuisine_style = df %>% select(cuisine, atmosphere) %>%  group_by(cuisine, atmosphere) %>% tally(sort = TRUE),
+      atmosphere_occasion = df %>% select(cuisine, style) %>% group_by(cuisine, style) %>% tally(sort = TRUE),
+      atmosphere_price = df %>% select(atmosphere, price) %>% group_by(atmosphere, price) %>% tally(sort = TRUE),
+      atmosphere_style = df %>% select(atmosphere, style) %>% group_by(atmosphere, style) %>% tally(sort = TRUE),
+      occasion_price = df %>% select(occasion, price) %>% group_by(occasion, price) %>% tally(sort = TRUE),
+      occasion_style = df %>% select(occasion, style) %>% group_by(occasion, style) %>% tally(sort = TRUE),
+      style_price = df %>% select(style, price) %>% group_by(style, price) %>% tally(sort = TRUE)
   )
 }
 
@@ -227,3 +326,5 @@ helpers.group_by_lhs <- function(ruleDF) {
     sumConv = sum(conviction)
   )
 }
+
+
