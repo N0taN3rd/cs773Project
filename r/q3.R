@@ -188,7 +188,7 @@ write.csv(
 )
 write.csv(
   d_rulesNSN_filter,
-  file = file.path(q3Dir, 'q3d_rule_NNS.csv'),
+  file = file.path(q3Dir, 'q3d_rule_pairFilter_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
