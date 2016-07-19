@@ -271,7 +271,7 @@ helpers.q4 <- function(write = F) {
   cuisine_foodQuality <- cuisine_foodQuality %>% transmute(cuisine=cuisine ,quality = atmosphere)
   
   cuisine_foodQuality <- droplevels(cuisine_foodQuality)
-  cq_spread <- cuisine_foodQuality %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n)
+  cq_spread <- cuisine_foodQuality %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n,fill = 0)
   
   cuisine_foodQualityD = cuisine_foodQuality
   cuisine_foodQualityD$quality <-
@@ -284,7 +284,7 @@ helpers.q4 <- function(write = F) {
       `Good Food` = 'Good'
     )
   
-  cqD_spread <- cuisine_foodQualityD %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n)
+  cqD_spread <- cuisine_foodQualityD %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n,fill = 0)
   
   
   # cuisine_foodQuality$cuisine <- levels(cuisine_foodQuality$cuisine)
