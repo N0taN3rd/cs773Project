@@ -13,6 +13,8 @@ q3DataList <- helpers.q3()
 styleFiltered <-
   helpers.filter_df(q3DataList$q3Data, style != 'none')
 
+styleFiltered$style <- factor(styleFiltered$style)
+
 #### Q3.A
 a_rules <- ruleGen.rules_apriori_lh(q3DataList$q3Data, q3DataList$ca)
 a_rules <- subset(a_rules, confidence >= 0.49)

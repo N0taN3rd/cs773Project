@@ -2,6 +2,7 @@ library(dplyr)
 library(tidyr)
 library(purrr)
 library(stringr)
+library(reshape2)
 library(foreach)
 library(iterators)
 
@@ -251,6 +252,53 @@ helpers.q3 <- function(write = F, filter = NULL) {
 }
 
 
+
+helpers.q4 <- function(write = F) {
+  data <- read.csv(file.path('q3', 'restaurantsq3.csv'))
+  
+  cuisine_foodQuality <-
+    data %>% select(cuisine, atmosphere) %>%
+    filter(cuisine != 'none' &
+             atmosphere != 'none' & grepl('Food', atmosphere)) 
+  
+  cuisine_foodQualitySide <-
+    cuisine_foodQuality %>% distinct %>%
+    transmute(
+      s1 = paste('cuisine', cuisine, sep = '='),
+      s2 = paste('atmosphere', atmosphere, sep = '=')
+    )
+  
+  cuisine_foodQuality <- cuisine_foodQuality %>% transmute(cuisine=cuisine ,quality = atmosphere)
+  
+  cuisine_foodQuality <- droplevels(cuisine_foodQuality)
+  cq_spread <- cuisine_foodQuality %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n)
+  
+  cuisine_foodQualityD = cuisine_foodQuality
+  cuisine_foodQualityD$quality <-
+    recode_factor(
+      cuisine_foodQualityD$quality,
+      `Excellent Food` = "Good",
+      `Near-perfect Food` = "Excellent",
+      `Extraordinary Food` = "Excellent",
+      `Fair Food` = 'Fair',
+      `Good Food` = 'Good'
+    )
+  
+  cqD_spread <- cuisine_foodQualityD %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n)
+  
+  
+  # cuisine_foodQuality$cuisine <- levels(cuisine_foodQuality$cuisine)
+  # cuisine_foodQuality$quality <- levels(cuisine_foodQuality$quality)
+  
+  list(q4Data = data,
+       cfqSide = cuisine_foodQualitySide,
+       cfq = cuisine_foodQuality,
+       cfqd = cuisine_foodQualityD,
+       cqD_spread = cqD_spread,
+       cq_spread=cq_spread)
+}
+
+
 helpers.pair_count <- function(df) {
   ldf <- df %>% transmute(
     cuisine = levels(unique(cuisine)),
@@ -325,6 +373,37 @@ helpers.group_by_lhs <- function(ruleDF) {
     cumLift = sum(lift),
     sumConv = sum(conviction)
   )
+}
+
+# from http://www.r-bloggers.com/measuring-associations-between-non-numeric-variables/
+helpers.GKtau <- function(x,y){
+  #
+  #  First, compute the IxJ contingency table between x and y
+  #
+  Nij <- table(x,y,useNA='ifany')
+  #
+  #  Next, convert this table into a joint probability estimate
+  #
+  PIij <- Nij/sum(Nij)
+  #
+  #  Compute the marginal probability estimates
+  #
+  PIiPlus = apply(PIij,MARGIN=1,sum)
+  PIPlusj = apply(PIij,MARGIN=2,sum)
+  #
+  #  Compute the marginal variation of y
+  #
+  Vy <- 1 - sum(PIPlusj^2)
+  #
+  #  Compute the expected conditional variation of y given x
+  #
+  InnerSum <- apply(PIij^2,MARGIN=1,sum)
+  VyBarx <-  1 - sum(InnerSum/PIiPlus)
+  #
+  #  Compute and return Goodman and Kruskal’s tau measure
+  #
+  tau <- (Vy - VyBarx)/Vy
+  tau
 }
 
 
