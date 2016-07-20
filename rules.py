@@ -266,7 +266,7 @@ def q2():
     headers = ['cuisine', 'atmosphere', 'occasion', 'price', 'style']
     cuisineGrouped = defaultdict(DictList)  # type: dict[DictList]
     cuisineFilter = ['Indian', 'Mexican', 'Italian', 'French', 'American']
-    with open('q2/cuisineCharactersUnique3.csv', 'w+') as cOut:
+    with open('q2/cuisineCharacters2.csv', 'w+') as cOut:
         cOut.write('cuisine,atmosphere,occasion,price,style\n')
         finalOut = []
         for r in filter(lambda x: x.hasLabelValue(('cuisine', cuisineFilter)), rs):
@@ -300,7 +300,7 @@ def q2():
                         finalOut.append((key, product[0], product[1], product[2], product[3]))
                 print(list(itertools.product(*listOfLabels)))
             print('----------------------------------------')
-        for entry in set(finalOut):
+        for entry in finalOut:
             print(entry)
             cOut.write('%s,%s,%s,%s,%s\n'%(entry[0],entry[1],entry[2],entry[3],entry[4]))
 
@@ -345,9 +345,12 @@ def q3():
 
 if __name__ == '__main__':
     print("hi")
-    # q3()
-    rs = getResturants()
-    for r in rs:
-        for l in r.labels:
-            if 'Decor' in l.val:
-                print(l.val)
+    q2()
+    # rs = getResturants()
+    # foodQualityCounter = Counter()
+    # for r in rs:
+    #     for l in filter(lambda x: x.label == 'atmosphere',r.labels):
+    #             if 'Food' in l.val:
+    #                 foodQualityCounter[l.val] += 1
+    #                 foodQualityCounter['total'] += 1
+    # print(foodQualityCounter)

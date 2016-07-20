@@ -6,10 +6,12 @@ setwd(cwd)
 
 source(file=file.path(cwd,'/r/ruleFunctions.R'))
 
-s1 <- read.csv('q2/cuisineCharactersUnique3.csv')
+s1 <- read.csv('q2/cuisineCharacters2.csv')
 
 ruleModel <- ruleGen.c50(d=s1,form =  cuisine ~ .,trialNum = 10,winnow = TRUE)
 
-summary(ruleModel)
+
+c50Summary <- capture.output(summary(ruleModel))
+cat(c50Summary,file = file.path(cwd,'q2','c50_10Trials.txt'),sep="\n")
 
 rulesFit <- ruleGen.part(s1,form=cuisine ~ .)

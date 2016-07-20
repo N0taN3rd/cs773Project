@@ -2,6 +2,7 @@ library(caret)
 library(arules)
 library(C50)
 library(Rsenal)
+library(rpart)
 
 
 ruleGen.c50 <- function(d,
