@@ -1,0 +1,21 @@
+
+Call:
+lm(formula = cuisine ~ Good + Fair + Excellent, data = cuisine_fqd_spread)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-39.225 -19.339   0.871  17.665  36.990 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 40.332472   2.722391  14.815   <2e-16 ***
+Good         0.000577   0.016492   0.035    0.972    
+Fair        -0.862551   1.358988  -0.635    0.528    
+Excellent   -0.009374   0.033799  -0.277    0.782    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22.49 on 73 degrees of freedom
+Multiple R-squared:  0.02945,	Adjusted R-squared:  -0.01044 
+F-statistic: 0.7383 on 3 and 73 DF,  p-value: 0.5326
+

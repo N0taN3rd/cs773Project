@@ -1,0 +1,24 @@
+
+Call:
+lm(formula = cuisine ~ `Excellent Food` + `Extraordinary Food` + 
+    `Fair Food` + `Good Food` + `Near-perfect Food`, data = cuisine_fq_spread)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-39.151 -19.160   0.278  18.047  37.624 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          40.058858   2.858897  14.012   <2e-16 ***
+`Excellent Food`      0.008465   0.062930   0.135    0.893    
+`Extraordinary Food`  0.001337   0.134509   0.010    0.992    
+`Fair Food`          -0.332084   1.771826  -0.187    0.852    
+`Good Food`          -0.026458   0.061197  -0.432    0.667    
+`Near-perfect Food`  -0.080117   0.483008  -0.166    0.869    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22.77 on 71 degrees of freedom
+Multiple R-squared:  0.03261,	Adjusted R-squared:  -0.03552 
+F-statistic: 0.4786 on 5 and 71 DF,  p-value: 0.791
+

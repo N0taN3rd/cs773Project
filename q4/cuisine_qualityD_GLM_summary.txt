@@ -1,0 +1,26 @@
+
+Call:
+glm(formula = cuisine ~ Good + Fair + Excellent, family = binomial(link = "logit"), 
+    data = cuisine_fqd_spread)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.68358   0.02154   0.12782   0.20283   0.58405  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept)    3.58754    1.23854   2.897  0.00377 **
+Good           0.07152    0.09264   0.772  0.44010   
+Fair           6.78422 4023.32047   0.002  0.99865   
+Excellent     -0.05484    0.06312  -0.869  0.38491   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 10.6746  on 76  degrees of freedom
+Residual deviance:  9.1923  on 73  degrees of freedom
+AIC: 17.192
+
+Number of Fisher Scoring iterations: 23
+

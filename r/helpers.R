@@ -258,8 +258,7 @@ helpers.q4 <- function(write = F) {
   
   cuisine_foodQuality <-
     data %>% select(cuisine, atmosphere) %>%
-    filter(cuisine != 'none' &
-             atmosphere != 'none' & grepl('Food', atmosphere)) 
+    filter(grepl('Food', atmosphere)) 
   
   cuisine_foodQualitySide <-
     cuisine_foodQuality %>% distinct %>%
