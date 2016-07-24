@@ -1,0 +1,3167 @@
+
+Call:
+C5.0.formula(formula = form, data = d, trials = trialNum, control = C5.0Control(subset = TRUE, winnow = winnow), rules
+ = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Fri Jul 22 13:36:38 2016
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 29414 cases (5 attributes) from undefined.data
+
+No attributes winnowed
+
+-----  Trial 0:  -----
+
+Rules:
+
+Rule 0/1: (4, lift 3501.7)
+	price = below $15
+	style = Middle Eastern
+	->  class Armenian  [0.833]
+
+Rule 0/2: (21, lift 1172.3)
+	price = below $15
+	style = Fast Food
+	->  class Belgian  [0.957]
+
+Rule 0/3: (36/24, lift 193.5)
+	occasion in {Delivery Available, Prix Fixe Menus, Takeout Available}
+	price = $15-$30
+	style = High Tea
+	->  class Czech  [0.342]
+
+Rule 0/4: (582, lift 3.1)
+	style in {Bakeries, Brasserie, Omelettes}
+	->  class French  [0.998]
+
+Rule 0/5: (564, lift 3.1)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Dining Outdoors, Entertainment, Fine for Dining Alone,
+                     Open for Breakfast, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Bakeries, Brasserie, High Tea, Omelettes}
+	->  class French  [0.998]
+
+Rule 0/6: (1300/3, lift 3.1)
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Caviar, Eclectic, High Tea}
+	->  class French  [0.997]
+
+Rule 0/7: (224, lift 3.1)
+	atmosphere in {Excellent Decor, Extraordinary Food, No Reservations,
+                       Parking/Valet, Wheelchair Access}
+	price in {$15-$30, below $15}
+	style in {Bakeries, Brasserie, High Tea}
+	->  class French  [0.996]
+
+Rule 0/8: (60, lift 3.0)
+	occasion in {After Hours Dining, Late Night Menu, Open for Breakfast,
+                     Pre-theater Dining, Prix Fixe Menus}
+	price = $15-$30
+	style = Coffee Shops
+	->  class French  [0.984]
+
+Rule 0/9: (32, lift 3.0)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       Near-perfect Food, Pub Feel, Singles Scene}
+	price in {$30-$50, over $50}
+	style = Cab
+	->  class French  [0.971]
+
+Rule 0/10: (31, lift 3.0)
+	atmosphere in {Business Scene, Classic Hotel Dining, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Great for People Watching, Hip Place To Be,
+                       Place for Singles, Romantic}
+	occasion in {Dancing, Entertainment, Game, Open for Breakfast,
+                     Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.970]
+
+Rule 0/11: (19, lift 2.9)
+	atmosphere in {Excellent Food, Excellent Service, Good Decor}
+	occasion in {none, Private Parties, Private Rooms Available,
+                     Weekend Brunch, Weekend Dining}
+	price = $30-$50
+	style = Continental
+	->  class French  [0.952]
+
+Rule 0/12: (14, lift 2.9)
+	occasion in {Game, Open for Breakfast, Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.938]
+
+Rule 0/13: (125/8, lift 2.9)
+	atmosphere in {An Out Of The Way Find, Business Scene,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       Parking/Valet, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Very Busy - Reservations a Must}
+	occasion in {Dancing, Game, none, Private Parties,
+                     Private Rooms Available, Weekend Dining}
+	price in {$30-$50, over $50}
+	style = Continental
+	->  class French  [0.929]
+
+Rule 0/14: (1168/83, lift 2.9)
+	occasion in {Dancing, Dining Outdoors, Entertainment, Game,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Weekend Brunch, Weekend Lunch}
+	price = over $50
+	->  class French  [0.928]
+
+Rule 0/15: (10, lift 2.8)
+	atmosphere in {Good Service, Old World Cafe Charm, Place for Singles}
+	price = $30-$50
+	style = Steakhouses
+	->  class French  [0.917]
+
+Rule 0/16: (28/2, lift 2.8)
+	atmosphere in {Extraordinary Service, Fabulous Wine Lists, Good Decor,
+                       Good Food, Good Service, Up and Coming}
+	occasion in {Fine for Dining Alone, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Weekend Brunch}
+	price = $15-$30
+	style = Power Brokers
+	->  class French  [0.900]
+
+Rule 0/17: (8, lift 2.8)
+	atmosphere in {Quiet for Conversation, Romantic}
+	price = $15-$30
+	style = Power Brokers
+	->  class French  [0.900]
+
+Rule 0/18: (8, lift 2.8)
+	occasion in {Prix Fixe Menus, Special Brunch Menu}
+	price = below $15
+	->  class French  [0.900]
+
+Rule 0/19: (1333/144, lift 2.8)
+	price = over $50
+	->  class French  [0.891]
+
+Rule 0/20: (41/4, lift 2.7)
+	occasion in {Fine for Dining Alone, Prix Fixe Menus,
+                     Special Brunch Menu, Weekend Lunch}
+	price = $15-$30
+	style in {Eclectic, Pastries, Steakhouses}
+	->  class French  [0.884]
+
+Rule 0/21: (4, lift 2.6)
+	occasion = Dining Outdoors
+	price = $15-$30
+	style = Carry in Wine and Beer
+	->  class French  [0.833]
+
+Rule 0/22: (42/8, lift 2.5)
+	occasion in {Dancing, Entertainment, Game, Open for Breakfast,
+                     Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.795]
+
+Rule 0/23: (88/18, lift 2.4)
+	occasion in {Game, See the Game, Walk}
+	price in {$30-$50, over $50}
+	style in {Cab, Traditional}
+	->  class French  [0.789]
+
+Rule 0/24: (54/12, lift 2.4)
+	occasion in {Delivery Available, Dining Outdoors, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Dining}
+	price = $15-$30
+	style = Steakhouses
+	->  class French  [0.768]
+
+Rule 0/25: (4623/1274, lift 2.2)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Fair Service, Focus on Dessert,
+                       Good Out of Town Business, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Smoking Allowed,
+                       Old World Cafe Charm, On the Beach, Parking/Valet,
+                       Place for Singles, Pub Feel, Quiet for Conversation,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Early Dining,
+                     Entertainment, Fine for Dining Alone, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, See the Game, Short Drive,
+                     Special Brunch Menu, Takeout Available, Walk,
+                     Weekend Brunch, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class French  [0.724]
+
+Rule 0/26: (931/268, lift 2.2)
+	atmosphere in {An Out Of The Way Find, Fair Food, Need To Dress,
+                       Quiet for Conversation}
+	->  class French  [0.712]
+
+Rule 0/27: (3379/1059, lift 2.1)
+	occasion in {Dining Outdoors, Game, Great Place to Meet for a Drink,
+                     Long Drive, Open for Breakfast, Pre-theater Dining,
+                     Prix Fixe Menus, See the Game, Short Drive,
+                     Special Brunch Menu, Walk, Weekend Jazz Brunch}
+	price in {$30-$50, over $50}
+	->  class French  [0.686]
+
+Rule 0/28: (2380/795, lift 2.1)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Smoking Allowed,
+                       Parking/Valet, Place for Singles, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	price in {$30-$50, over $50}
+	style = Power Brokers
+	->  class French  [0.666]
+
+Rule 0/29: (1022/347, lift 2.0)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Classic Hotel Dining, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Focus on Dessert, Good Food,
+                       Good Out of Town Business, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Service, No Reservations, On the Beach,
+                       Parking/Valet, Place for Singles, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Warm spots by the fire, Wheelchair Access}
+	style = Continental
+	->  class French  [0.660]
+
+Rule 0/30: (45/17, lift 1.9)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       For the Young and Young at Heart, Good Decor, Quirky}
+	price = $30-$50
+	style = Steakhouses
+	->  class French  [0.617]
+
+Rule 0/31: (56, lift 59.1)
+	price = $15-$30
+	style = Deli
+	->  class German  [0.983]
+
+Rule 0/32: (2, lift 45.1)
+	atmosphere in {An Historic Spot, Good Decor}
+	occasion = none
+	price = $15-$30
+	style = Power Brokers
+	->  class German  [0.750]
+
+Rule 0/33: (26, lift 37.8)
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Open for Breakfast, Takeout Available}
+	style = Middle Eastern
+	->  class Greek  [0.964]
+
+Rule 0/34: (21, lift 37.5)
+	atmosphere in {Extraordinary Food, Hip Place To Be, No Reservations,
+                       Quirky}
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.957]
+
+Rule 0/35: (18, lift 37.3)
+	atmosphere in {Cafe/Garden Dining, Up and Coming}
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Entertainment, Private Rooms Available, Weekend Dining}
+	style = Continental
+	->  class Greek  [0.950]
+
+Rule 0/36: (15, lift 36.9)
+	occasion in {Delivery Available, Fine for Dining Alone,
+                     Takeout Available}
+	price = below $15
+	style = Cab
+	->  class Greek  [0.941]
+
+Rule 0/37: (8, lift 35.3)
+	atmosphere in {Good Decor, Good Food, Good Service, Parking/Valet}
+	occasion in {Dancing, Entertainment}
+	price = $15-$30
+	style = Cab
+	->  class Greek  [0.900]
+
+Rule 0/38: (11/3, lift 27.2)
+	atmosphere in {Good Decor, Good Food, Good Service, Parking/Valet}
+	occasion in {Dancing, Entertainment, Game, Open for Breakfast,
+                     Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class Greek  [0.692]
+
+Rule 0/39: (44/19, lift 22.2)
+	price = below $15
+	style = Cab
+	->  class Greek  [0.565]
+
+Rule 0/40: (151/70, lift 21.0)
+	style = Middle Eastern
+	->  class Greek  [0.536]
+
+Rule 0/41: (4, lift 193.0)
+	occasion = Dining After the Theater
+	price = below $15
+	->  class Irish  [0.833]
+
+Rule 0/42: (13/3, lift 169.8)
+	occasion = none
+	price = $15-$30
+	style = Continental
+	->  class Irish  [0.733]
+
+Rule 0/43: (33/9, lift 165.4)
+	atmosphere in {Authentic, Creative, Extraordinary Food,
+                       Extraordinary Service, Focus on Dessert, On the Beach,
+                       Quiet for Conversation}
+	price = $15-$30
+	style = Californian
+	->  class Irish  [0.714]
+
+Rule 0/44: (345/37, lift 1.6)
+	occasion in {After Hours Dining, Delivery Available, Dining Outdoors,
+                     Late Night Menu, Pre-theater Dining, Takeout Available,
+                     Weekend Dining, Weekend Lunch}
+	price = $30-$50
+	style in {Cab, Pizza, Traditional}
+	->  class Italian  [0.890]
+
+Rule 0/45: (60/6, lift 1.6)
+	atmosphere in {Fair Food, For the Young and Young at Heart, Good Food,
+                       No Reservations, People Keep Coming Back, Quirky}
+	price = $30-$50
+	style in {none, Power Brokers, Steakhouses}
+	->  class Italian  [0.887]
+
+Rule 0/46: (3390/527, lift 1.5)
+	style in {Pizza, Traditional}
+	->  class Italian  [0.844]
+
+Rule 0/47: (3770/716, lift 1.4)
+	style in {Cab, Pizza}
+	->  class Italian  [0.810]
+
+Rule 0/48: (28134/11387, lift 1.0)
+	style in {Cab, Cafe/Espresso Bars, Californian, Carry in Wine and Beer,
+                  Central, Coffee Houses, Coffee Shops, Continental, Deli,
+                  Diners, Eclectic, Fast Food, Hamburgers, International,
+                  Kosher, Middle Eastern, none, Pastries, Pizza, Pizzerias,
+                  Power Brokers, Southwestern, Steakhouses, Traditional}
+	->  class Italian  [0.595]
+
+Rule 0/49: (6, lift 150.5)
+	occasion in {Fine for Dining Alone, Menus in Braille}
+	price = $15-$30
+	style = Coffee Shops
+	->  class Polish  [0.875]
+
+Rule 0/50: (30/3, lift 150.5)
+	occasion in {none, Open for Breakfast, Short Drive, Weekend Brunch}
+	price = below $15
+	style in {Coffee Shops, Diners}
+	->  class Polish  [0.875]
+
+Rule 0/51: (100/42, lift 99.5)
+	occasion in {Short Drive, Weekend Brunch}
+	price = below $15
+	style = none
+	->  class Polish  [0.578]
+
+Rule 0/52: (143/77, lift 79.5)
+	occasion in {Game, Long Drive, none, Short Drive, Weekend Brunch}
+	price = below $15
+	style = none
+	->  class Polish  [0.462]
+
+Rule 0/53: (45, lift 179.9)
+	occasion in {Dining Outdoors, Open for Breakfast, Takeout Available,
+                     Weekend Dining}
+	price = below $15
+	style = Carry in Wine and Beer
+	->  class Portuguese  [0.979]
+
+Rule 0/54: (102/57, lift 81.3)
+	style = Carry in Wine and Beer
+	->  class Portuguese  [0.442]
+
+Rule 0/55: (50, lift 28.5)
+	atmosphere in {Classic Hotel Dining, Excellent Food, Excellent Service,
+                       Good Decor, Good Out of Town Business,
+                       Great for People Watching, Quiet for Conversation,
+                       Up and Coming}
+	style in {International, Southwestern}
+	->  class Spanish  [0.981]
+
+Rule 0/56: (20, lift 27.7)
+	style = International
+	->  class Spanish  [0.955]
+
+Rule 0/57: (4, lift 24.2)
+	occasion = Fine for Dining Alone
+	price = below $15
+	style = Coffee Shops
+	->  class Spanish  [0.833]
+
+Default class: Italian
+
+-----  Trial 1:  -----
+
+Rules:
+
+Rule 1/1: (17.6, lift 1270.2)
+	style = Fast Food
+	->  class Belgian  [0.949]
+
+Rule 1/2: (550.3, lift 3.0)
+	price in {$30-$50, over $50}
+	style in {Californian, Eclectic}
+	->  class French  [0.998]
+
+Rule 1/3: (56.2, lift 2.9)
+	occasion in {Late Night Menu, Long Drive, none, Open for Breakfast,
+                     Parties and Occasions, Weekend Brunch}
+	price in {$30-$50, over $50}
+	style in {Continental, Steakhouses}
+	->  class French  [0.983]
+
+Rule 1/4: (1084.1/31.9, lift 2.9)
+	style in {Bakeries, Brasserie, Caviar, High Tea, Omelettes}
+	->  class French  [0.970]
+
+Rule 1/5: (568.9/26.2, lift 2.9)
+	price = over $50
+	style in {Californian, Continental, Power Brokers}
+	->  class French  [0.952]
+
+Rule 1/6: (1028.1/158.3, lift 2.5)
+	atmosphere in {An Out Of The Way Find, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Good Out of Town Business,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, Parking/Valet,
+                       Pub Feel, Quiet for Conversation, Relaxed Senior Scene,
+                       Romantic, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	occasion in {Dancing, Dining Outdoors, Entertainment, Game, Long Drive,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Walk, Weekend Brunch, Weekend Dining,
+                     Weekend Lunch}
+	price = over $50
+	->  class French  [0.845]
+
+Rule 1/7: (35.2/6.7, lift 2.4)
+	occasion in {Dancing, Entertainment, Game, Open for Breakfast,
+                     Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.793]
+
+Rule 1/8: (155.7/50.3, lift 2.0)
+	atmosphere in {Excellent Decor, Health Conscious Menus, Pub Feel,
+                       Warm spots by the fire}
+	price in {$30-$50, over $50}
+	style = Power Brokers
+	->  class French  [0.675]
+
+Rule 1/9: (5935.3/2156.9, lift 1.9)
+	atmosphere in {An Out Of The Way Find, Cafe/Garden Dining,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service, Fair Service,
+                       Good Out of Town Business, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, On the Beach,
+                       Parking/Valet, Place for Singles, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Dancing, Delivery Available,
+                     Dining Outdoors, Entertainment, Game, Long Drive,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     See the Game, Short Drive, Special Brunch Menu, Walk,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class French  [0.637]
+
+Rule 1/10: (285.2/109.5, lift 1.8)
+	atmosphere in {An Out Of The Way Find, Classic Hotel Dining, Creative,
+                       Extraordinary Service, Fabulous Wine Lists, Good Food,
+                       Good Service, Great for People Watching,
+                       Old World Cafe Charm, On the Beach, Place for Singles,
+                       Quiet for Conversation, Romantic, Up and Coming}
+	price = $15-$30
+	style in {Carry in Wine and Beer, Coffee Shops, Continental, Eclectic,
+                  Pastries, Power Brokers, Steakhouses}
+	->  class French  [0.615]
+
+Rule 1/11: (5618.1/2718.5, lift 1.5)
+	style in {Californian, Carry in Wine and Beer, Coffee Shops,
+                  Continental, Diners, Eclectic, Pastries, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.516]
+
+Rule 1/12: (47, lift 42.7)
+	style = Deli
+	->  class German  [0.980]
+
+Rule 1/13: (147.9/55.4, lift 17.7)
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.624]
+
+Rule 1/14: (1975.3/11.6, lift 1.9)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.994]
+
+Rule 1/15: (249.1/63.7, lift 1.4)
+	price = $15-$30
+	style in {Californian, Diners}
+	->  class Italian  [0.742]
+
+Rule 1/16: (1801.8/659.1, lift 1.2)
+	price = below $15
+	->  class Italian  [0.634]
+
+Rule 1/17: (450.6/165.9, lift 1.2)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Great for People Watching,
+                       Hip Place To Be, Near-perfect Decor, Near-perfect Food,
+                       Need To Dress, Parking/Valet, Place for Singles,
+                       Pub Feel, Quiet for Conversation, Romantic,
+                       Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	price = $30-$50
+	style = Cab
+	->  class Italian  [0.631]
+
+Rule 1/18: (1045.7/402.3, lift 1.2)
+	atmosphere in {Authentic, Business Scene, Cafe/Garden Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Extraordinary Food,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Decor, Good for Younger Kids,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Hip Place To Be, Near-perfect Food, Need To Dress,
+                       No Reservations, Parking/Valet, Quirky,
+                       Relaxed Senior Scene, Singles Scene, Tourist Appeal,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Long Drive, Parties and Occasions, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style in {Californian, Carry in Wine and Beer, Coffee Shops,
+                  Continental, Diners, Eclectic, Pastries, Power Brokers,
+                  Steakhouses}
+	->  class Italian  [0.615]
+
+Rule 1/19: (9042/3910.3, lift 1.1)
+	atmosphere in {Cafe/Garden Dining, Excellent Decor, Excellent Food,
+                       Excellent Service, Focus on Dessert,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Near-perfect Food, Pub Feel,
+                       Singles Scene, Up and Coming, Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Game,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Long Drive, none, Open for Breakfast,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus,
+                     Takeout Available, Weekend Brunch, Weekend Dining}
+	->  class Italian  [0.568]
+
+Rule 1/20: (19067.2/8775.9, lift 1.0)
+	style in {Cab, Middle Eastern, none}
+	->  class Italian  [0.540]
+
+Rule 1/21: (1489.2/745.8, lift 1.0)
+	style = Traditional
+	->  class Italian  [0.499]
+
+Rule 1/22: (115.5/40.3, lift 13.3)
+	style in {International, Southwestern}
+	->  class Spanish  [0.649]
+
+Default class: Italian
+
+-----  Trial 2:  -----
+
+Rules:
+
+Rule 2/1: (496.2, lift 2.9)
+	price in {$30-$50, over $50}
+	style in {Californian, Eclectic}
+	->  class French  [0.998]
+
+Rule 2/2: (30.3, lift 2.8)
+	occasion = Entertainment
+	style = Power Brokers
+	->  class French  [0.969]
+
+Rule 2/3: (989.9/37.6, lift 2.8)
+	style in {Bakeries, Brasserie, Caviar, High Tea, Omelettes}
+	->  class French  [0.961]
+
+Rule 2/4: (475.5/63.4, lift 2.5)
+	occasion in {Early Dining, Happy Hour, Open on Mondays, Open on Sundays,
+                     Picnics, See the Game, Short Drive, Special Brunch Menu,
+                     Walk, Weekend Jazz Brunch}
+	price = $30-$50
+	->  class French  [0.865]
+
+Rule 2/5: (966/134.2, lift 2.5)
+	occasion in {Dancing, Dining Outdoors, Entertainment, Game,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Weekend Brunch, Weekend Lunch}
+	price = over $50
+	->  class French  [0.860]
+
+Rule 2/6: (1141.5/225.3, lift 2.3)
+	price = over $50
+	->  class French  [0.802]
+
+Rule 2/7: (210.1/52.5, lift 2.2)
+	atmosphere in {An Out Of The Way Find, Cafe/Garden Dining,
+                       Classic Hotel Dining, For the Young and Young at Heart,
+                       Great for People Watching, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Smoking Allowed,
+                       On the Beach, Place for Singles, Pub Feel, Singles Scene}
+	occasion in {Dining After the Theater, Game,
+                     Great Place to Meet for a Drink, none, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Weekend Dining}
+	price = $30-$50
+	style in {Cab, Continental, none, Steakhouses}
+	->  class French  [0.748]
+
+Rule 2/8: (1660.7/485.3, lift 2.1)
+	occasion in {Early Dining, Fine for Dining Alone, Happy Hour,
+                     Long Drive, Menus in Braille, Open for Breakfast,
+                     Open on Mondays, Open on Sundays, Parties and Occasions,
+                     Picnics, See the Game, Short Drive, Special Brunch Menu,
+                     Walk, Weekend Brunch, Weekend Jazz Brunch, Weekend Lunch}
+	price = $30-$50
+	->  class French  [0.708]
+
+Rule 2/9: (257/87.2, lift 1.9)
+	occasion in {Long Drive, Open for Breakfast, Parties and Occasions,
+                     Weekend Brunch}
+	price = $30-$50
+	style = none
+	->  class French  [0.659]
+
+Rule 2/10: (1547.7/627.4, lift 1.7)
+	occasion in {Prix Fixe Menus, Special Brunch Menu}
+	style in {Cab, Californian, Continental, none, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.594]
+
+Rule 2/11: (590.1/245.8, lift 1.7)
+	atmosphere in {Fabulous Views, Health Conscious Menus,
+                       Near-perfect Food, Need To Dress, Quiet for Conversation,
+                       Romantic}
+	price = $15-$30
+	style in {Eclectic, none, Power Brokers}
+	->  class French  [0.583]
+
+Rule 2/12: (1149.6/543.4, lift 1.5)
+	atmosphere in {An Out Of The Way Find, Extraordinary Service}
+	->  class French  [0.527]
+
+Rule 2/13: (260.2/123.6, lift 1.5)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Good Decor, Good Service,
+                       Quiet for Conversation, Warm spots by the fire}
+	occasion in {Game, Great Place to Meet for a Drink, Weekend Dining}
+	price in {$30-$50, over $50}
+	style in {Cab, Continental, none, Steakhouses}
+	->  class French  [0.525]
+
+Rule 2/14: (1208.1/594.9, lift 1.5)
+	style = Continental
+	->  class French  [0.508]
+
+Rule 2/15: (199/104, lift 1.4)
+	occasion in {Dancing, Delivery Available, Dining Outdoors,
+                     Entertainment, Game, Great Place to Meet for a Drink,
+                     Open for Breakfast, Prix Fixe Menus, Takeout Available}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.478]
+
+Rule 2/16: (58.5/16.2, lift 27.7)
+	style in {Deli, Fast Food}
+	->  class German  [0.716]
+
+Rule 2/17: (46.8/14.4, lift 17.1)
+	price = below $15
+	style = Cab
+	->  class Greek  [0.685]
+
+Rule 2/18: (154.4/63.4, lift 14.7)
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.588]
+
+Rule 2/19: (1783.9/13.3, lift 2.0)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.992]
+
+Rule 2/20: (600.6/199.9, lift 1.4)
+	atmosphere in {An Historic Spot, Focus on Dessert,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Old World Cafe Charm, People Keep Coming Back, Pub Feel,
+                       Relaxed Senior Scene, Tourist Appeal}
+	price = $15-$30
+	style in {Eclectic, none, Pastries, Power Brokers, Steakhouses}
+	->  class Italian  [0.667]
+
+Rule 2/21: (357.6/136.8, lift 1.3)
+	occasion in {Long Drive, Open for Breakfast, Parties and Occasions,
+                     Weekend Brunch}
+	price = $30-$50
+	style in {Cab, Power Brokers}
+	->  class Italian  [0.617]
+
+Rule 2/22: (4985.3/2106.4, lift 1.2)
+	occasion in {Long Drive, Menus in Braille, none, Walk, Weekend Dining}
+	->  class Italian  [0.577]
+
+Rule 2/23: (2644.9/1124.9, lift 1.2)
+	atmosphere in {An Historic Spot, Business Scene, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Views, Fabulous Wine Lists, Focus on Dessert,
+                       Good Food, Good for Younger Kids,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Decor, No Reservations,
+                       Old World Cafe Charm, Parking/Valet,
+                       People Keep Coming Back, Quirky, Relaxed Senior Scene,
+                       Romantic, Up and Coming, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	occasion in {Dining After the Theater, Game,
+                     Great Place to Meet for a Drink, none, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Weekend Dining}
+	price = $30-$50
+	style in {Cab, Continental, none, Power Brokers, Steakhouses}
+	->  class Italian  [0.575]
+
+Rule 2/24: (2585.7/1098.3, lift 1.2)
+	atmosphere in {Buffet Dining, Business Scene, Classic Hotel Dining,
+                       Creative, Extraordinary Decor, Fabulous Wine Lists,
+                       Fair Service, For the Young and Young at Heart,
+                       Great for People Watching, Hip Place To Be,
+                       No Smoking Allowed, Place for Singles, Up and Coming,
+                       Very Busy - Reservations a Must}
+	price = $15-$30
+	->  class Italian  [0.575]
+
+Rule 2/25: (576.3/257.2, lift 1.1)
+	occasion in {Fine for Dining Alone, Menus in Braille, Weekend Lunch}
+	style = none
+	->  class Italian  [0.554]
+
+Rule 2/26: (9126.3/4533.8, lift 1.0)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Late Night Menu,
+                     Prix Fixe Menus, Takeout Available}
+	->  class Italian  [0.503]
+
+Rule 2/27: (24674.9/12842.2, lift 1.0)
+	style in {Cab, Californian, Continental, Eclectic, Middle Eastern, none,
+                  Pastries, Power Brokers, Steakhouses}
+	->  class Italian  [0.480]
+
+Default class: Italian
+
+-----  Trial 3:  -----
+
+Rules:
+
+Rule 3/1: (19.2, lift 1139.5)
+	style = Fast Food
+	->  class Belgian  [0.953]
+
+Rule 3/2: (468.6, lift 2.8)
+	price in {$30-$50, over $50}
+	style in {Californian, Eclectic}
+	->  class French  [0.998]
+
+Rule 3/3: (117, lift 2.8)
+	occasion in {Early Dining, Entertainment, Fine for Dining Alone,
+                     Happy Hour, Picnics, See the Game, Special Brunch Menu,
+                     Walk, Weekend Jazz Brunch}
+	price = $30-$50
+	style = Power Brokers
+	->  class French  [0.992]
+
+Rule 3/4: (68.4, lift 2.7)
+	occasion in {Early Dining, Short Drive, Walk}
+	price = $30-$50
+	style in {Continental, none}
+	->  class French  [0.986]
+
+Rule 3/5: (925.1/41.4, lift 2.7)
+	style in {Bakeries, Brasserie, Caviar, High Tea, Omelettes}
+	->  class French  [0.954]
+
+Rule 3/6: (1095.6/232.2, lift 2.2)
+	price = over $50
+	->  class French  [0.788]
+
+Rule 3/7: (471/120.1, lift 2.1)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Good Decor,
+                       Good Out of Town Business, Need To Dress,
+                       No Smoking Allowed, Parking/Valet,
+                       Quiet for Conversation, Romantic,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {Parties and Occasions, Pre-theater Dining, Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class French  [0.744]
+
+Rule 3/8: (225.2/71.7, lift 1.9)
+	atmosphere in {An Out Of The Way Find, Fabulous Wine Lists,
+                       Focus on Dessert, Great for People Watching,
+                       Health Conscious Menus, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       Place for Singles, Pub Feel, Romantic, Singles Scene}
+	style = Cab
+	->  class French  [0.680]
+
+Rule 3/9: (151.5/55.8, lift 1.8)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       Up and Coming}
+	occasion in {Short Drive, Walk, Weekend Dining}
+	price in {$30-$50, over $50}
+	style = none
+	->  class French  [0.630]
+
+Rule 3/10: (1548.2/613.1, lift 1.7)
+	occasion in {Prix Fixe Menus, Special Brunch Menu}
+	style in {Californian, Coffee Shops, Continental, none, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.604]
+
+Rule 3/11: (3023.2/1217.7, lift 1.7)
+	atmosphere in {An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Fair Service,
+                       Good Out of Town Business, Great for People Watching,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Smoking Allowed,
+                       On the Beach, Parking/Valet, Place for Singles, Pub Feel,
+                       Relaxed Senior Scene, Romantic,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {After Hours Dining, Delivery Available, Dining Outdoors,
+                     Entertainment, Fine for Dining Alone, Long Drive,
+                     Menus in Braille, Open for Breakfast, Open on Mondays,
+                     Open on Sundays, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	style in {Continental, none}
+	->  class French  [0.597]
+
+Rule 3/12: (163.4/72.9, lift 1.5)
+	price = $15-$30
+	style in {Carry in Wine and Beer, Pastries, Steakhouses}
+	->  class French  [0.553]
+
+Rule 3/13: (265.5/125.5, lift 1.5)
+	atmosphere in {Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Up and Coming}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Game, Great Place to Meet for a Drink,
+                     Late Night Menu, Long Drive, none, Open for Breakfast,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, See the Game, Special Brunch Menu,
+                     Takeout Available, Walk, Weekend Brunch, Weekend Dining,
+                     Weekend Lunch}
+	price = $30-$50
+	style in {Continental, Power Brokers, Steakhouses}
+	->  class French  [0.527]
+
+Rule 3/14: (1349.3/659, lift 1.4)
+	style in {Coffee Shops, Continental}
+	->  class French  [0.512]
+
+Rule 3/15: (204.5/99.9, lift 1.4)
+	occasion in {Dancing, Delivery Available, Dining Outdoors,
+                     Entertainment, Game, Great Place to Meet for a Drink,
+                     Open for Breakfast, Prix Fixe Menus, Takeout Available}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.511]
+
+Rule 3/16: (23040.9/14108.3, lift 1.1)
+	style in {Californian, Carry in Wine and Beer, Coffee Shops,
+                  Continental, Diners, Eclectic, none, Pastries, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.388]
+
+Rule 3/17: (40.2, lift 35.0)
+	style = Deli
+	->  class German  [0.976]
+
+Rule 3/18: (51.3/19.2, lift 14.4)
+	atmosphere in {Excellent Food, Excellent Service, Fair Decor,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, No Reservations, Parking/Valet, Quirky,
+                       Wheelchair Access}
+	price = below $15
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.622]
+
+Rule 3/19: (158.6/65.8, lift 13.5)
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.584]
+
+Rule 3/20: (1654.1/14.5, lift 2.2)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.991]
+
+Rule 3/21: (97.2/18.1, lift 1.8)
+	occasion in {none, Pre-theater Dining, Weekend Dining,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style = Cab
+	->  class Italian  [0.808]
+
+Rule 3/22: (68.4/20.5, lift 1.5)
+	atmosphere in {An Historic Spot, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists,
+                       For the Young and Young at Heart, Good Decor,
+                       Good Service, Old World Cafe Charm, Parking/Valet,
+                       Place for Singles, Pub Feel, Quirky, Romantic,
+                       Wheelchair Access}
+	price = $30-$50
+	style = Steakhouses
+	->  class Italian  [0.694]
+
+Rule 3/23: (456.1/146.4, lift 1.5)
+	atmosphere in {An Historic Spot, Buffet Dining, Cafe/Garden Dining,
+                       Fabulous Wine Lists, Fair Decor, Focus on Dessert,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Old World Cafe Charm, On the Beach,
+                       People Keep Coming Back, Pub Feel, Relaxed Senior Scene,
+                       Singles Scene}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Long Drive, none, Open for Breakfast, Open on Mondays,
+                     Open on Sundays, Parties and Occasions, Picnics,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Special Brunch Menu, Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style = none
+	->  class Italian  [0.678]
+
+Rule 3/24: (237.3/82.6, lift 1.4)
+	price = $15-$30
+	style in {Californian, Diners}
+	->  class Italian  [0.651]
+
+Rule 3/25: (936.8/339.3, lift 1.4)
+	atmosphere in {An Historic Spot, Authentic, Cafe/Garden Dining,
+                       Creative, Credit cards are not accepted,
+                       Extraordinary Decor, Extraordinary Service, Fair Food,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be, On the Beach,
+                       People Keep Coming Back, Place for Singles, Poor Decor,
+                       Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	price = below $15
+	->  class Italian  [0.637]
+
+Rule 3/26: (168/61.5, lift 1.4)
+	atmosphere in {An Historic Spot, Creative, Extraordinary Service,
+                       For the Young and Young at Heart,
+                       Good Out of Town Business, Little Known But Well Liked,
+                       No Smoking Allowed, Quiet for Conversation,
+                       Relaxed Senior Scene, Warm spots by the fire}
+	style = Cab
+	->  class Italian  [0.632]
+
+Rule 3/27: (424.2/166, lift 1.3)
+	atmosphere in {An Historic Spot, Authentic, Fair Food, Focus on Dessert,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Health Conscious Menus, No Reservations,
+                       Old World Cafe Charm, People Keep Coming Back,
+                       Quiet for Conversation, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {After Hours Dining, Delivery Available, Dining Outdoors,
+                     Entertainment, Fine for Dining Alone, Long Drive,
+                     Menus in Braille, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price = $30-$50
+	style in {Continental, none}
+	->  class Italian  [0.608]
+
+Rule 3/28: (502.4/203.8, lift 1.3)
+	price = $15-$30
+	style in {Eclectic, Power Brokers}
+	->  class Italian  [0.594]
+
+Rule 3/29: (590.6/246.2, lift 1.3)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Authentic,
+                       Business Scene, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Fair Food,
+                       Fair Service, Focus on Dessert,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Reservations, No Smoking Allowed,
+                       Old World Cafe Charm, Parking/Valet,
+                       People Keep Coming Back, Place for Singles,
+                       Quiet for Conversation, Quirky, Relaxed Senior Scene,
+                       Romantic, Singles Scene, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Catering for Special Events, Dancing,
+                     Dining After the Theater, Game, Late Night Menu, none}
+	price = $30-$50
+	style in {Continental, none}
+	->  class Italian  [0.583]
+
+Rule 3/30: (4124.4/1835.5, lift 1.2)
+	occasion in {Dining After the Theater, Early Dining, Late Night Menu,
+                     Menus in Braille, Pre-theater Dining, Takeout Available,
+                     Weekend Dining}
+	price = $15-$30
+	->  class Italian  [0.555]
+
+Rule 3/31: (1409.3/651.8, lift 1.2)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Good Decor,
+                       Good Out of Town Business, Need To Dress,
+                       No Reservations, No Smoking Allowed, Parking/Valet,
+                       Quiet for Conversation, Quirky, Romantic,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Game,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Long Drive, none, Open for Breakfast, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus,
+                     Takeout Available, Weekend Brunch, Weekend Dining}
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.537]
+
+Rule 3/32: (2191.6/1032, lift 1.2)
+	atmosphere in {An Historic Spot, Buffet Dining, Cafe/Garden Dining,
+                       Classic Hotel Dining, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Fabulous Wine Lists,
+                       Fair Decor, Focus on Dessert, Good Decor, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Little Known But Well Liked,
+                       No Reservations, Old World Cafe Charm, On the Beach,
+                       Parking/Valet, People Keep Coming Back, Pub Feel,
+                       Relaxed Senior Scene, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Long Drive, Private Parties,
+                     Private Rooms Available}
+	price = $15-$30
+	style in {Carry in Wine and Beer, Eclectic, none, Power Brokers,
+                  Steakhouses}
+	->  class Italian  [0.529]
+
+Rule 3/33: (5487.1/2669.3, lift 1.1)
+	atmosphere in {An Historic Spot, Buffet Dining, Cafe/Garden Dining,
+                       Classic Hotel Dining, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Fabulous Wine Lists,
+                       Fair Decor, Focus on Dessert, Good Decor, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Little Known But Well Liked,
+                       No Reservations, Old World Cafe Charm, On the Beach,
+                       Parking/Valet, People Keep Coming Back, Pub Feel,
+                       Relaxed Senior Scene, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Game, Happy Hour, Long Drive, none, Open for Breakfast,
+                     Open on Mondays, Open on Sundays, Parties and Occasions,
+                     Picnics, Private Parties, Private Rooms Available,
+                     Prix Fixe Menus, Short Drive, Special Brunch Menu, Walk,
+                     Weekend Brunch, Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style = none
+	->  class Italian  [0.514]
+
+Rule 3/34: (20950.8/10955.8, lift 1.0)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Extraordinary Food, Fair Decor,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Hip Place To Be, No Reservations,
+                       Parking/Valet, Quirky, Tourist Appeal, Up and Coming,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	->  class Italian  [0.477]
+
+Rule 3/35: (64.8/32.6, lift 57.8)
+	price = below $15
+	style in {Coffee Shops, Diners}
+	->  class Polish  [0.497]
+
+Rule 3/36: (359.2/215.5, lift 46.6)
+	atmosphere in {Buffet Dining, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       Little Known But Well Liked, No Reservations,
+                       No Smoking Allowed, Parking/Valet, Relaxed Senior Scene}
+	occasion in {Catering for Special Events, Delivery Available, Game,
+                     Long Drive, none, Private Parties, Private Rooms Available,
+                     Short Drive, Takeout Available, Weekend Brunch}
+	price = below $15
+	style in {Carry in Wine and Beer, Coffee Shops, Diners, none}
+	->  class Polish  [0.400]
+
+Rule 3/37: (79.3/25.7, lift 75.6)
+	price = below $15
+	style = Carry in Wine and Beer
+	->  class Portuguese  [0.672]
+
+Rule 3/38: (126.3/47.7, lift 10.3)
+	style in {International, Southwestern}
+	->  class Spanish  [0.620]
+
+Default class: Italian
+
+-----  Trial 4:  -----
+
+Rules:
+
+Rule 4/1: (5.2, lift 2301.1)
+	price = below $15
+	style = Middle Eastern
+	->  class Armenian  [0.862]
+
+Rule 4/2: (19, lift 1129.2)
+	style = Fast Food
+	->  class Belgian  [0.952]
+
+Rule 4/3: (439.7, lift 2.8)
+	price in {$30-$50, over $50}
+	style in {Californian, Eclectic}
+	->  class French  [0.998]
+
+Rule 4/4: (91.5, lift 2.8)
+	occasion in {Early Dining, Happy Hour, See the Game, Short Drive}
+	price in {$30-$50, over $50}
+	->  class French  [0.989]
+
+Rule 4/5: (886.7/44.6, lift 2.6)
+	style in {Bakeries, Brasserie, Caviar, High Tea, Omelettes}
+	->  class French  [0.949]
+
+Rule 4/6: (1059.3/249.2, lift 2.1)
+	price = over $50
+	->  class French  [0.764]
+
+Rule 4/7: (42.5/10.5, lift 2.1)
+	occasion in {Dancing, Entertainment, Game, Open for Breakfast,
+                     Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.742]
+
+Rule 4/8: (646.1/174.6, lift 2.0)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Smoking Allowed,
+                       Old World Cafe Charm, On the Beach, Parking/Valet,
+                       Place for Singles, Quiet for Conversation,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Parties and Occasions, Pre-theater Dining, Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class French  [0.729]
+
+Rule 4/9: (147.8/59.5, lift 1.7)
+	atmosphere in {Extraordinary Decor, Fabulous Wine Lists,
+                       Great for People Watching, Hip Place To Be,
+                       No Smoking Allowed, Place for Singles, Singles Scene,
+                       Up and Coming}
+	occasion in {After Hours Dining, Fine for Dining Alone, none,
+                     Open for Breakfast, Prix Fixe Menus, Walk}
+	price = $15-$30
+	style in {Eclectic, none, Power Brokers, Steakhouses}
+	->  class French  [0.596]
+
+Rule 4/10: (73.4/29.5, lift 1.7)
+	atmosphere in {Extraordinary Food, Great for People Watching,
+                       Hip Place To Be, Romantic}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.595]
+
+Rule 4/11: (4413/1800.1, lift 1.6)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Food, Good for Younger Kids,
+                       Good Out of Town Business, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Reservations,
+                       No Smoking Allowed, Old World Cafe Charm, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quiet for Conversation,
+                       Quirky, Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Fine for Dining Alone, Long Drive, Menus in Braille,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus,
+                     Special Brunch Menu, Walk, Weekend Brunch,
+                     Weekend Jazz Brunch}
+	price in {$30-$50, over $50}
+	->  class French  [0.592]
+
+Rule 4/12: (2488.3/1049.1, lift 1.6)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Fair Food, Focus on Dessert,
+                       For the Young and Young at Heart, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Reservations, No Smoking Allowed,
+                       Old World Cafe Charm, On the Beach, Parking/Valet,
+                       People Keep Coming Back, Place for Singles, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Early Dining, Entertainment,
+                     Fine for Dining Alone, Happy Hour, Picnics,
+                     Prix Fixe Menus, See the Game, Special Brunch Menu,
+                     Takeout Available, Walk, Weekend Jazz Brunch}
+	price in {$30-$50, over $50}
+	style in {Cab, Californian, Continental, Eclectic, none, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.578]
+
+Rule 4/13: (76.7/32.4, lift 1.6)
+	occasion in {Delivery Available, Fine for Dining Alone, Late Night Menu,
+                     Long Drive, none, Open for Breakfast, Short Drive}
+	price = $15-$30
+	style = Continental
+	->  class French  [0.576]
+
+Rule 4/14: (3350.5/1659.5, lift 1.4)
+	occasion in {After Hours Dining, Fine for Dining Alone, Game,
+                     Long Drive, Prix Fixe Menus, Special Brunch Menu}
+	style in {Continental, Eclectic, none, Pastries, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.505]
+
+Rule 4/15: (39.4, lift 32.9)
+	style = Deli
+	->  class German  [0.976]
+
+Rule 4/16: (48.3/17.1, lift 14.0)
+	price = below $15
+	style = Cab
+	->  class Greek  [0.640]
+
+Rule 4/17: (75/28.3, lift 13.5)
+	atmosphere in {Cafe/Garden Dining, Good Food, Relaxed Senior Scene,
+                       Up and Coming}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Entertainment, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style = Continental
+	->  class Greek  [0.619]
+
+Rule 4/18: (161.3/70.2, lift 12.3)
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.564]
+
+Rule 4/19: (738.1/401, lift 10.0)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Good Decor, Parking/Valet,
+                       Tourist Appeal, Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.457]
+
+Rule 4/20: (821.6/472.3, lift 9.3)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Good Decor, Good Food, Good Service,
+                       Parking/Valet, Place for Singles, Tourist Appeal,
+                       Up and Coming, Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.425]
+
+Rule 4/21: (1129.7/722.5, lift 7.9)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Good Decor, Good Food, Good Service,
+                       Parking/Valet, Place for Singles, Tourist Appeal,
+                       Up and Coming, Very Busy - Reservations a Must}
+	price = $15-$30
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.361]
+
+Rule 4/22: (1553.9/15.4, lift 2.2)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.989]
+
+Rule 4/23: (313.5/86.8, lift 1.6)
+	atmosphere in {An Historic Spot, Authentic, Business Scene,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Fair Decor, Focus on Dessert,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Great for People Watching, Hip Place To Be,
+                       Near-perfect Food, Need To Dress, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	price in {$30-$50, below $15}
+	style = Traditional
+	->  class Italian  [0.722]
+
+Rule 4/24: (67.3/20.1, lift 1.6)
+	occasion in {Private Parties, Private Rooms Available, Prix Fixe Menus}
+	price = $30-$50
+	style = Steakhouses
+	->  class Italian  [0.696]
+
+Rule 4/25: (300.7/108.1, lift 1.4)
+	atmosphere in {An Historic Spot, Focus on Dessert,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Old World Cafe Charm, People Keep Coming Back, Pub Feel,
+                       Relaxed Senior Scene, Tourist Appeal}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Game, Long Drive, none, Open for Breakfast,
+                     Open on Mondays, Open on Sundays, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus,
+                     Special Brunch Menu}
+	price = $15-$30
+	style in {Eclectic, none, Pastries, Power Brokers, Steakhouses}
+	->  class Italian  [0.639]
+
+Rule 4/26: (523.1/244.1, lift 1.2)
+	price in {$30-$50, below $15}
+	style = Traditional
+	->  class Italian  [0.533]
+
+Rule 4/27: (2037.8/961.1, lift 1.2)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Fair Food,
+                       Fair Service, Focus on Dessert,
+                       For the Young and Young at Heart, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Reservations, No Smoking Allowed,
+                       Old World Cafe Charm, On the Beach, Parking/Valet,
+                       People Keep Coming Back, Place for Singles, Pub Feel,
+                       Quiet for Conversation, Quirky, Relaxed Senior Scene,
+                       Romantic, Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Entertainment, Game,
+                     Great Place to Meet for a Drink, Late Night Menu, none,
+                     Picnics, Pre-theater Dining, Takeout Available,
+                     Weekend Dining, Weekend Lunch}
+	price = $30-$50
+	style in {Cab, Continental, none, Steakhouses}
+	->  class Italian  [0.528]
+
+Rule 4/28: (1395.9/659, lift 1.2)
+	occasion in {After Hours Dining, Game, Great Place to Meet for a Drink,
+                     Late Night Menu, Long Drive, none, Open for Breakfast,
+                     Private Parties, Private Rooms Available, Weekend Brunch,
+                     Weekend Dining}
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.528]
+
+Rule 4/29: (9431.2/4836.6, lift 1.1)
+	atmosphere in {An Out Of The Way Find, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists,
+                       For the Young and Young at Heart, Good Decor,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Near-perfect Food, Need To Dress, No Reservations,
+                       On the Beach, Parking/Valet, Quiet for Conversation,
+                       Romantic, Singles Scene, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Entertainment, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	->  class Italian  [0.487]
+
+Rule 4/30: (24924.3/14020.6, lift 1.0)
+	style in {Cab, Californian, Continental, Eclectic, Middle Eastern, none,
+                  Pastries, Power Brokers, Steakhouses}
+	->  class Italian  [0.437]
+
+Rule 4/31: (118.4/65.2, lift 48.2)
+	style = Carry in Wine and Beer
+	->  class Portuguese  [0.450]
+
+Rule 4/32: (130.5/51.6, lift 9.4)
+	style in {International, Southwestern}
+	->  class Spanish  [0.603]
+
+Rule 4/33: (130.3/61, lift 64.5)
+	atmosphere in {An Historic Spot, Creative, Extraordinary Decor,
+                       Fabulous Wine Lists, Good Out of Town Business,
+                       Parking/Valet, Romantic, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {Dining After the Theater, Early Dining, Late Night Menu,
+                     Pre-theater Dining}
+	price = $15-$30
+	style in {Eclectic, none, Steakhouses}
+	->  class Swiss  [0.532]
+
+Default class: Italian
+
+-----  Trial 5:  -----
+
+Rules:
+
+Rule 5/1: (18.3, lift 1153.1)
+	style = Fast Food
+	->  class Belgian  [0.951]
+
+Rule 5/2: (111.8, lift 2.7)
+	occasion in {Early Dining, Entertainment, Fine for Dining Alone,
+                     Happy Hour, Picnics, See the Game, Short Drive,
+                     Special Brunch Menu, Walk, Weekend Jazz Brunch}
+	price in {$30-$50, over $50}
+	style = Power Brokers
+	->  class French  [0.991]
+
+Rule 5/3: (854.4/46.5, lift 2.6)
+	style in {Bakeries, Brasserie, Caviar, High Tea, Omelettes}
+	->  class French  [0.945]
+
+Rule 5/4: (1036.7/259.5, lift 2.1)
+	price = over $50
+	->  class French  [0.749]
+
+Rule 5/5: (231/58.9, lift 2.0)
+	occasion = Weekend Lunch
+	price in {$30-$50, over $50}
+	->  class French  [0.743]
+
+Rule 5/6: (10636.4/4991, lift 1.5)
+	price in {$30-$50, over $50}
+	->  class French  [0.531]
+
+Rule 5/7: (275.5/135.1, lift 1.4)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Long Drive, Private Parties, Private Rooms Available,
+                     Prix Fixe Menus, Short Drive, Special Brunch Menu,
+                     Weekend Brunch, Weekend Lunch}
+	price = $15-$30
+	style in {Carry in Wine and Beer, Eclectic, Pastries, Steakhouses}
+	->  class French  [0.510]
+
+Rule 5/8: (1376.5/696.3, lift 1.4)
+	style in {Coffee Shops, Continental}
+	->  class French  [0.494]
+
+Rule 5/9: (5725.1/2925.9, lift 1.3)
+	atmosphere in {Classic Hotel Dining, Creative, Excellent Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Health Conscious Menus, Near-perfect Food, Need To Dress,
+                       Quiet for Conversation, Romantic,
+                       Very Busy - Reservations a Must, Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Game, Great Place to Meet for a Drink, Happy Hour,
+                     Long Drive, none, Open for Breakfast, Open on Mondays,
+                     Open on Sundays, Parties and Occasions, Picnics,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Short Drive, Special Brunch Menu, Walk, Weekend Brunch,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	style in {Cab, Californian, Carry in Wine and Beer, Coffee Shops,
+                  Continental, Eclectic, Middle Eastern, none, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.489]
+
+Rule 5/10: (208.1/108, lift 1.3)
+	occasion in {Dancing, Delivery Available, Dining Outdoors,
+                     Entertainment, Game, Great Place to Meet for a Drink,
+                     Open for Breakfast, Prix Fixe Menus, Takeout Available}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.481]
+
+Rule 5/11: (37.8, lift 31.8)
+	style = Deli
+	->  class German  [0.975]
+
+Rule 5/12: (1086.8/761.4, lift 9.8)
+	price = $15-$30
+	style = Traditional
+	->  class German  [0.300]
+
+Rule 5/13: (15.6, lift 20.4)
+	occasion in {Delivery Available, Fine for Dining Alone,
+                     Takeout Available}
+	price = below $15
+	style = Cab
+	->  class Greek  [0.943]
+
+Rule 5/14: (162.5/72.5, lift 12.0)
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.553]
+
+Rule 5/15: (753.3/430, lift 9.3)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Good Decor, Parking/Valet,
+                       Tourist Appeal, Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.429]
+
+Rule 5/16: (839.9/504.7, lift 8.6)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Good Decor, Good Food, Good Service,
+                       Parking/Valet, Place for Singles, Tourist Appeal,
+                       Up and Coming, Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.399]
+
+Rule 5/17: (1491.9/16, lift 2.3)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.989]
+
+Rule 5/18: (16.8/1.1, lift 2.0)
+	atmosphere in {Extraordinary Service, Parking/Valet, Place for Singles,
+                       Romantic}
+	price = $30-$50
+	style = Steakhouses
+	->  class Italian  [0.889]
+
+Rule 5/19: (67.1/14, lift 1.8)
+	atmosphere in {An Historic Spot, Creative, Extraordinary Service,
+                       Fair Decor, For the Young and Young at Heart,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Little Known But Well Liked, No Reservations,
+                       No Smoking Allowed, Quiet for Conversation,
+                       Relaxed Senior Scene, Warm spots by the fire,
+                       Wheelchair Access}
+	price = $15-$30
+	style = Cab
+	->  class Italian  [0.783]
+
+Rule 5/20: (91.7/20, lift 1.8)
+	occasion in {none, Pre-theater Dining, Weekend Dining,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style = Cab
+	->  class Italian  [0.776]
+
+Rule 5/21: (308/90.6, lift 1.6)
+	atmosphere in {An Historic Spot, Authentic, Business Scene,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Fair Decor, Focus on Dessert,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Great for People Watching, Hip Place To Be,
+                       Near-perfect Food, Need To Dress, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	price in {$30-$50, below $15}
+	style = Traditional
+	->  class Italian  [0.705]
+
+Rule 5/22: (300.6/112.3, lift 1.4)
+	price = $15-$30
+	style = Power Brokers
+	->  class Italian  [0.626]
+
+Rule 5/23: (232.1/92.8, lift 1.4)
+	price = $15-$30
+	style in {Californian, Diners}
+	->  class Italian  [0.599]
+
+Rule 5/24: (2028/878.7, lift 1.3)
+	atmosphere in {An Historic Spot, Authentic, Business Scene,
+                       Extraordinary Food, Fabulous Wine Lists, Fair Food,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Out of Town Business, Good Service,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       No Reservations, Old World Cafe Charm,
+                       People Keep Coming Back, Quiet for Conversation, Quirky,
+                       Relaxed Senior Scene, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Entertainment, Fine for Dining Alone,
+                     Game, Great Place to Meet for a Drink, Late Night Menu,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus,
+                     Takeout Available, Weekend Brunch, Weekend Dining,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	price = $30-$50
+	style in {Cab, Continental, none, Steakhouses}
+	->  class Italian  [0.567]
+
+Rule 5/25: (308.7/141.9, lift 1.2)
+	occasion = none
+	price in {$30-$50, over $50}
+	style in {Cab, Continental, none, Steakhouses}
+	->  class Italian  [0.540]
+
+Rule 5/26: (521.5/253.8, lift 1.2)
+	price in {$30-$50, below $15}
+	style = Traditional
+	->  class Italian  [0.513]
+
+Rule 5/27: (4092/2017.7, lift 1.2)
+	occasion in {Dining After the Theater, Early Dining, Late Night Menu,
+                     Menus in Braille, Pre-theater Dining, Takeout Available,
+                     Weekend Dining}
+	price = $15-$30
+	->  class Italian  [0.507]
+
+Rule 5/28: (1529.4/761.4, lift 1.1)
+	occasion in {After Hours Dining, Game, Great Place to Meet for a Drink,
+                     Late Night Menu, Long Drive, none, Open for Breakfast,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Weekend Brunch, Weekend Dining}
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.502]
+
+Rule 5/29: (2394.8/1305.9, lift 1.0)
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.455]
+
+Rule 5/30: (25272.7/14485.9, lift 1.0)
+	style in {Cab, Californian, Carry in Wine and Beer, Coffee Shops,
+                  Continental, Diners, Eclectic, Middle Eastern, none, Pastries,
+                  Power Brokers, Steakhouses}
+	->  class Italian  [0.427]
+
+Rule 5/31: (278.4/155.4, lift 46.7)
+	occasion in {Game, Long Drive, Short Drive, Weekend Brunch}
+	price = below $15
+	style in {Cab, Carry in Wine and Beer, Coffee Shops, Diners, none}
+	->  class Polish  [0.442]
+
+Rule 5/32: (105.3/54.3, lift 50.8)
+	occasion in {Dining Outdoors, Fine for Dining Alone, none,
+                     Open for Breakfast, Takeout Available, Weekend Dining}
+	price = below $15
+	style in {Carry in Wine and Beer, Coffee Shops, Diners, Middle Eastern}
+	->  class Portuguese  [0.485]
+
+Rule 5/33: (130.7/55.1, lift 8.7)
+	style in {International, Southwestern}
+	->  class Spanish  [0.577]
+
+Default class: Italian
+
+-----  Trial 6:  -----
+
+Rules:
+
+Rule 6/1: (798.5, lift 2.8)
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Caviar, Eclectic, High Tea}
+	->  class French  [0.999]
+
+Rule 6/2: (95.4, lift 2.7)
+	price = below $15
+	style = High Tea
+	->  class French  [0.990]
+
+Rule 6/3: (84.9, lift 2.7)
+	occasion in {Early Dining, Happy Hour, See the Game, Short Drive}
+	price in {$30-$50, over $50}
+	->  class French  [0.988]
+
+Rule 6/4: (56.1, lift 2.7)
+	occasion in {Fine for Dining Alone, Late Night Menu, Long Drive,
+                     Open for Breakfast, Parties and Occasions, Walk,
+                     Weekend Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	style = Continental
+	->  class French  [0.983]
+
+Rule 6/5: (689.1/18.8, lift 2.7)
+	occasion in {Dancing, Dining Outdoors, Entertainment, Game,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Weekend Brunch, Weekend Lunch}
+	price = over $50
+	->  class French  [0.971]
+
+Rule 6/6: (382.4/22.7, lift 2.6)
+	price = $15-$30
+	style in {Bakeries, Brasserie, Coffee Shops, High Tea, Omelettes}
+	->  class French  [0.938]
+
+Rule 6/7: (66.3/6.2, lift 2.5)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Fabulous Views,
+                       Near-perfect Decor, Near-perfect Service,
+                       Place for Singles, Pub Feel}
+	occasion in {Game, Private Parties, Private Rooms Available,
+                     Prix Fixe Menus, Weekend Dining}
+	price in {$30-$50, over $50}
+	style = Power Brokers
+	->  class French  [0.895]
+
+Rule 6/8: (33.4/7.5, lift 2.1)
+	occasion in {Short Drive, Weekend Brunch, Weekend Lunch}
+	style = Eclectic
+	->  class French  [0.760]
+
+Rule 6/9: (139.1/37.1, lift 2.0)
+	occasion in {Dancing, Early Dining, Entertainment,
+                     Fine for Dining Alone, Happy Hour, Picnics, See the Game,
+                     Special Brunch Menu, Walk, Weekend Jazz Brunch}
+	price = $30-$50
+	style in {Power Brokers, Traditional}
+	->  class French  [0.730]
+
+Rule 6/10: (62.3/23.6, lift 1.7)
+	occasion in {Late Night Menu, Pre-theater Dining, Takeout Available,
+                     Weekend Dining}
+	style = Steakhouses
+	->  class French  [0.617]
+
+Rule 6/11: (1951.1/810.5, lift 1.6)
+	occasion in {Great Place to Meet for a Drink, Long Drive, none,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Weekend Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	style in {Brasserie, Cab, Californian, Continental, Eclectic, High Tea,
+                  none, Power Brokers, Steakhouses, Traditional}
+	->  class French  [0.585]
+
+Rule 6/12: (610.7/254.2, lift 1.6)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Authentic,
+                       Buffet Dining, Business Scene, Classic Hotel Dining,
+                       Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Views, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Food,
+                       Need To Dress, No Reservations, No Smoking Allowed,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quiet for Conversation,
+                       Relaxed Senior Scene, Romantic, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Fine for Dining Alone, Open for Breakfast, Prix Fixe Menus,
+                     Walk}
+	price = $15-$30
+	style in {Bakeries, Brasserie, Cab, Coffee Shops, Continental, Eclectic,
+                  High Tea, Middle Eastern, none, Omelettes, Pastries,
+                  Power Brokers, Steakhouses}
+	->  class French  [0.583]
+
+Rule 6/13: (84.2/35.1, lift 1.6)
+	atmosphere in {Excellent Decor, Warm spots by the fire}
+	occasion in {Game, Private Parties, Private Rooms Available,
+                     Prix Fixe Menus, Weekend Dining}
+	price in {$30-$50, over $50}
+	style in {Power Brokers, Traditional}
+	->  class French  [0.581]
+
+Rule 6/14: (74.3/31.2, lift 1.6)
+	atmosphere in {Extraordinary Food, Great for People Watching,
+                       Hip Place To Be, Romantic}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.577]
+
+Rule 6/15: (126.2/62, lift 1.4)
+	price = $15-$30
+	style = Steakhouses
+	->  class French  [0.508]
+
+Rule 6/16: (1253.6/652.5, lift 1.3)
+	style = Continental
+	->  class French  [0.480]
+
+Rule 6/17: (25459.1/15371.1, lift 1.1)
+	style in {Bakeries, Brasserie, Cab, Carry in Wine and Beer,
+                  Coffee Shops, Continental, Eclectic, High Tea, Middle Eastern,
+                  none, Omelettes, Pastries, Power Brokers, Steakhouses}
+	->  class French  [0.396]
+
+Rule 6/18: (36.5, lift 31.5)
+	style = Deli
+	->  class German  [0.974]
+
+Rule 6/19: (49.7/19.6, lift 12.8)
+	price = below $15
+	style = Cab
+	->  class Greek  [0.601]
+
+Rule 6/20: (164.1/74.9, lift 11.5)
+	price = $15-$30
+	style = Middle Eastern
+	->  class Greek  [0.543]
+
+Rule 6/21: (170.5/81.4, lift 11.1)
+	atmosphere in {Authentic, Business Scene, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Decor,
+                       Good Decor, Good Food, Good Service, Parking/Valet,
+                       Place for Singles, Tourist Appeal, Up and Coming,
+                       Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Late Night Menu}
+	price = $15-$30
+	style = Cab
+	->  class Greek  [0.523]
+
+Rule 6/22: (18.5/4, lift 84.0)
+	atmosphere in {No Smoking Allowed, Quirky}
+	occasion in {Game, Private Parties, Private Rooms Available,
+                     Prix Fixe Menus, Weekend Dining}
+	price = $30-$50
+	style in {Power Brokers, Traditional}
+	->  class Hungarian  [0.755]
+
+Rule 6/23: (1426.8, lift 2.3)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.999]
+
+Rule 6/24: (90/20.6, lift 1.8)
+	occasion in {none, Pre-theater Dining, Weekend Dining,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style = Cab
+	->  class Italian  [0.765]
+
+Rule 6/25: (357.1/126.6, lift 1.5)
+	atmosphere in {An Historic Spot, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists,
+                       Focus on Dessert, Good Out of Town Business,
+                       Health Conscious Menus, Near-perfect Decor,
+                       Parking/Valet, Quiet for Conversation,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Dancing, Delivery Available, Dining Outdoors,
+                     Entertainment, Game, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining}
+	price = $30-$50
+	style = Continental
+	->  class Italian  [0.645]
+
+Rule 6/26: (126.4/47.5, lift 1.4)
+	atmosphere in {Authentic, Business Scene, Classic Hotel Dining,
+                       Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Food,
+                       Need To Dress, No Reservations, Parking/Valet,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	occasion = Fine for Dining Alone
+	style = none
+	->  class Italian  [0.622]
+
+Rule 6/27: (438.8/171.6, lift 1.4)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Business Scene,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       For the Young and Young at Heart,
+                       Good Out of Town Business, Great for People Watching,
+                       Hip Place To Be, Near-perfect Decor, Near-perfect Food,
+                       Need To Dress, Old World Cafe Charm, Parking/Valet,
+                       Place for Singles, Pub Feel, Quiet for Conversation,
+                       Quirky, Romantic, Singles Scene,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Takeout Available, Walk,
+                     Weekend Brunch, Weekend Dining}
+	price = $30-$50
+	style in {Cab, Steakhouses}
+	->  class Italian  [0.608]
+
+Rule 6/28: (383.7/153.3, lift 1.4)
+	atmosphere in {An Historic Spot, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists,
+                       Focus on Dessert, Good Out of Town Business,
+                       Health Conscious Menus, Near-perfect Decor,
+                       Parking/Valet, Quiet for Conversation,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Dancing, Delivery Available, Dining Outdoors,
+                     Entertainment, Fine for Dining Alone, Game,
+                     Late Night Menu, Long Drive, Open for Breakfast,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Walk, Weekend Brunch, Weekend Dining,
+                     Weekend Lunch}
+	price = $30-$50
+	style = Continental
+	->  class Italian  [0.600]
+
+Rule 6/29: (895.3/364.7, lift 1.4)
+	atmosphere in {An Historic Spot, Authentic, Cafe/Garden Dining,
+                       Creative, Credit cards are not accepted,
+                       Extraordinary Decor, Extraordinary Service, Fair Food,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be, On the Beach,
+                       People Keep Coming Back, Place for Singles, Poor Decor,
+                       Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	price = below $15
+	->  class Italian  [0.592]
+
+Rule 6/30: (312.3/142.9, lift 1.3)
+	occasion = none
+	price in {$30-$50, over $50}
+	style in {Cab, Continental, none, Steakhouses}
+	->  class Italian  [0.542]
+
+Rule 6/31: (431.7/198.7, lift 1.2)
+	occasion in {Great Place to Meet for a Drink, Long Drive, none,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Weekend Brunch}
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.540]
+
+Rule 6/32: (1687.9/831.5, lift 1.2)
+	price = below $15
+	->  class Italian  [0.507]
+
+Rule 6/33: (8874.2/4746.8, lift 1.1)
+	price = $30-$50
+	style in {Cab, Continental, none, Power Brokers, Steakhouses,
+                  Traditional}
+	->  class Italian  [0.465]
+
+Rule 6/34: (17124.9/9528, lift 1.0)
+	price = $15-$30
+	->  class Italian  [0.444]
+
+Rule 6/35: (17538.4/9887.8, lift 1.0)
+	style = none
+	->  class Italian  [0.436]
+
+Rule 6/36: (131.2/58.1, lift 8.1)
+	style in {International, Southwestern}
+	->  class Spanish  [0.556]
+
+Default class: Italian
+
+-----  Trial 7:  -----
+
+Rules:
+
+Rule 7/1: (28.5, lift 773.5)
+	style = Fast Food
+	->  class Belgian  [0.967]
+
+Rule 7/2: (800.2, lift 2.9)
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Caviar, Eclectic, High Tea}
+	->  class French  [0.999]
+
+Rule 7/3: (775.4, lift 2.9)
+	style in {Bakeries, Brasserie, High Tea, Omelettes}
+	->  class French  [0.999]
+
+Rule 7/4: (412.9, lift 2.9)
+	style = High Tea
+	->  class French  [0.998]
+
+Rule 7/5: (192.5, lift 2.9)
+	occasion in {Early Dining, Happy Hour, Open on Mondays, Open on Sundays,
+                     See the Game, Short Drive, Walk}
+	price = $30-$50
+	style in {Continental, Eclectic, none, Power Brokers}
+	->  class French  [0.995]
+
+Rule 7/6: (38.2, lift 2.8)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       Near-perfect Food, Pub Feel, Singles Scene}
+	price in {$30-$50, over $50}
+	style = Cab
+	->  class French  [0.975]
+
+Rule 7/7: (24.4, lift 2.8)
+	occasion = Entertainment
+	style = Power Brokers
+	->  class French  [0.962]
+
+Rule 7/8: (750.1/40.3, lift 2.7)
+	price = over $50
+	style in {Californian, Caviar, Continental, High Tea, none,
+                  Power Brokers}
+	->  class French  [0.945]
+
+Rule 7/9: (817.2/47.5, lift 2.7)
+	price = over $50
+	->  class French  [0.941]
+
+Rule 7/10: (41.3/2.7, lift 2.7)
+	atmosphere in {Business Scene, Excellent Food, Fabulous Wine Lists,
+                       Good Decor, Good Food, Good Out of Town Business,
+                       Good Service, Parking/Valet, Relaxed Senior Scene,
+                       Up and Coming, Wheelchair Access}
+	occasion in {After Hours Dining, Fine for Dining Alone, Prix Fixe Menus}
+	price = $15-$30
+	style in {Eclectic, Pastries, Power Brokers}
+	->  class French  [0.915]
+
+Rule 7/11: (243/20, lift 2.7)
+	atmosphere in {An Out Of The Way Find, Cafe/Garden Dining,
+                       Classic Hotel Dining, Fair Service,
+                       Great for People Watching, Near-perfect Service,
+                       Need To Dress, On the Beach, Place for Singles}
+	occasion in {Dining After the Theater, Fine for Dining Alone, Game,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price in {$30-$50, over $50}
+	style in {Continental, none, Steakhouses}
+	->  class French  [0.914]
+
+Rule 7/12: (125.8/28.3, lift 2.2)
+	price = $15-$30
+	style in {Carry in Wine and Beer, Coffee Shops}
+	->  class French  [0.770]
+
+Rule 7/13: (238.4/55.8, lift 2.2)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       Cafe/Garden Dining, Excellent Decor, Fabulous Views,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Near-perfect Service, Place for Singles,
+                       Relaxed Senior Scene, Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Prix Fixe Menus, Takeout Available}
+	price in {$30-$50, over $50}
+	style = Power Brokers
+	->  class French  [0.764]
+
+Rule 7/14: (1723.9/586.8, lift 1.9)
+	occasion in {Long Drive, Menus in Braille, Open for Breakfast,
+                     Parties and Occasions, Special Brunch Menu, Weekend Dining,
+                     Weekend Jazz Brunch}
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Caviar, Continental, Eclectic,
+                  High Tea, none, Power Brokers, Steakhouses}
+	->  class French  [0.659]
+
+Rule 7/15: (2352.5/817.4, lift 1.9)
+	atmosphere in {Business Scene, Excellent Food, Extraordinary Decor,
+                       Extraordinary Service, Good Decor,
+                       Good Out of Town Business, Good Service, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Old World Cafe Charm, Parking/Valet,
+                       Quiet for Conversation, Romantic, Up and Coming,
+                       Very Busy - Reservations a Must}
+	occasion in {Fine for Dining Alone, Game, Late Night Menu, Picnics,
+                     Private Parties, Private Rooms Available, Weekend Brunch,
+                     Weekend Lunch}
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Continental, Eclectic, High Tea, none,
+                  Power Brokers, Steakhouses}
+	->  class French  [0.652]
+
+Rule 7/16: (1694.7/611.4, lift 1.9)
+	atmosphere in {Business Scene, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists,
+                       Good Out of Town Business, Near-perfect Decor,
+                       Need To Dress, Parking/Valet, Romantic,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Prix Fixe Menus, Takeout Available}
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Caviar, Continental, Eclectic,
+                  High Tea, none, Power Brokers, Steakhouses}
+	->  class French  [0.639]
+
+Rule 7/17: (248.7/97, lift 1.8)
+	atmosphere in {An Out Of The Way Find, Authentic, Extraordinary Service,
+                       On the Beach, Quirky}
+	style in {Eclectic, Power Brokers, Steakhouses}
+	->  class French  [0.609]
+
+Rule 7/18: (5472.4/2145.5, lift 1.8)
+	atmosphere in {Excellent Food, Excellent Service, Extraordinary Decor,
+                       Extraordinary Service, Great for People Watching,
+                       Need To Dress, Parking/Valet, Place for Singles,
+                       Quiet for Conversation, Romantic, Up and Coming,
+                       Very Busy - Reservations a Must}
+	price in {$30-$50, over $50}
+	->  class French  [0.608]
+
+Rule 7/19: (6186.1/2576.1, lift 1.7)
+	atmosphere in {Classic Hotel Dining, Creative, Excellent Decor,
+                       Extraordinary Food, Fabulous Views,
+                       For the Young and Young at Heart,
+                       Great for People Watching, Health Conscious Menus,
+                       Near-perfect Food, Need To Dress, No Smoking Allowed,
+                       Place for Singles, Quiet for Conversation, Romantic,
+                       Very Busy - Reservations a Must, Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Fine for Dining Alone, Game, Long Drive, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Short Drive, Special Brunch Menu, Walk, Weekend Brunch,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	style in {Bakeries, Brasserie, Californian, Caviar, Continental,
+                  Eclectic, High Tea, none, Power Brokers, Steakhouses}
+	->  class French  [0.584]
+
+Rule 7/20: (1119.5/507.2, lift 1.6)
+	occasion in {Game, Special Brunch Menu}
+	style in {Caviar, Continental, High Tea, none, Power Brokers,
+                  Steakhouses}
+	->  class French  [0.547]
+
+Rule 7/21: (988.3/480.5, lift 1.5)
+	occasion in {Catering for Special Events, Dancing, Delivery Available,
+                     Dining Outdoors, Early Dining, Entertainment,
+                     Fine for Dining Alone, Game, Late Night Menu, Long Drive,
+                     none, Open for Breakfast, Parties and Occasions,
+                     Pre-theater Dining, Private Rooms Available,
+                     Prix Fixe Menus, Short Drive, Special Brunch Menu, Walk,
+                     Weekend Dining}
+	style = Continental
+	->  class French  [0.514]
+
+Rule 7/22: (231.2/113.3, lift 1.5)
+	occasion in {Dancing, Delivery Available, Dining Outdoors,
+                     Entertainment, Game, Great Place to Meet for a Drink,
+                     Open for Breakfast, Prix Fixe Menus}
+	price = $15-$30
+	style = Cab
+	->  class French  [0.510]
+
+Rule 7/23: (512.4/118.6, lift 38.2)
+	atmosphere in {An Historic Spot, Authentic, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fabulous Wine Lists, Good Decor, Good Food, Good Service,
+                       Health Conscious Menus, Parking/Valet,
+                       Relaxed Senior Scene, Singles Scene, Tourist Appeal,
+                       Wheelchair Access}
+	occasion in {Dancing, Delivery Available, Entertainment,
+                     Open for Breakfast, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Weekend Brunch, Weekend Lunch}
+	price = $15-$30
+	style in {Deli, Traditional}
+	->  class German  [0.767]
+
+Rule 7/24: (1065.8/676.1, lift 13.2)
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style = Cab
+	->  class Greek  [0.366]
+
+Rule 7/25: (49.7/22.1, lift 96.3)
+	occasion in {Dancing, Entertainment}
+	price = $30-$50
+	style = Traditional
+	->  class Hungarian  [0.553]
+
+Rule 7/26: (1429.9, lift 2.3)
+	style in {Cafe/Espresso Bars, Central, Coffee Houses, Hamburgers,
+                  Kosher, Pizza, Pizzerias}
+	->  class Italian  [0.999]
+
+Rule 7/27: (460.5, lift 2.3)
+	price = below $15
+	style in {Coffee Houses, Pizza, Traditional}
+	->  class Italian  [0.998]
+
+Rule 7/28: (270.6, lift 2.3)
+	atmosphere in {Business Scene, Classic Hotel Dining,
+                       Extraordinary Service, For the Young and Young at Heart,
+                       Good Out of Town Business, Great for People Watching,
+                       No Smoking Allowed, Quiet for Conversation, Romantic,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Warm spots by the fire}
+	price in {$15-$30, below $15}
+	style in {Coffee Houses, Hamburgers, Pizza, Pizzerias, Traditional}
+	->  class Italian  [0.996]
+
+Rule 7/29: (82.3, lift 2.2)
+	occasion in {none, Pre-theater Dining, Takeout Available,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price = $15-$30
+	style = Cab
+	->  class Italian  [0.988]
+
+Rule 7/30: (946.5/10.4, lift 2.2)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Fine for Dining Alone, Game,
+                     Late Night Menu, Long Drive, none, Open on Mondays,
+                     Open on Sundays, Picnics, Pre-theater Dining,
+                     Takeout Available, Weekend Dining, Weekend Jazz Brunch}
+	price in {$15-$30, below $15}
+	style in {Cafe/Espresso Bars, Coffee Houses, Deli, Hamburgers, Pizza,
+                  Pizzerias, Traditional}
+	->  class Italian  [0.988]
+
+Rule 7/31: (323.7/12.5, lift 2.2)
+	occasion in {Catering for Special Events, Dancing, Delivery Available,
+                     Dining Outdoors, Early Dining, Entertainment,
+                     Fine for Dining Alone, Late Night Menu, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price = below $15
+	style = none
+	->  class Italian  [0.959]
+
+Rule 7/32: (159/13.9, lift 2.1)
+	atmosphere in {Business Scene, Classic Hotel Dining, Creative,
+                       Excellent Decor, Extraordinary Food, Fabulous Wine Lists,
+                       Focus on Dessert, Good Decor, Good Out of Town Business,
+                       Good Service, Hip Place To Be, Near-perfect Decor,
+                       Wheelchair Access}
+	price = $30-$50
+	style = Cab
+	->  class Italian  [0.908]
+
+Rule 7/33: (144.7/24.9, lift 1.9)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Great Place to Meet for a Drink,
+                     Late Night Menu, none, Pre-theater Dining, Weekend Dining}
+	price = $30-$50
+	style = Cab
+	->  class Italian  [0.823]
+
+Rule 7/34: (67.3/11.4, lift 1.9)
+	atmosphere in {Excellent Decor, Extraordinary Food,
+                       Great for People Watching, Quiet for Conversation,
+                       Romantic, Very Busy - Reservations a Must,
+                       Warm spots by the fire}
+	price = $15-$30
+	style = Power Brokers
+	->  class Italian  [0.821]
+
+Rule 7/35: (183.8/49.8, lift 1.7)
+	atmosphere in {An Historic Spot, Business Scene, Creative,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, For the Young and Young at Heart,
+                       Good Food, Good Out of Town Business, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Up and Coming, Warm spots by the fire}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style = Cab
+	->  class Italian  [0.727]
+
+Rule 7/36: (107.9/30.6, lift 1.6)
+	atmosphere in {Classic Hotel Dining, Creative, Excellent Food,
+                       Excellent Service, Extraordinary Decor, Focus on Dessert,
+                       Near-perfect Food, No Reservations, No Smoking Allowed,
+                       Quiet for Conversation, Singles Scene, Up and Coming}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Prix Fixe Menus,
+                     Takeout Available}
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.713]
+
+Rule 7/37: (178.1/51.7, lift 1.6)
+	price = $15-$30
+	style = Californian
+	->  class Italian  [0.707]
+
+Rule 7/38: (789.4/251.6, lift 1.5)
+	atmosphere in {An Historic Spot, Authentic, Business Scene,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Good Decor,
+                       Good Out of Town Business, Good Service,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, No Smoking Allowed,
+                       Old World Cafe Charm, Parking/Valet,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {Dining After the Theater, none, Pre-theater Dining}
+	style in {Continental, none}
+	->  class Italian  [0.681]
+
+Rule 7/39: (987.2/331.9, lift 1.5)
+	atmosphere in {Buffet Dining, Creative, Credit cards are not accepted,
+                       Fabulous Views, Fair Decor, Fair Food, Focus on Dessert,
+                       For the Young and Young at Heart, Good Food,
+                       Good for Younger Kids, No Reservations,
+                       People Keep Coming Back, Poor Decor, Pub Feel, Quirky,
+                       Warm spots by the fire}
+	occasion in {Dining After the Theater, Fine for Dining Alone, Game,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	style in {Continental, none, Steakhouses}
+	->  class Italian  [0.664]
+
+Rule 7/40: (2184/917.4, lift 1.3)
+	atmosphere in {An Historic Spot, Authentic, Excellent Decor,
+                       Excellent Service, Extraordinary Food,
+                       Fabulous Wine Lists, Health Conscious Menus,
+                       No Smoking Allowed, Relaxed Senior Scene, Singles Scene,
+                       Wheelchair Access}
+	occasion in {Fine for Dining Alone, Game, Late Night Menu, Picnics,
+                     Private Parties, Private Rooms Available, Weekend Brunch,
+                     Weekend Lunch}
+	style in {Continental, none, Steakhouses}
+	->  class Italian  [0.580]
+
+Rule 7/41: (102.5/44.8, lift 1.3)
+	occasion = Game
+	price = $30-$50
+	style = Power Brokers
+	->  class Italian  [0.562]
+
+Rule 7/42: (20661.5/10893.7, lift 1.1)
+	style in {Bakeries, Brasserie, Californian, Caviar, Continental,
+                  Eclectic, High Tea, none, Omelettes, Pastries, Power Brokers,
+                  Steakhouses}
+	->  class Italian  [0.473]
+
+Rule 7/43: (246.1/171.8, lift 120.2)
+	price = below $15
+	style in {Cab, Carry in Wine and Beer, Coffee Shops, Middle Eastern}
+	->  class Portuguese  [0.304]
+
+Rule 7/44: (38.9/14.1, lift 24.7)
+	atmosphere in {Credit cards are not accepted, Fair Food}
+	occasion in {After Hours Dining, Dancing, Delivery Available,
+                     Dining Outdoors, Entertainment, Game, none,
+                     Open on Mondays, Open on Sundays, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus}
+	price = $15-$30
+	->  class Spanish  [0.631]
+
+Rule 7/45: (92.5/51.1, lift 17.5)
+	atmosphere in {Authentic, Place for Singles}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Weekend Brunch}
+	price = $15-$30
+	style = Cab
+	->  class Spanish  [0.449]
+
+Default class: Italian
+
+-----  Trial 8:  -----
+
+Rules:
+
+Rule 8/1: (710.9, lift 3.4)
+	style in {Bakeries, Brasserie, High Tea, Omelettes}
+	->  class French  [0.999]
+
+Rule 8/2: (671.4, lift 3.4)
+	price = $30-$50
+	style in {Brasserie, Californian, Eclectic, High Tea}
+	->  class French  [0.999]
+
+Rule 8/3: (705.7, lift 3.4)
+	price = over $50
+	->  class French  [0.999]
+
+Rule 8/4: (82.6, lift 3.4)
+	atmosphere in {Business Scene, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       For the Young and Young at Heart, Good Decor,
+                       Good Out of Town Business, No Reservations,
+                       Parking/Valet, Romantic, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Entertainment, Fine for Dining Alone, Open for Breakfast,
+                     Prix Fixe Menus, Special Brunch Menu}
+	price in {$15-$30, below $15}
+	style in {Bakeries, Brasserie, Continental, Eclectic, High Tea,
+                  Omelettes, Pastries, Power Brokers, Steakhouses}
+	->  class French  [0.988]
+
+Rule 8/5: (30.6, lift 3.3)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       Near-perfect Food, Pub Feel, Singles Scene}
+	price = $30-$50
+	style = Cab
+	->  class French  [0.969]
+
+Rule 8/6: (16.8, lift 3.2)
+	occasion in {Prix Fixe Menus, Special Brunch Menu}
+	price = below $15
+	->  class French  [0.947]
+
+Rule 8/7: (156.9/20, lift 3.0)
+	atmosphere in {Fair Food, Need To Dress}
+	style = none
+	->  class French  [0.868]
+
+Rule 8/8: (66.1/8.1, lift 2.9)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Good Decor, No Reservations,
+                       Parking/Valet, Romantic, Singles Scene,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Delivery Available, Late Night Menu, Long Drive,
+                     Private Rooms Available, Short Drive}
+	price = $15-$30
+	style = Continental
+	->  class French  [0.867]
+
+Rule 8/9: (339.7/64.2, lift 2.8)
+	atmosphere in {An Out Of The Way Find, Extraordinary Service,
+                       Health Conscious Menus, Near-perfect Food,
+                       Quiet for Conversation, Romantic}
+	occasion in {Dancing, Entertainment, Long Drive, Open for Breakfast,
+                     Prix Fixe Menus, Walk}
+	style = none
+	->  class French  [0.809]
+
+Rule 8/10: (791.6/164.3, lift 2.7)
+	atmosphere in {An Out Of The Way Find, Cafe/Garden Dining,
+                       Classic Hotel Dining, Fabulous Views, Fair Service,
+                       Near-perfect Decor, Near-perfect Service, Need To Dress,
+                       On the Beach, Place for Singles, Pub Feel,
+                       Relaxed Senior Scene}
+	price = $30-$50
+	style in {Brasserie, Californian, Continental, Eclectic, High Tea, none,
+                  Pizza, Power Brokers, Steakhouses, Traditional}
+	->  class French  [0.792]
+
+Rule 8/11: (1467.5/370.3, lift 2.5)
+	occasion in {Early Dining, Happy Hour, Long Drive, Open on Mondays,
+                     Open on Sundays, Picnics, Prix Fixe Menus, See the Game,
+                     Short Drive, Special Brunch Menu, Walk,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	price = $30-$50
+	style in {Brasserie, Californian, Continental, Eclectic, High Tea, none,
+                  Pizza, Power Brokers, Steakhouses, Traditional}
+	->  class French  [0.747]
+
+Rule 8/12: (374.5/104.7, lift 2.4)
+	atmosphere in {An Out Of The Way Find, Extraordinary Service,
+                       Fabulous Wine Lists, Good Food, Good Service,
+                       Great for People Watching, On the Beach,
+                       Quiet for Conversation, Relaxed Senior Scene,
+                       Up and Coming}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Fine for Dining Alone, Late Night Menu, Long Drive,
+                     Open for Breakfast, Parties and Occasions, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Bakeries, Brasserie, Continental, Eclectic, High Tea,
+                  Omelettes, Pastries, Power Brokers, Steakhouses}
+	->  class French  [0.719]
+
+Rule 8/13: (132.6/43.2, lift 2.3)
+	price = $15-$30
+	style in {Carry in Wine and Beer, Coffee Shops, Diners}
+	->  class French  [0.671]
+
+Rule 8/14: (75.7/25.5, lift 2.2)
+	atmosphere in {Business Scene, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Good Decor,
+                       Parking/Valet, Wheelchair Access}
+	price = $15-$30
+	style = Steakhouses
+	->  class French  [0.659]
+
+Rule 8/15: (3287.7/1326.3, lift 2.0)
+	atmosphere in {An Out Of The Way Find, Extraordinary Service, Fair Food,
+                       Health Conscious Menus, Near-perfect Food, Need To Dress,
+                       Quiet for Conversation, Romantic}
+	style in {Brasserie, Californian, Caviar, Continental, Eclectic,
+                  High Tea, none, Pizza, Power Brokers, Steakhouses,
+                  Traditional}
+	->  class French  [0.597]
+
+Rule 8/16: (698.1/290.8, lift 2.0)
+	atmosphere in {Business Scene, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Good Decor,
+                       No Reservations, Parking/Valet, Romantic, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Fine for Dining Alone, Late Night Menu, Long Drive,
+                     Open for Breakfast, Parties and Occasions, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	style = Continental
+	->  class French  [0.583]
+
+Rule 8/17: (4461/1998, lift 1.9)
+	occasion in {Dining Outdoors, Entertainment, Fine for Dining Alone,
+                     Menus in Braille, Open for Breakfast,
+                     Parties and Occasions, Pre-theater Dining,
+                     Private Rooms Available, Takeout Available, Weekend Brunch}
+	price = $30-$50
+	style in {Brasserie, Californian, Continental, Eclectic, High Tea, none,
+                  Pizza, Power Brokers, Steakhouses, Traditional}
+	->  class French  [0.552]
+
+Rule 8/18: (71.1/26.1, lift 411.4)
+	style in {Deli, Fast Food}
+	->  class German  [0.629]
+
+Rule 8/19: (33.4, lift 45.7)
+	atmosphere = Cafe/Garden Dining
+	price = $15-$30
+	style = Continental
+	->  class Greek  [0.972]
+
+Rule 8/20: (124.2/24.6, lift 37.5)
+	atmosphere in {Authentic, Fair Decor, No Reservations, Quirky,
+                       Tourist Appeal}
+	occasion in {After Hours Dining, Delivery Available, Entertainment,
+                     Fine for Dining Alone, Late Night Menu, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining}
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.797]
+
+Rule 8/21: (103.4/26.6, lift 34.7)
+	occasion in {Private Parties, Private Rooms Available,
+                     Takeout Available}
+	style = Middle Eastern
+	->  class Greek  [0.738]
+
+Rule 8/22: (65.7/17.4, lift 34.3)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service, Hip Place To Be,
+                       Parking/Valet, Wheelchair Access}
+	occasion in {Catering for Special Events, Entertainment,
+                     Fine for Dining Alone, Open for Breakfast}
+	price in {$15-$30, below $15}
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.729]
+
+Rule 8/23: (122/43.2, lift 30.3)
+	atmosphere in {Classic Hotel Dining, Excellent Decor, Excellent Food,
+                       Excellent Service, Good Decor, Good for Younger Kids,
+                       Parking/Valet, Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Late Night Menu, Takeout Available}
+	price in {$15-$30, below $15}
+	style in {Cab, Middle Eastern}
+	->  class Greek  [0.644]
+
+Rule 8/24: (41.6/15.1, lift 699.8)
+	occasion = none
+	price = $15-$30
+	style in {Continental, Power Brokers}
+	->  class Irish  [0.631]
+
+Rule 8/25: (571.1, lift 2.0)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Dining After the Theater, Dining Outdoors, Early Dining,
+                     Entertainment, Fine for Dining Alone, Late Night Menu,
+                     none, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price = below $15
+	style in {Coffee Houses, none, Pizza, Traditional}
+	->  class Italian  [0.998]
+
+Rule 8/26: (2278.6/7.6, lift 2.0)
+	occasion in {Dining After the Theater, Early Dining,
+                     Fine for Dining Alone, Happy Hour, Late Night Menu,
+                     Menus in Braille, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Cafe/Espresso Bars, Californian, Central, Coffee Houses,
+                  Hamburgers, Kosher, none, Pizza, Pizzerias, Traditional}
+	->  class Italian  [0.996]
+
+Rule 8/27: (86.3, lift 2.0)
+	atmosphere in {Classic Hotel Dining, Extraordinary Decor,
+                       For the Young and Young at Heart, Good for Younger Kids,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Hip Place To Be, Near-perfect Food, Need To Dress,
+                       Tourist Appeal, Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Parties and Occasions, Private Parties,
+                     Private Rooms Available, Short Drive, Takeout Available,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price = $15-$30
+	style in {Continental, Eclectic, Power Brokers, Steakhouses}
+	->  class Italian  [0.989]
+
+Rule 8/28: (1957.8/25.5, lift 2.0)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Entertainment, Fine for Dining Alone,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Picnics, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	style in {Pizza, Traditional}
+	->  class Italian  [0.986]
+
+Rule 8/29: (1998.5/46.3, lift 2.0)
+	style in {Pizza, Traditional}
+	->  class Italian  [0.976]
+
+Rule 8/30: (6954.7/561.9, lift 1.8)
+	atmosphere in {An Historic Spot, Authentic, Buffet Dining,
+                       Business Scene, Cafe/Garden Dining, Classic Hotel Dining,
+                       Creative, Credit cards are not accepted, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Decor,
+                       Extraordinary Food, Fabulous Views, Fabulous Wine Lists,
+                       Fair Decor, Fair Service, Focus on Dessert,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Out of Town Business,
+                       Good Service, Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       No Smoking Allowed, Old World Cafe Charm, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Singles Scene, Tourist Appeal,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	price = $15-$30
+	style in {Cafe/Espresso Bars, Californian, Central, Coffee Houses,
+                  Hamburgers, Kosher, none, Pizza, Pizzerias, Traditional}
+	->  class Italian  [0.919]
+
+Rule 8/31: (272.6/37.1, lift 1.7)
+	atmosphere in {Business Scene, Classic Hotel Dining, Creative,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Extraordinary Food, Good Decor,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Hip Place To Be, Parking/Valet, Place for Singles,
+                       Romantic, Singles Scene, Tourist Appeal,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Parties and Occasions, Private Parties,
+                     Private Rooms Available, Short Drive, Takeout Available,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price = $15-$30
+	style in {Eclectic, Pastries, Power Brokers}
+	->  class Italian  [0.861]
+
+Rule 8/32: (2678/417.4, lift 1.7)
+	atmosphere in {Authentic, Creative, Excellent Service, Fair Food,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Little Known But Well Liked,
+                       No Reservations, People Keep Coming Back, Quirky}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Entertainment, Fine for Dining Alone,
+                     Game, Great Place to Meet for a Drink, Late Night Menu,
+                     Menus in Braille, none, Open for Breakfast,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining}
+	style in {Continental, none, Power Brokers, Steakhouses}
+	->  class Italian  [0.844]
+
+Rule 8/33: (8484.6/2567.6, lift 1.4)
+	atmosphere in {An Historic Spot, Authentic, Business Scene, Creative,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Fair Food,
+                       Focus on Dessert, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Out of Town Business, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Food, No Reservations, Old World Cafe Charm,
+                       Parking/Valet, People Keep Coming Back,
+                       Quiet for Conversation, Quirky, Romantic, Singles Scene,
+                       Up and Coming, Very Busy - Reservations a Must,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater, Game,
+                     Great Place to Meet for a Drink, Late Night Menu, none,
+                     Private Parties, Weekend Dining}
+	style in {Bakeries, Californian, Caviar, Coffee Houses, Continental,
+                  Eclectic, Hamburgers, High Tea, none, Omelettes, Pizza,
+                  Pizzerias, Power Brokers, Steakhouses, Traditional}
+	->  class Italian  [0.697]
+
+Rule 8/34: (2236.1/963.3, lift 1.1)
+	style in {Cab, Middle Eastern}
+	->  class Italian  [0.569]
+
+Rule 8/35: (179.8/71.5, lift 82.5)
+	occasion in {Short Drive, Weekend Brunch}
+	price = below $15
+	style in {none, Pizza, Traditional}
+	->  class Polish  [0.601]
+
+Rule 8/36: (244.5/150.6, lift 52.9)
+	price = below $15
+	style in {Carry in Wine and Beer, Coffee Shops, Diners}
+	->  class Polish  [0.385]
+
+Rule 8/37: (210.1/78.4, lift 118.5)
+	style in {International, Southwestern}
+	->  class Spanish  [0.626]
+
+Default class: Italian
+
+-----  Trial 9:  -----
+
+Rules:
+
+Rule 9/1: (614, lift 3.7)
+	style in {Bakeries, Brasserie, High Tea, Omelettes}
+	->  class French  [0.998]
+
+Rule 9/2: (609.5, lift 3.7)
+	price = over $50
+	->  class French  [0.998]
+
+Rule 9/3: (54.8, lift 3.7)
+	occasion in {Entertainment, Fine for Dining Alone}
+	style = Power Brokers
+	->  class French  [0.982]
+
+Rule 9/4: (51.4, lift 3.7)
+	price = $15-$30
+	style = Coffee Shops
+	->  class French  [0.981]
+
+Rule 9/5: (47, lift 3.7)
+	price = $30-$50
+	style = Eclectic
+	->  class French  [0.980]
+
+Rule 9/6: (20.4, lift 3.6)
+	occasion in {Delivery Available, Pre-theater Dining}
+	price = $30-$50
+	style = Steakhouses
+	->  class French  [0.955]
+
+Rule 9/7: (14.5, lift 3.5)
+	occasion in {Prix Fixe Menus, Special Brunch Menu}
+	price = below $15
+	->  class French  [0.940]
+
+Rule 9/8: (725.2/43.3, lift 3.5)
+	atmosphere in {An Out Of The Way Find, Business Scene,
+                       Cafe/Garden Dining, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Fabulous Wine Lists, Good Out of Town Business,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Smoking Allowed, Parking/Valet, Place for Singles,
+                       Pub Feel, Quiet for Conversation, Relaxed Senior Scene,
+                       Romantic, Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Early Dining, Happy Hour, Open on Mondays, Open on Sundays,
+                     Prix Fixe Menus, See the Game, Short Drive,
+                     Special Brunch Menu, Walk, Weekend Jazz Brunch}
+	price = $30-$50
+	style in {Cab, none, Power Brokers, Steakhouses}
+	->  class French  [0.939]
+
+Rule 9/9: (13.1, lift 3.5)
+	occasion in {Prix Fixe Menus, Special Brunch Menu}
+	price = $15-$30
+	style = Steakhouses
+	->  class French  [0.934]
+
+Rule 9/10: (1175.7/113.1, lift 3.4)
+	atmosphere in {An Out Of The Way Find, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food,
+                       Extraordinary Service, Fabulous Wine Lists, Good Food,
+                       Good Service, Great for People Watching, No Reservations,
+                       On the Beach, Parking/Valet, Quiet for Conversation,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Early Dining, Entertainment,
+                     Fine for Dining Alone, Late Night Menu, Long Drive, none,
+                     Open for Breakfast, Parties and Occasions, Picnics,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Special Brunch Menu, Walk, Weekend Brunch,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	style in {Bakeries, Brasserie, Californian, Caviar, Continental,
+                  High Tea, Omelettes}
+	->  class French  [0.903]
+
+Rule 9/11: (178.6/19, lift 3.3)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Fabulous Views,
+                       Health Conscious Menus, Near-perfect Decor,
+                       Near-perfect Service, Place for Singles, Pub Feel}
+	price = $30-$50
+	style in {Cab, Power Brokers}
+	->  class French  [0.889]
+
+Rule 9/12: (121.9/13.1, lift 3.3)
+	atmosphere in {Need To Dress, Quiet for Conversation}
+	price = $15-$30
+	style in {none, Power Brokers, Traditional}
+	->  class French  [0.886]
+
+Rule 9/13: (1383.6/171.3, lift 3.3)
+	price in {$30-$50, over $50}
+	style in {Brasserie, Californian, Caviar, Continental, High Tea}
+	->  class French  [0.876]
+
+Rule 9/14: (490.9/69.9, lift 3.2)
+	atmosphere in {An Out Of The Way Find, Classic Hotel Dining,
+                       Excellent Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Views, Fair Decor,
+                       Fair Food, Focus on Dessert, Health Conscious Menus,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Smoking Allowed, People Keep Coming Back,
+                       Quiet for Conversation, Romantic,
+                       Very Busy - Reservations a Must, Warm spots by the fire}
+	occasion in {Prix Fixe Menus, Special Brunch Menu, Walk}
+	style in {none, Steakhouses}
+	->  class French  [0.856]
+
+Rule 9/15: (286.5/57, lift 3.0)
+	atmosphere = Extraordinary Food
+	occasion in {After Hours Dining, Delivery Available, Dining Outdoors,
+                     Entertainment, Game, Long Drive, Menus in Braille,
+                     Open for Breakfast, Parties and Occasions, Picnics,
+                     Private Parties, Weekend Brunch, Weekend Lunch}
+	price = $30-$50
+	style = none
+	->  class French  [0.799]
+
+Rule 9/16: (203.1/43.3, lift 2.9)
+	occasion in {Dancing, Entertainment, Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Prix Fixe Menus}
+	price in {$15-$30, below $15}
+	style in {Cab, Coffee Shops, Pastries, Power Brokers}
+	->  class French  [0.784]
+
+Rule 9/17: (351.5/75.9, lift 2.9)
+	atmosphere in {An Historic Spot, Cafe/Garden Dining,
+                       Classic Hotel Dining, Creative, Extraordinary Decor,
+                       Extraordinary Food, Extraordinary Service,
+                       Focus on Dessert, Great for People Watching,
+                       Health Conscious Menus, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       Parking/Valet, Place for Singles, Quiet for Conversation,
+                       Romantic, Very Busy - Reservations a Must}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Entertainment, Fine for Dining Alone,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Weekend Lunch}
+	price = $30-$50
+	style in {Cab, Power Brokers}
+	->  class French  [0.783]
+
+Rule 9/18: (582.3/136.2, lift 2.9)
+	atmosphere in {An Out Of The Way Find, Extraordinary Service,
+                       Health Conscious Menus, Near-perfect Food, Need To Dress,
+                       Quiet for Conversation, Romantic}
+	occasion in {Dancing, Entertainment, Fine for Dining Alone, Game,
+                     Long Drive, Prix Fixe Menus, Special Brunch Menu, Walk}
+	style in {Eclectic, none}
+	->  class French  [0.765]
+
+Rule 9/19: (1911.6/474.4, lift 2.8)
+	atmosphere in {An Out Of The Way Find, Cafe/Garden Dining,
+                       Classic Hotel Dining, Creative, Extraordinary Decor,
+                       Extraordinary Service, Fair Service,
+                       Great for People Watching, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       On the Beach, Parking/Valet, Place for Singles,
+                       Quiet for Conversation, Romantic,
+                       Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Delivery Available, Dining Outdoors,
+                     Entertainment, Fine for Dining Alone, Game, Long Drive,
+                     Menus in Braille, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available,
+                     Takeout Available, Weekend Brunch, Weekend Dining,
+                     Weekend Lunch}
+	price = $30-$50
+	style = none
+	->  class French  [0.752]
+
+Rule 9/20: (208.6/55.8, lift 2.7)
+	atmosphere in {Great for People Watching, Near-perfect Food,
+                       Need To Dress, Romantic}
+	style = Cab
+	->  class French  [0.730]
+
+Rule 9/21: (570.1/153.6, lift 2.7)
+	occasion in {Game, Long Drive, Open for Breakfast,
+                     Parties and Occasions}
+	price = $30-$50
+	style = none
+	->  class French  [0.730]
+
+Rule 9/22: (150.4/53.5, lift 2.4)
+	atmosphere in {Excellent Decor, Relaxed Senior Scene,
+                       Warm spots by the fire}
+	occasion in {After Hours Dining, Dining Outdoors, Entertainment,
+                     Private Parties, Private Rooms Available,
+                     Takeout Available, Weekend Brunch, Weekend Dining}
+	price = $30-$50
+	style = Power Brokers
+	->  class French  [0.643]
+
+Rule 9/23: (21.8/2.5, lift 76.3)
+	atmosphere in {Cafe/Garden Dining, Place for Singles, Pub Feel,
+                       Up and Coming}
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Entertainment, none, Private Rooms Available}
+	price = $15-$30
+	style = Continental
+	->  class Greek  [0.851]
+
+Rule 9/24: (87.2/28.6, lift 59.9)
+	price = below $15
+	style = Cab
+	->  class Greek  [0.668]
+
+Rule 9/25: (453.9/310.6, lift 28.4)
+	price = $15-$30
+	style in {Carry in Wine and Beer, Deli, International, Middle Eastern,
+                  Southwestern}
+	->  class Greek  [0.316]
+
+Rule 9/26: (1455.5, lift 2.1)
+	price in {$15-$30, below $15}
+	style in {Coffee Houses, Hamburgers, Pizza, Traditional}
+	->  class Italian  [0.999]
+
+Rule 9/27: (100.1, lift 2.0)
+	price = $15-$30
+	style = Californian
+	->  class Italian  [0.990]
+
+Rule 9/28: (13.2, lift 1.9)
+	occasion in {Catering for Special Events, Pre-theater Dining}
+	price = $30-$50
+	style = Cab
+	->  class Italian  [0.934]
+
+Rule 9/29: (22187.8/8093.4, lift 1.3)
+	style in {Bakeries, Brasserie, Cab, Cafe/Espresso Bars, Californian,
+                  Caviar, Central, Coffee Houses, Coffee Shops, Continental,
+                  Diners, Eclectic, Hamburgers, High Tea, Kosher, none,
+                  Omelettes, Pastries, Pizza, Pizzerias, Power Brokers,
+                  Steakhouses, Traditional}
+	->  class Italian  [0.635]
+
+Rule 9/30: (322.3/154.9, lift 91.2)
+	price = below $15
+	style in {Carry in Wine and Beer, Fast Food, Middle Eastern}
+	->  class Portuguese  [0.519]
+
+Default class: Italian
+
+
+Evaluation on training data (29414 cases):
+
+Trial	        Rules     
+-----	  ----------------
+	    No      Errors
+
+   0	    57 7711(26.2%)
+   1	    22 8551(29.1%)
+   2	    27 8940(30.4%)
+   3	    38 8752(29.8%)
+   4	    33 9137(31.1%)
+   5	    33 9848(33.5%)
+   6	    36 8883(30.2%)
+   7	    45 9217(31.3%)
+   8	    37 8217(27.9%)
+   9	    30 8220(27.9%)
+boost	       7778(26.4%)   <<
+
+
+	   (a)   (b)   (c)   (d)   (e)   (f)   (g)   (h)   (i)   (j)   (k)   (l)   (m)   (n)   (o)   (p)    <-classified as
+	  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+	                                                           7                                        (a): class Armenian
+	                            14                            40                                        (b): class Austrian
+	                21                                         3                                        (c): class Belgian
+	                            12                            40                                        (d): class Czech
+	                          6122                          3395                                        (e): class French
+	                            26    56                     407                                        (f): class German
+	                            41         106               603                                        (g): class Greek
+	                            12                           124                                        (h): class Hungarian
+	                            12                           115                                        (i): class Irish
+	                          1443          48             15211                      48                (j): class Italian
+	                            12                           159                                        (k): class Polish
+	                                                         115          45                            (l): class Portuguese
+	                                                          30                                        (m): class Romanian
+	                            68                           871                      75                (n): class Spanish
+	                             6                           120                                        (o): class Swiss
+	                                                           7                                        (p): class Ukrainian
+
+
+	Attribute usage:
+
+	100.00%	price
+	100.00%	style
+	 99.81%	atmosphere
+	 99.04%	occasion
+
+
+Time: 2.2 secs
+

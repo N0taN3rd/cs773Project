@@ -1,0 +1,179 @@
+
+Call:
+C5.0.formula(formula = form, data = d, trials = trialNum, control = C5.0Control(subset = TRUE, winnow = winnow), rules
+ = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Fri Jul 22 13:33:42 2016
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 7932 cases (5 attributes) from undefined.data
+
+1 attribute winnowed
+Estimated importance of remaining attributes:
+
+      8%  style
+      3%  price
+     <1%  atmosphere
+
+-----  Trial 0:  -----
+
+Rules:
+
+Rule 0/1: (72/12, lift 34.6)
+	price = over $50
+	->  class Asian  [0.824]
+
+Rule 0/2: (758/439, lift 1.1)
+	atmosphere = Excellent Food
+	->  class Chinese  [0.421]
+
+Rule 0/3: (7797/4654, lift 1.0)
+	style in {Cab, Californian, Carry in Wine and Beer, Eclectic, Fast Food,
+                  High Tea, none, Noodle Houses, Noodle Shops, Power Brokers,
+                  Southeast Asian, Steakhouses, Traditional}
+	->  class Chinese  [0.403]
+
+Rule 0/4: (18, lift 8.3)
+	price = $15-$30
+	style = Californian
+	->  class Indian  [0.950]
+
+Rule 0/5: (22/6, lift 38.2)
+	atmosphere in {Excellent Decor, Excellent Service, Extraordinary Food,
+                       Wheelchair Access}
+	price = $15-$30
+	style = Southeast Asian
+	->  class Indonesian  [0.708]
+
+Rule 0/6: (75, lift 4.8)
+	style in {Noodle Houses, Steakhouses}
+	->  class Japanese  [0.987]
+
+Rule 0/7: (46, lift 4.8)
+	price = $30-$50
+	style in {Cab, Noodle Shops}
+	->  class Japanese  [0.979]
+
+Rule 0/8: (8, lift 4.4)
+	atmosphere in {Authentic, Extraordinary Decor, Extraordinary Service,
+                       Little Known But Well Liked}
+	price = over $50
+	->  class Japanese  [0.900]
+
+Rule 0/9: (8, lift 4.4)
+	atmosphere in {Near-perfect Food, Quirky}
+	price = $30-$50
+	style = Power Brokers
+	->  class Japanese  [0.900]
+
+Rule 0/10: (230/99, lift 2.8)
+	atmosphere in {Authentic, Buffet Dining, Business Scene,
+                       Classic Hotel Dining, Extraordinary Service,
+                       Fabulous Wine Lists, Fair Decor, Good Decor,
+                       Little Known But Well Liked, Near-perfect Food,
+                       Need To Dress, Parking/Valet, Quiet for Conversation,
+                       Romantic, Singles Scene, Very Busy - Reservations a Must,
+                       Warm spots by the fire}
+	price = $30-$50
+	style in {Cab, Californian, none, Noodle Shops}
+	->  class Japanese  [0.569]
+
+Rule 0/11: (268/139, lift 2.4)
+	style in {Cab, Noodle Shops}
+	->  class Japanese  [0.481]
+
+Rule 0/12: (126/70, lift 2.2)
+	atmosphere in {Extraordinary Food, Good Out of Town Business}
+	price = $30-$50
+	style in {Cab, Californian, none, Noodle Shops}
+	->  class Japanese  [0.445]
+
+Rule 0/13: (135/46, lift 49.6)
+	style = Middle Eastern
+	->  class Lebanese  [0.657]
+
+Rule 0/14: (4, lift 188.9)
+	atmosphere in {Parking/Valet, Relaxed Senior Scene}
+	style = Middle Eastern
+	->  class Persian  [0.833]
+
+Rule 0/15: (8, lift 6.6)
+	price = below $15
+	style = Southeast Asian
+	->  class Thai  [0.900]
+
+Rule 0/16: (38/5, lift 6.2)
+	price = below $15
+	style = Cab
+	->  class Thai  [0.850]
+
+Rule 0/17: (42/6, lift 71.7)
+	atmosphere in {Extraordinary Food, Fair Decor, Good Service,
+                       No Smoking Allowed, Quirky, Wheelchair Access}
+	price = below $15
+	style = Middle Eastern
+	->  class Turkish  [0.841]
+
+Rule 0/18: (20, lift 14.1)
+	atmosphere in {Fabulous Wine Lists, Good Out of Town Business,
+                       Great for People Watching, Hip Place To Be,
+                       Parking/Valet}
+	price = $15-$30
+	style in {Power Brokers, Southeast Asian}
+	->  class Vietnamese  [0.955]
+
+Rule 0/19: (16, lift 14.0)
+	price = $15-$30
+	style = Power Brokers
+	->  class Vietnamese  [0.944]
+
+Rule 0/20: (5, lift 12.7)
+	atmosphere = Good Service
+	price = $30-$50
+	->  class Vietnamese  [0.857]
+
+Default class: Chinese
+
+*** boosting reduced to 1 trial since last classifier is very inaccurate
+
+*** boosting abandoned (too few classifiers)
+
+
+Evaluation on training data (7932 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	    20 4261(53.7%)   <<
+
+
+	   (a)   (b)   (c)   (d)   (e)   (f)   (g)   (h)   (i)   (j)   (k)   (l)   (m)    <-classified as
+	  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+	    60          67                      62                                        (a): class Asian
+	                25                                                                (b): class Cambodian
+	              3003                     135                       5                (c): class Chinese
+	                26                                                                (d): class Filipino
+	               853          18          33                                        (e): class Indian
+	               131                16                                              (f): class Indonesian
+	     4        1242                     379                                        (g): class Japanese
+	                16                            83                       6          (h): class Lebanese
+	                23                                                                (i): class Malaysian
+	                17                       8     6           4                      (j): class Persian
+	              1022                      18                      41                (k): class Thai
+	                57                                                    36          (l): class Turkish
+	               499                 6                                        31    (m): class Vietnamese
+
+
+	Attribute usage:
+
+	100.00%	style
+	 15.42%	atmosphere
+	  7.78%	price
+
+
+Time: 0.1 secs
+

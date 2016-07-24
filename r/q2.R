@@ -13,5 +13,3 @@ ruleModel <- ruleGen.c50(d=s1,form =  cuisine ~ .,trialNum = 10,winnow = TRUE)
 
 c50Summary <- capture.output(summary(ruleModel))
 cat(c50Summary,file = file.path(cwd,'q2','c50_10Trials2.txt'),sep="\n")
-
-rulesFit <- ruleGen.part(s1,form=cuisine ~ .)

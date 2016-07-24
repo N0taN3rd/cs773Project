@@ -1,0 +1,51 @@
+
+Call:
+C5.0.formula(formula = form, data = d, trials = trialNum, control = C5.0Control(subset = TRUE, winnow = winnow), rules
+ = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Fri Jul 22 13:40:37 2016
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 29441 cases (5 attributes) from undefined.data
+
+4 attributes winnowed
+
+-----  Trial 0:  -----
+
+Rules:
+
+Default class: American
+
+-----  Trial 1:  -----
+
+Rules:
+
+Default class: American
+
+*** boosting reduced to 1 trial since last classifier is very inaccurate
+
+*** boosting abandoned (too few classifiers)
+
+
+Evaluation on training data (29441 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	     0  344( 1.2%)   <<
+
+
+	   (a)   (b)   (c)   (d)    <-classified as
+	  ----  ----  ----  ----
+	 29097                      (a): class American
+	   230                      (b): class Brazilian
+	    74                      (c): class Peruvian
+	    40                      (d): class Venezuelan
+
+
+Time: 0.1 secs
+

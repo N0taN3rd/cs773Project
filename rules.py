@@ -343,6 +343,10 @@ def q3():
             #         listOfLabels.append(ll)
 
 
+def forYun():
+    print('sasas')
+
+
 if __name__ == '__main__':
     print("hi")
     q2()

@@ -1,0 +1,152 @@
+
+Call:
+C5.0.formula(formula = form, data = d, trials = trialNum, control = C5.0Control(subset = TRUE, winnow = winnow), rules
+ = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Fri Jul 22 11:44:46 2016
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 391 cases (5 attributes) from undefined.data
+
+1 attribute winnowed
+Estimated importance of remaining attributes:
+
+     42%  style
+     25%  price
+     <1%  atmosphere
+
+-----  Trial 0:  -----
+
+Rules:
+
+Rule 0/1: (44, lift 3.2)
+	style = Traditional
+	->  class African  [0.978]
+
+Rule 0/2: (10, lift 3.0)
+	atmosphere = Great for People Watching
+	->  class African  [0.917]
+
+Rule 0/3: (139/49, lift 2.1)
+	price in {$30-$50, below $15}
+	->  class African  [0.645]
+
+Rule 0/4: (26/8, lift 7.4)
+	atmosphere in {Good Food, Wheelchair Access}
+	price = $15-$30
+	style = none
+	->  class Egyptian  [0.679]
+
+Rule 0/5: (252/154, lift 1.4)
+	price = $15-$30
+	->  class Ethiopian  [0.390]
+
+Rule 0/6: (49, lift 3.5)
+	style in {Carry in Wine and Beer, Middle Eastern}
+	->  class Moroccan  [0.980]
+
+Rule 0/7: (46, lift 3.5)
+	style = Middle Eastern
+	->  class Moroccan  [0.979]
+
+Rule 0/8: (30, lift 3.5)
+	price = $30-$50
+	style = none
+	->  class Moroccan  [0.969]
+
+Rule 0/9: (12, lift 3.3)
+	atmosphere in {Extraordinary Decor, Extraordinary Service,
+                       Little Known But Well Liked}
+	price = $15-$30
+	->  class Moroccan  [0.929]
+
+Default class: African
+
+-----  Trial 1:  -----
+
+Rules:
+
+Rule 1/1: (36.8, lift 3.3)
+	price = $30-$50
+	style = Traditional
+	->  class African  [0.974]
+
+Rule 1/2: (62.7/24.2, lift 2.1)
+	price = below $15
+	->  class African  [0.610]
+
+Rule 1/3: (106.2/64.6, lift 3.7)
+	atmosphere in {Excellent Service, Good Decor, Good Food,
+                       Wheelchair Access}
+	price = $15-$30
+	style = none
+	->  class Egyptian  [0.394]
+
+Rule 1/4: (266.5/179.4, lift 1.2)
+	price = $15-$30
+	->  class Ethiopian  [0.328]
+
+Rule 1/5: (38.5, lift 3.6)
+	style = Middle Eastern
+	->  class Moroccan  [0.975]
+
+Rule 1/6: (25.1, lift 3.6)
+	price = $30-$50
+	style = none
+	->  class Moroccan  [0.963]
+
+Default class: African
+
+-----  Trial 2:  -----
+
+Rules:
+
+Rule 2/1: (118.5/49.5, lift 2.0)
+	price in {$30-$50, below $15}
+	->  class African  [0.581]
+
+Rule 2/2: (272.5/184.6, lift 1.2)
+	price = $15-$30
+	->  class Ethiopian  [0.324]
+
+Rule 2/3: (35.3, lift 3.6)
+	style = Middle Eastern
+	->  class Moroccan  [0.973]
+
+Default class: African
+
+*** boosting reduced to 2 trials since last classifier is very inaccurate
+
+*** boosting abandoned (too few classifiers)
+
+
+Evaluation on training data (391 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	     9  100(25.6%)   <<
+
+
+	   (a)   (b)   (c)   (d)   (e)    <-classified as
+	  ----  ----  ----  ----  ----
+	    96          24                (a): class African
+	          18    18                (b): class Egyptian
+	    13     8    90                (c): class Ethiopian
+	                22    87          (d): class Moroccan
+	                15                (e): class Tunisian
+
+
+	Attribute usage:
+
+	100.00%	price
+	 38.11%	style
+	 12.28%	atmosphere
+
+
+Time: 0.0 secs
+

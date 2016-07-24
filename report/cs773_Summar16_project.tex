@@ -1,0 +1,442 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{listings}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{pgfplotstable}
+\usepackage{tabu}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{makeidx}
+\usepackage[toc,page]{appendix}
+\usepackage{cprotect}
+
+
+
+\captionsetup{labelformat=empty}
+
+\pgfplotsset{compat=1.13}
+
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\makeindex
+
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+} 
+
+\begin{document} 
+
+\begin{titlepage}
+
+\begin{center}
+\Huge{Course Project}
+
+\Large{CS773: Data Mining and Security}
+
+\Large{Summer 2016}
+
+\Large{John Berlin, Yun Han}
+\end{center}
+
+\end{titlepage}
+
+\printindex
+\tableofcontents
+\listoftables
+\listoffigures
+\lstlistoflistings
+
+\newpage
+\addcontentsline{toc}{section}{Data Changes}
+\section*{Data Changes}
+For questions two through four the data was reduced to \textit{cuisine,atmosphere,occasion,price,style}. Any restaurant that did not have one of those features the fake feature none was added and for those that 
+had multiple features per feature category i.e one atmosphere, cuisine and price but two occasion features with non style the following was done. This is shown in table \hyperref[tab:dchange]{\ref{tab:dchange}}.
+\begin{table}[h]
+\caption{Data change example}
+\begin{tabu}{ccccc} 
+cuisine & atmosphere & occasion & price & style \\
+Italian & Excellent Decor & Open on Sundays & \$15-\$30 & none\\
+Italian & Excellent Decor & Open on Mondays & \$15-\$30 & none \\
+\end{tabu}
+
+ \label{tab:dchange} 
+\end{table} 
+
+
+\addcontentsline{toc}{section}{Task i}
+\section*{Task i}
+\index{Task i}
+\begin{verbatim}
+Study the provided features and classify them into one of the standard (cuisine, style,
+price, atmosphere, and occasion) or into your own created additional categories. Limit
+the new categories to at most 5. If you think that a feature fits into more than one of
+your categories, do put them in all the categories that they fit in. This could be more
+an exception than a role. Typically, there should be a 1-1 mapping of features to
+categories.
+\end{verbatim}
+\subsection*{Results}
+
+\begin{table}[h]
+\centering
+\caption{Atmosphere Classification}
+\begin{tabu}{ccc} 
+An Historic Spot & An Out Of The Way Find & Authentic \\
+Buffet Dining & Business Scene & Cafe/Garden Dining \\
+Classic Hotel Dining & Creative & Credit cards are not accepted \\
+Excellent Decor & Excellent Food & Excellent Service \\
+Extraordinary Decor & Extraordinary Food & Extraordinary Service \\
+Fabulous Views & Fabulous Wine Lists & Fair Decor \\
+Fair Food & Fair Service & Focus on Dessert \\
+For the Young and Young at Heart & Good Decor & Good Food \\
+Good Out of Town Business & Good Service & Good for Younger Kids \\
+Great for People Watching & Health Conscious Menus & Hip Place To Be \\
+Little Known But Well Liked & Near-perfect Decor & Near-perfect Food \\
+Near-perfect Service & Need To Dress & No Liquor Served \\
+No Reservations & No Smoking Allowed & Old World Cafe Charm \\
+On the Beach & Parking/Valet & People Keep Coming Back \\
+Place for Singles & Poor Decor & Pub Feel \\
+Quiet for Conversation & Quirky & Relaxed Senior Scene \\
+Romantic & Singles Scene & Tourist Appeal \\
+Up and Coming & Very Busy - Reservations a Must & Warm spots by the fire \\
+Wheelchair Access & & \\
+\end{tabu}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cuisine Classification}
+\begin{tabu}{ccccc}
+Afghanistan & African & American & Argentinean & Armenian \\
+Asian & Austrian & Bar-B-Q & Belgian & Brazilian \\
+Burmese & Burritos & Cajun & Cambodian & Canadian \\
+Caribbean & Chinese & Coffee and Dessert & Creole & Cuban \\
+Czech & Dim Sum & Egyptian & Ethiopian & Filipino \\
+Fountain and Ice Cream & French & German & Greek & Guatemalan \\
+Hamburgers & Beer \& Hot Dogs & Hungarian & Indian & Indonesian \\
+Irish & Italian & Jamaican & Japanese & Jewish \\
+Korean & Latin & Lebanese & Malaysian & Mediterranean \\
+Mexican & Moroccan & Nicaraguan & Pacific New Wave & Pacific Rim \\
+Persian & Peruvian & Polish & Polynesian & Portuguese \\
+Puerto Rican & Romanian & Roumanian & Russian & Salvadoran \\
+Scandinavian & Seafood & Spanish & Sushi & Swiss \\
+Tapas & Tex Mex & Tex-Mex & Thai & Tibetan \\
+Tunisian & Turkish & Ukrainian & Ukranian & Vegetarian \\
+Venezuelan & Vietnamese & Wine and Beer & Yugoslavian &  \\
+\end{tabu}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Occasion Classification}
+\begin{tabu}{cccc}
+After Hours Dining & Catering for Special Events & Dancing & Delivery Available \\
+Dining After the Theater & Dining Outdoors & Early Dining & Entertainment \\
+Fine for Dining Alone & Game & Great Place to Meet for a Drink & Happy Hour \\
+Late Night Menu & Long Drive & Margaritas & Menus in Braille \\
+Open for Breakfast & Open on Mondays & Open on Sundays & Other Quick Food \\
+Parties and Occasions & Picnics & Pre-theater Dining & Private Parties \\
+Private Rooms Available & Prix Fixe Menus & See the Game & Short Drive \\
+Special Brunch Menu & Takeout Available & Walk & Weekend Brunch \\
+Weekend Dining & Weekend Jazz Brunch & Weekend Lunch &  \\
+\end{tabu}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Style Classification}
+\begin{tabu}{cccc}
+A & American (Contemporary) & American (New) & American (Regional) \\
+American (Traditional) & Bakeries & Brasserie & Cab \\
+Cafe/Espresso Bars & Cafeterias & Californian & Carry in Wine and Beer \\
+Caviar & Central & Coffee Houses & Continental \\
+Haute Creole & Haute New Orleans & Coffeehouses & Coffee Shops \\
+Deli & Diners & Down-Home & Eastern European \\
+Eclectic & Down-Home Creole & Southern & Southwestern \\
+South American & Southeast Asian & English & Fast Food \\
+Fondue & Franco-Russian & Frankfurters & French Bistro \\
+French Classic & French Contemporary & French-Japanese & French (New) \\
+French Nouvelle & Grills & Hamburgers & Health Food \\
+High Tea & International & Italian (North & Italian (Northern) \\
+Italian (North \& South) & Italian Nuova Cucina & Italian (Southern) & Kosher \\
+Lithuanian & Middle Eastern & N & Noodle Houses \\
+Noodle Shops & Omelettes & Oyster Bars & Pancakes \\
+Pastries & Pastry Shops & Pizza & Pizzerias \\
+Po' Boys & Power Brokers & Scottish & Soul Food \\
+Soulfood & Southern Comfort & Steakhouses & Swiss-French \\
+Tacos & Traditional & Yogurt Bar & \\
+\end{tabu}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Price Classification}
+\begin{tabu}{cccc}
+\$15-\$30 & \$30-\$50 & below \$15 & over \$50 \\
+\end{tabu}
+\end{table}
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{Task ii}
+\section*{Task ii}
+\index{Task ii}
+\begin{verbatim}
+Analyze and form rules to characterize the following five types of cuisine: (i) Indian
+(ii) Mexican (iii) Italian (iv) French (v) American. For each category, derive a set of
+rules based on data available from all cities.
+\end{verbatim}
+\subsection*{Results}
+The results for task ii were generated from an R script seen in listing \hyperref[lst:tii]{\ref{lst:tii}} which uses the C50 decision tree algorithm to produce rules. Data used in this script was generated using a python file \verb+rules.py+ which accompanies this report. The classification was aided through using boosting which is indicated by setting the \textit{trialNum} to ten as well as setting predictor winnowing(feature selection) to true. The ruleGen file can be seen in this listing \hyperref[lst:apendixRF]{\ref{lst:apendixRF}} in the appendices for this report. We also set the flag of rules to true in order to decompose the tree into the bare rules. \newline\newline
+Overall the classification of the data the features \textit{price}, \textit{style}, \textit{occasion} were heavily used when generating the rules as seen in table \hyperref[tab:tii_au]{\ref{tab:tii_au}}. Boosting resulted in a \verb+38.7%+ error margin with trials 0, 7 and 8 resulting in least error. The entire rule set for each trial can be found in the files \textit{c50\_10Trial(2).txt} which accompanies this report.
+Trial 0 generated the most number of rules which was 118 with the average number of rules being between 40-60. We omit listing the rules here as the file is 5977 lines long but include notable rules as seen below. This is a sampling seen in figure \hyperref[fig:c50]{\ref{fig:c50}} is taken from all trials.
+\begin{figure}[h]
+\begin{verbatim}
+Rule 0/24: (582, lift 6.4)
+	style in {Bakeries, Brasserie, Caviar}
+	->  class French  [0.998]
+
+Rule 0/38: (3, lift 5.1)
+	atmosphere = Romantic
+	occasion = After Hours Dining
+	price = $30-$50
+	style = none
+	->  class French  [0.800]
+	
+Rule 0/58: (4, lift 56.3)
+	atmosphere in {Good Food, Good Service}
+	price = $15-$30
+	style = Carry in Wine and Beer
+	->  class Indian  [0.833]
+
+Rule 0/106: (8, lift 11.5)
+	occasion in {Dining Outdoors, Late Night Menu}
+	price = below $15
+	style = Carry in Wine and Beer
+	->  class Mexican  [0.900]
+	
+Rule 3/4: (1984.1/437.8, lift 1.8)
+	occasion in {Dancing, Delivery Available, Dining After the Theater,
+                     Early Dining, Fine for Dining Alone,
+                     Great Place to Meet for a Drink, Long Drive,
+                     Menus in Braille, Open on Mondays, Open on Sundays,
+                     Picnics, See the Game, Short Drive, Special Brunch Menu,
+                     Takeout Available, Weekend Dining}
+	style in {Coffee Shops, Eclectic, High Tea, Omelettes, Pastries,
+                  Steakhouses}
+	->  class American  [0.779]
+\end{verbatim}
+\caption{Sampling of rules from C50}
+\label{fig:c50} 
+\end{figure}
+
+
+\begin{table}[H]
+\centering
+\setlength\tabcolsep{2pt}
+\begin{minipage}{0.38\textwidth}
+\caption{Task ii Classification Errors}
+\begin{verbatim}
+Evaluation on training data (61063 cases):
+Trial	        Rules     
+-----	  ----------------
+	    No      Errors
+
+   0	   119 22584(37.0%)
+   1	    60 25297(41.4%)
+   2	    61 24058(39.4%)
+   3	    45 25904(42.4%)
+   4	    61 24293(39.8%)
+   5	    53 25591(41.9%)
+   6	    43 25873(42.4%)
+   7	    78 23947(39.2%)
+   8	    65 23669(38.8%)
+   9	    52 24269(39.7%)
+boost	      23614(38.7%) 
+\end{verbatim}
+\label{tab:tii_err} 
+\end{minipage}%
+\begin{minipage}{0.68\textwidth}
+\caption{Task ii Classification Confusion Matrix} 
+\begin{verbatim}
+ (a)   (b)   (c)   (d)   (e)    <-classified as
+	  ----  ----  ----  ----  ----
+	 25111  1206        2420   360    (a): class American
+	  4754  3533        1220    10    (b): class French
+	   640    15         229    20    (c): class Indian
+	  8781   572        7247   150    (d): class Italian
+	  2769               468  1558    (e): class Mexican
+\end{verbatim}
+ \label{tab:tii_cm} 
+\end{minipage} 
+\begin{minipage}{0.48\textwidth}
+\centering
+\caption{Task ii Attribute Usage} 
+\begin{verbatim}
+	100.00%	price
+	100.00%	style
+	 99.99%	occasion
+	 89.66%	atmosphere
+\end{verbatim}
+ \label{tab:tii_au} 
+\end{minipage}
+\end{table}
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{Task iii}
+\section*{Task iii}
+\index{Task iii}
+\begin{verbatim}
+Let us now concentrate specifically on the quality of the food. This is specified
+through features 73-78. Assuming that the outcome you are interested is in one of the
+following categories, determine if there is any relationship between type of cuisine
+and the quality indicator. Categories to be considered are: Fair, Good, Excellent.
+You can combine the given 6 categories into these 3 categories.
+\end{verbatim}
+\subsection*{Results}
+
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{Task iv}
+\section*{Task iv}
+\index{Task iv}
+\begin{verbatim}
+Derive association rules among the given features. In other words, does Creative
+atmosphere imply a specific category? In particular, experiment with the following
+associations:
+a. Cuisine and atmosphere
+b. Price and atmosphere
+c. Price and style
+d. Cuisine and occasion.
+e. Décor and Price
+\end{verbatim}
+\subsection*{Results}
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{Task v}
+\section*{Task v}
+\index{Task v}
+\begin{verbatim}
+Find an association between a restaurant offering vegetarian (243) to its price and
+cuisine.
+\end{verbatim}
+\subsection*{Results}
+\begin{enumerate}
+\item Assumptions 
+\begin{enumerate}
+\item The cuisine types are divided manually and are most of the origination of the food type.
+\item The restaurants that do not have vegetarian (243) feature are considered not offering vegetarian
+\item The first cuisine type encountered in the restaurant data is extracted for association rule mining.
+\item Weka is used to mine the association rules between the three attributes: cuisine, price and vegietarian
+\end{enumerate} 
+\end{enumerate}
+The Tertius method works well to mine the association rules for vegetarian restaurant. Below in figure \hyperref[fig:tv]{\ref{fig:tv}} please find the results from Weka. The default scheme was used (weka.associations.Tertius -K 10 -F 0.0 -N 1.0 -L 4 -G 0 -c 0 -I 0 -P 0). The perl code used for the task is seen in listing \hyperref[lst:v]{\ref{lst:v}}.
+\begin{figure}[h]
+\begin{verbatim}
+ 1. /* 0.098122 0.017548 */ price = 162 ==> vegie = Yes or cuisine = 221
+ 2. /* 0.094522 0.016346 */ price = 162 ==> vegie = Yes or cuisine = 229
+ 3. /* 0.093922 0.018029 */ price = 162 ==> vegie = Yes or cuisine = 058
+ 4. /* 0.093168 0.018510 */ price = 162 ==> cuisine = 221
+ 5. /* 0.092312 0.017548 */ price = 162 ==> vegie = Yes or cuisine = 142
+ 6. /* 0.091351 0.018269 */ price = 162 ==> vegie = Yes or cuisine = 009
+ 7. /* 0.089326 0.017308 */ price = 162 ==> cuisine = 229
+ 8. /* 0.088972 0.018990 */ price = 162 ==> cuisine = 058
+ 9. /* 0.088802 0.018269 */ price = 162 ==> cuisine = 142
+10. /* 0.088764 0.018990 */ price = 162 ==> vegie = Yes or cuisine = 186 
+Number of hypotheses considered: 10543
+Number of hypotheses explored: 6667
+\end{verbatim}
+\caption{Tertius results}
+ \label{fig:tv} 
+\end{figure}
+
+\addcontentsline{toc}{section}{Task vi}
+\section*{Task vi}
+\index{Task vi}
+\begin{verbatim}
+Determine the error that would be incurred by categorizing the restaurants based on
+the continents they represent: Asia, Europe, Africa, North America, and South
+America. For each continent, form rules to determine the outcome (which continent
+they come from) based on other attributes such as price, atmosphere, quality of food,
+etc.
+\end{verbatim}
+\subsection*{Results}
+\begin{enumerate}
+\item Assumptions 
+\begin{enumerate}
+\item The restaurants that contain geographical information features can be accurately categorized by continent.
+\item The list of countries and continents is a complete list.
+\item The restaurants that do not match the list of countries and continents cannot be categorized by continents and generate errors.
+\end{enumerate} 
+\end{enumerate}
+The total number of restaurants: 4160.
+The number of restaurants that contain geographical features: 3758.
+$$Error=\frac{4160 - 3758}{4160} * 100\% = 9.66\%$$ 
+Perl code to get the number of total restaurants and the number of restaurants that contain geographical features can bee seen in listing \hyperref[lst:vi]{\ref{lst:vi}}.
+\newpage
+\begin{appendices}
+\section*{Perl Scripts}
+\lstinputlisting[language=Perl,
+frame=single,
+caption={Task v Perl script},label=lst:v,captionpos=b,numbers=left]{../q5-Yun/q5.pl}
+\lstinputlisting[language=Perl,
+frame=single,
+caption={Task vi Perl script},label=lst:vi,captionpos=b,numbers=left]{../q6-Yun/q6-prez.pl}
+\section*{R Scripts}
+\lstinputlisting[language=R,
+frame=single,
+caption={Task ii R script},label=lst:tii,captionpos=b,numbers=left]{../r/q2.R}
+\lstinputlisting[language=R,
+frame=single,
+caption={Rule functions},label=lst:apendixRF,captionpos=b,numbers=left]{../r/ruleFunctions.R}
+\lstinputlisting[language=R,
+frame=single,
+caption={Helper functions},label=lst:apendixHF,captionpos=b,numbers=left]{../r/helpers.R}
+\end{appendices}
+\end{document}

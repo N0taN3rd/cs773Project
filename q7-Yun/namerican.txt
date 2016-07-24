@@ -1,0 +1,2331 @@
+
+Call:
+C5.0.formula(formula = form, data = d, trials = trialNum, control = C5.0Control(subset = TRUE, winnow = winnow), rules
+ = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Fri Jul 22 13:38:34 2016
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 34684 cases (5 attributes) from undefined.data
+
+No attributes winnowed
+
+-----  Trial 0:  -----
+
+Rules:
+
+Rule 0/1: (38, lift 1.2)
+	occasion in {Dancing, Dining After the Theater, Entertainment,
+                     Weekend Brunch}
+	style = Southwestern
+	->  class American  [0.975]
+
+Rule 0/2: (3529/116, lift 1.2)
+	occasion in {Dining After the Theater, Early Dining,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     See the Game, Walk}
+	->  class American  [0.967]
+
+Rule 0/3: (16, lift 1.1)
+	occasion in {Delivery Available, Takeout Available}
+	price = below $15
+	style = Southwestern
+	->  class American  [0.944]
+
+Rule 0/4: (34440/5343, lift 1.0)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Early Dining, Entertainment,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Other Quick Food, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, See the Game,
+                     Short Drive, Special Brunch Menu, Takeout Available, Walk,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	->  class American  [0.845]
+
+Rule 0/5: (15, lift 2176.3)
+	atmosphere in {Fair Decor, Good Food, Good for Younger Kids,
+                       Good Service, People Keep Coming Back}
+	style = Pancakes
+	->  class Canadian  [0.941]
+
+Rule 0/6: (244, lift 7.2)
+	occasion = Margaritas
+	->  class Mexican  [0.996]
+
+Rule 0/7: (254/8, lift 7.0)
+	occasion in {After Hours Dining, Dining Outdoors, Fine for Dining Alone,
+                     Late Night Menu, Open for Breakfast, Weekend Dining}
+	price = below $15
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.965]
+
+Rule 0/8: (20, lift 6.9)
+	occasion in {Dining Outdoors, Weekend Dining}
+	style = Carry in Wine and Beer
+	->  class Mexican  [0.955]
+
+Rule 0/9: (12, lift 6.7)
+	occasion = Takeout Available
+	price = below $15
+	style = Californian
+	->  class Mexican  [0.929]
+
+Rule 0/10: (6, lift 6.3)
+	atmosphere = Cafe/Garden Dining
+	style = Traditional
+	->  class Mexican  [0.875]
+
+Rule 0/11: (6, lift 6.3)
+	occasion = Short Drive
+	price = $15-$30
+	style = Traditional
+	->  class Mexican  [0.875]
+
+Rule 0/12: (41/5, lift 6.2)
+	atmosphere in {Extraordinary Food, Fair Decor, Good Food, Good Service,
+                       No Reservations}
+	occasion in {Delivery Available, Dining Outdoors, Weekend Dining}
+	price = below $15
+	style = Traditional
+	->  class Mexican  [0.860]
+
+Rule 0/13: (75/14, lift 5.8)
+	atmosphere in {Authentic, Credit cards are not accepted, On the Beach}
+	price = $15-$30
+	style in {none, Traditional}
+	->  class Mexican  [0.805]
+
+Rule 0/14: (197/51, lift 5.3)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Great for People Watching, Hip Place To Be,
+                       No Reservations, On the Beach, People Keep Coming Back,
+                       Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion = Weekend Jazz Brunch
+	price = $15-$30
+	style in {none, Traditional}
+	->  class Mexican  [0.739]
+
+Rule 0/15: (1132/299, lift 5.3)
+	price in {$15-$30, below $15}
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.735]
+
+Rule 0/16: (1172/339, lift 5.1)
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.710]
+
+Rule 0/17: (175/55, lift 4.9)
+	atmosphere in {Authentic, For the Young and Young at Heart, Good Decor,
+                       Good Food, Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be, On the Beach,
+                       People Keep Coming Back, Quirky, Warm spots by the fire}
+	occasion = Weekend Brunch
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.684]
+
+Rule 0/18: (412/141, lift 4.8)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Little Known But Well Liked,
+                       No Reservations, On the Beach, Parking/Valet,
+                       People Keep Coming Back, Place for Singles, Poor Decor,
+                       Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Entertainment, Late Night Menu, none,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.657]
+
+Rule 0/19: (409/201, lift 3.7)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       On the Beach, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire}
+	occasion = Weekend Brunch
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.509]
+
+Rule 0/20: (858/443, lift 3.5)
+	atmosphere in {Authentic, Credit cards are not accepted, Fair Decor,
+                       Fair Service, Good Service, No Reservations,
+                       Parking/Valet, People Keep Coming Back, Quirky}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Happy Hour, Late Night Menu, Long Drive, none,
+                     Open on Mondays, Open on Sundays, Private Parties,
+                     Private Rooms Available, Short Drive, Takeout Available,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.484]
+
+Default class: American
+
+-----  Trial 1:  -----
+
+Rules:
+
+Rule 1/1: (106.2, lift 1.5)
+	occasion in {Catering for Special Events, Special Brunch Menu}
+	style = Traditional
+	->  class American  [0.991]
+
+Rule 1/2: (191.9/5.5, lift 1.4)
+	occasion in {Dining After the Theater, Game,
+                     Great Place to Meet for a Drink, Open for Breakfast,
+                     Open on Mondays, Open on Sundays, Prix Fixe Menus,
+                     See the Game}
+	style in {Southwestern, Traditional}
+	->  class American  [0.966]
+
+Rule 1/3: (7713.8/385.2, lift 1.4)
+	price in {$30-$50, over $50}
+	->  class American  [0.950]
+
+Rule 1/4: (7304.7/390.5, lift 1.4)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Buffet Dining,
+                       Business Scene, Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Service,
+                       Fabulous Views, Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Liquor Served,
+                       No Smoking Allowed, Old World Cafe Charm, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Tourist Appeal, Very Busy - Reservations a Must}
+	->  class American  [0.946]
+
+Rule 1/5: (13612.9/828.8, lift 1.4)
+	style in {Cab, Cafeterias, Californian, Central, Coffee Houses,
+                  Coffee Shops, Continental, Deli, Diners, Eclectic,
+                  Frankfurters, Grills, Hamburgers, Health Food, High Tea,
+                  Omelettes, Oyster Bars, Pancakes, Pastries, Pizza, Po' Boys,
+                  Power Brokers, Soulfood, Southern, Southern Comfort,
+                  Steakhouses}
+	->  class American  [0.939]
+
+Rule 1/6: (2841.6/219.7, lift 1.4)
+	occasion in {Dining After the Theater, Early Dining,
+                     Fine for Dining Alone, Game, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     See the Game, Walk}
+	->  class American  [0.922]
+
+Rule 1/7: (29058/9754.1, lift 1.0)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Happy Hour, Late Night Menu, Long Drive, none,
+                     Open on Mondays, Open on Sundays, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining}
+	->  class American  [0.664]
+
+Rule 1/8: (135.3, lift 3.6)
+	style = Tacos
+	->  class Mexican  [0.993]
+
+Rule 1/9: (56/8.1, lift 3.1)
+	atmosphere in {Extraordinary Decor, Extraordinary Service,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Pub Feel, Quiet for Conversation, Relaxed Senior Scene,
+                       Romantic}
+	style in {Carry in Wine and Beer, Southwestern, Tacos}
+	->  class Mexican  [0.844]
+
+Rule 1/10: (157/31.4, lift 2.9)
+	atmosphere in {Authentic, Fair Decor, Fair Service}
+	price = $15-$30
+	style in {none, Southwestern, Traditional}
+	->  class Mexican  [0.796]
+
+Rule 1/11: (19.7/3.9, lift 2.8)
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Weekend Dining}
+	style = Carry in Wine and Beer
+	->  class Mexican  [0.772]
+
+Rule 1/12: (85.8/22, lift 2.7)
+	atmosphere in {For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service, Hip Place To Be,
+                       People Keep Coming Back, Singles Scene}
+	occasion = Catering for Special Events
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.738]
+
+Rule 1/13: (683.1/225.3, lift 2.5)
+	atmosphere in {Authentic, Creative, Fair Food, Good Decor,
+                       Good for Younger Kids, Good Service, Hip Place To Be,
+                       People Keep Coming Back, Quirky, Singles Scene}
+	occasion in {Private Parties, Private Rooms Available}
+	price = $15-$30
+	style in {none, Southwestern, Traditional}
+	->  class Mexican  [0.670]
+
+Rule 1/14: (162.5/61.8, lift 2.3)
+	atmosphere in {Extraordinary Food, No Reservations, Quirky}
+	occasion in {Catering for Special Events, Weekend Dining}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.618]
+
+Rule 1/15: (3413.2/1337, lift 2.2)
+	atmosphere in {Authentic, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor, Fair Food,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       No Reservations, On the Beach, People Keep Coming Back,
+                       Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Dancing, Entertainment, Happy Hour,
+                     Late Night Menu, Long Drive, none, Short Drive,
+                     Weekend Brunch}
+	price in {$15-$30, below $15}
+	style = none
+	->  class Mexican  [0.608]
+
+Rule 1/16: (3563.4/1531.6, lift 2.1)
+	atmosphere in {Authentic, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       On the Beach, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Quirky, Singles Scene,
+                       Up and Coming, Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Happy Hour, Late Night Menu, Long Drive, none,
+                     Open on Mondays, Open on Sundays, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, Short Drive,
+                     Special Brunch Menu, Takeout Available, Weekend Brunch,
+                     Weekend Dining}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.570]
+
+Rule 1/17: (1519.1/733, lift 1.9)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       No Reservations, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	price = $15-$30
+	style = Traditional
+	->  class Mexican  [0.517]
+
+Rule 1/18: (18017.2/9363.8, lift 1.8)
+	atmosphere in {Authentic, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       On the Beach, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Quirky, Singles Scene,
+                       Up and Coming, Warm spots by the fire, Wheelchair Access}
+	style in {Carry in Wine and Beer, none, Southwestern, Tacos,
+                  Traditional}
+	->  class Mexican  [0.480]
+
+Default class: American
+
+-----  Trial 2:  -----
+
+Rules:
+
+Rule 2/1: (2347.3, lift 1.5)
+	price in {$30-$50, over $50}
+	style in {Californian, Power Brokers, Soulfood, Southern, Southwestern,
+                  Traditional}
+	->  class American  [1.000]
+
+Rule 2/2: (353.2, lift 1.5)
+	price = over $50
+	->  class American  [0.997]
+
+Rule 2/3: (1581.7/16.2, lift 1.5)
+	atmosphere in {Classic Hotel Dining, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Near-perfect Decor, Near-perfect Service, Need To Dress,
+                       No Liquor Served, Old World Cafe Charm,
+                       Quiet for Conversation, Tourist Appeal}
+	style in {Cab, Californian, Carry in Wine and Beer, none, Power Brokers,
+                  Southern, Traditional}
+	->  class American  [0.989]
+
+Rule 2/4: (2650.4/29.1, lift 1.5)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining After the Theater, Dining Outdoors, Early Dining,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, Short Drive, Special Brunch Menu, Walk,
+                     Weekend Brunch, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class American  [0.989]
+
+Rule 2/5: (4466.3/61.3, lift 1.5)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Buffet Dining,
+                       Business Scene, Cafe/Garden Dining, Classic Hotel Dining,
+                       Excellent Food, Extraordinary Decor,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert, Good Decor,
+                       Good Food, Good Out of Town Business, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Decor, Near-perfect Service, Need To Dress,
+                       No Smoking Allowed, Old World Cafe Charm, Parking/Valet,
+                       People Keep Coming Back, Pub Feel,
+                       Quiet for Conversation, Quirky, Romantic, Singles Scene,
+                       Up and Coming, Warm spots by the fire}
+	price in {$30-$50, over $50}
+	->  class American  [0.986]
+
+Rule 2/6: (6558/212.9, lift 1.5)
+	style in {Cafeterias, Central, Coffee Houses, Coffee Shops, Continental,
+                  Deli, Diners, Eclectic, Frankfurters, Grills, Hamburgers,
+                  Health Food, High Tea, Omelettes, Oyster Bars, Pancakes,
+                  Pastries, Pizza, Po' Boys, Southern Comfort, Steakhouses}
+	->  class American  [0.967]
+
+Rule 2/7: (22.1, lift 1.5)
+	atmosphere in {Good Food, Good Service, People Keep Coming Back}
+	occasion = Special Brunch Menu
+	price = $15-$30
+	style = none
+	->  class American  [0.958]
+
+Rule 2/8: (15.9, lift 1.5)
+	occasion in {Delivery Available, Takeout Available}
+	style = Carry in Wine and Beer
+	->  class American  [0.944]
+
+Rule 2/9: (48.7/3.2, lift 1.4)
+	atmosphere in {Buffet Dining, Business Scene, Place for Singles,
+                       Up and Coming, Very Busy - Reservations a Must}
+	occasion in {Delivery Available, Takeout Available}
+	price = $15-$30
+	style = none
+	->  class American  [0.916]
+
+Rule 2/10: (98.8/9.7, lift 1.4)
+	atmosphere in {Buffet Dining, Business Scene, Fair Service,
+                       Little Known But Well Liked,
+                       Very Busy - Reservations a Must}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Weekend Dining}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class American  [0.894]
+
+Rule 2/11: (2413.2/413.3, lift 1.3)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Entertainment, Fine for Dining Alone,
+                     Game, Great Place to Meet for a Drink, Late Night Menu,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, See the Game,
+                     Takeout Available, Weekend Brunch, Weekend Dining,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	style in {Cab, Californian, Soulfood, Southern}
+	->  class American  [0.828]
+
+Rule 2/12: (4468.6/943.3, lift 1.2)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       Cafe/Garden Dining, Creative,
+                       Credit cards are not accepted, Extraordinary Decor,
+                       Extraordinary Service, Fair Food, No Smoking Allowed,
+                       On the Beach, Pub Feel, Relaxed Senior Scene, Romantic,
+                       Singles Scene, Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Early Dining, Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     See the Game, Short Drive, Special Brunch Menu,
+                     Takeout Available, Walk, Weekend Brunch, Weekend Dining}
+	->  class American  [0.789]
+
+Rule 2/13: (4367.2/924.8, lift 1.2)
+	occasion in {After Hours Dining, Dancing, Delivery Available,
+                     Dining After the Theater, Early Dining, Entertainment,
+                     Game, Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     See the Game, Short Drive, Special Brunch Menu,
+                     Takeout Available, Weekend Brunch, Weekend Dining,
+                     Weekend Jazz Brunch, Weekend Lunch}
+	style in {Power Brokers, Traditional}
+	->  class American  [0.788]
+
+Rule 2/14: (10910.3/3280.3, lift 1.1)
+	occasion in {Dancing, Dining After the Theater, Early Dining,
+                     Entertainment, Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Other Quick Food, Parties and Occasions, Picnics,
+                     Pre-theater Dining, See the Game, Short Drive, Walk,
+                     Weekend Brunch}
+	->  class American  [0.699]
+
+Rule 2/15: (2424.9/748.8, lift 1.1)
+	occasion in {Prix Fixe Menus, Weekend Lunch}
+	->  class American  [0.691]
+
+Rule 2/16: (1363.8/525.1, lift 1.0)
+	occasion = Delivery Available
+	->  class American  [0.615]
+
+Rule 2/17: (32.1/6.3, lift 23.6)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       Good Decor, Good Food, Good Service, No Reservations,
+                       Up and Coming}
+	occasion = Special Brunch Menu
+	price = below $15
+	style = none
+	->  class Cuban  [0.787]
+
+Rule 2/18: (425.8/80, lift 2.9)
+	atmosphere in {Business Scene, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Up and Coming,
+                       Wheelchair Access}
+	occasion in {Margaritas, Weekend Jazz Brunch}
+	style = none
+	->  class Mexican  [0.811]
+
+Rule 2/19: (106.9/23.3, lift 2.8)
+	atmosphere = Authentic
+	price = $15-$30
+	->  class Mexican  [0.777]
+
+Rule 2/20: (1614.8/534.5, lift 2.4)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Late Night Menu, none, Open for Breakfast, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining}
+	price in {$15-$30, below $15}
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.669]
+
+Rule 2/21: (259.1/89.6, lift 2.3)
+	occasion in {Margaritas, none, Special Brunch Menu}
+	price in {$15-$30, below $15}
+	style in {Cab, Californian, Soulfood, Southern}
+	->  class Mexican  [0.653]
+
+Rule 2/22: (517.5/184.5, lift 2.3)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       Cafe/Garden Dining, Creative,
+                       Credit cards are not accepted, Extraordinary Decor,
+                       Extraordinary Service, No Smoking Allowed, On the Beach,
+                       Pub Feel, Relaxed Senior Scene, Romantic, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {Entertainment, Margaritas, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Cab, Californian, none, Power Brokers, Southern, Traditional}
+	->  class Mexican  [0.643]
+
+Rule 2/23: (1783.4/680.7, lift 2.2)
+	price in {$15-$30, below $15}
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.618]
+
+Rule 2/24: (751.3/324.6, lift 2.0)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Service,
+                       Extraordinary Food, For the Young and Young at Heart,
+                       Good for Younger Kids, Near-perfect Food,
+                       Place for Singles, Relaxed Senior Scene,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {Dancing, Delivery Available, Entertainment, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Takeout Available, Weekend Dining}
+	price = $30-$50
+	style in {Cab, none}
+	->  class Mexican  [0.568]
+
+Rule 2/25: (766.2/339.5, lift 2.0)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Service,
+                       Extraordinary Food, For the Young and Young at Heart,
+                       Good for Younger Kids, Near-perfect Food,
+                       Place for Singles, Relaxed Senior Scene,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {Dancing, Delivery Available, Entertainment, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Takeout Available, Weekend Dining}
+	price in {$30-$50, over $50}
+	style in {Cab, none}
+	->  class Mexican  [0.557]
+
+Rule 2/26: (254/112.6, lift 2.0)
+	occasion in {Prix Fixe Menus, Weekend Lunch}
+	price = below $15
+	style = none
+	->  class Mexican  [0.556]
+
+Rule 2/27: (645.5/307.5, lift 1.9)
+	atmosphere in {Authentic, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       Parking/Valet, People Keep Coming Back, Quirky,
+                       Wheelchair Access}
+	occasion = Takeout Available
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.524]
+
+Rule 2/28: (476.8/250.5, lift 1.7)
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Fine for Dining Alone, Margaritas}
+	price in {$15-$30, below $15}
+	style in {Power Brokers, Traditional}
+	->  class Mexican  [0.475]
+
+Rule 2/29: (6229.7/3445.1, lift 1.6)
+	atmosphere in {Authentic, Buffet Dining, Business Scene,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Quirky, Up and Coming,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Weekend Dining}
+	price in {$15-$30, below $15}
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.447]
+
+Default class: American
+
+-----  Trial 3:  -----
+
+Rules:
+
+Rule 3/1: (533.4, lift 1.6)
+	occasion in {Dancing, Dining After the Theater, Entertainment, Game,
+                     Great Place to Meet for a Drink, Late Night Menu, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Prix Fixe Menus, Weekend Brunch, Weekend Jazz Brunch}
+	style = Power Brokers
+	->  class American  [0.998]
+
+Rule 3/2: (242, lift 1.6)
+	price = below $15
+	style in {Cab, Soulfood, Southern}
+	->  class American  [0.996]
+
+Rule 3/3: (119.2, lift 1.6)
+	occasion in {Dining After the Theater, Game,
+                     Great Place to Meet for a Drink, Open for Breakfast,
+                     Open on Mondays, Open on Sundays, Prix Fixe Menus,
+                     See the Game}
+	price = $15-$30
+	style in {Power Brokers, Southwestern, Traditional}
+	->  class American  [0.992]
+
+Rule 3/4: (98.8, lift 1.6)
+	occasion in {Dancing, Entertainment}
+	style in {Californian, Soulfood, Southern}
+	->  class American  [0.990]
+
+Rule 3/5: (105.1/2.7, lift 1.5)
+	atmosphere in {Classic Hotel Dining, Extraordinary Food, Fabulous Views,
+                       Fabulous Wine Lists, Fair Decor, Focus on Dessert,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Near-perfect Decor, Need To Dress, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Tourist Appeal}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style in {Power Brokers, Southwestern, Traditional}
+	->  class American  [0.966]
+
+Rule 3/6: (624.6/23.7, lift 1.5)
+	atmosphere in {An Out Of The Way Find, Buffet Dining, Business Scene,
+                       Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Great for People Watching,
+                       Little Known But Well Liked, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Reservations, No Smoking Allowed,
+                       Old World Cafe Charm, Place for Singles, Pub Feel,
+                       Quiet for Conversation, Quirky, Relaxed Senior Scene,
+                       Romantic, Tourist Appeal,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {After Hours Dining, Dancing, Dining After the Theater,
+                     Entertainment, Game, Great Place to Meet for a Drink,
+                     Late Night Menu, none, Open for Breakfast, Open on Mondays,
+                     Open on Sundays, Prix Fixe Menus, See the Game,
+                     Short Drive, Weekend Brunch, Weekend Jazz Brunch}
+	style in {Power Brokers, Southwestern, Traditional}
+	->  class American  [0.961]
+
+Rule 3/7: (5700.3/248.1, lift 1.5)
+	style in {Cafeterias, Central, Coffee Houses, Coffee Shops, Continental,
+                  Deli, Diners, Eclectic, Frankfurters, Grills, Hamburgers,
+                  Health Food, High Tea, Omelettes, Oyster Bars, Pancakes,
+                  Pastries, Pizza, Po' Boys, Southern Comfort, Steakhouses}
+	->  class American  [0.956]
+
+Rule 3/8: (15.6, lift 1.5)
+	occasion in {Delivery Available, Long Drive, Weekend Brunch}
+	price = $15-$30
+	style = Carry in Wine and Beer
+	->  class American  [0.943]
+
+Rule 3/9: (5927.5/469.7, lift 1.5)
+	price in {$30-$50, over $50}
+	->  class American  [0.921]
+
+Rule 3/10: (2155.9/221.3, lift 1.4)
+	atmosphere in {Buffet Dining, Business Scene, Cafe/Garden Dining,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Great for People Watching,
+                       Near-perfect Decor, Near-perfect Service, Need To Dress,
+                       No Liquor Served, Old World Cafe Charm,
+                       Quiet for Conversation, Relaxed Senior Scene,
+                       Tourist Appeal, Very Busy - Reservations a Must}
+	style in {Cab, Californian, Carry in Wine and Beer, none, Soulfood,
+                  Southern}
+	->  class American  [0.897]
+
+Rule 3/11: (150.6/31.4, lift 1.3)
+	occasion in {Dancing, Fine for Dining Alone, Game, Happy Hour,
+                     Long Drive, Picnics, See the Game}
+	price = below $15
+	style in {Cab, Californian, none, Soulfood, Southern}
+	->  class American  [0.788]
+
+Rule 3/12: (24770.4/8591.6, lift 1.0)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining After the Theater, Dining Outdoors, Early Dining,
+                     Game, Great Place to Meet for a Drink, Late Night Menu,
+                     Open for Breakfast, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, See the Game,
+                     Special Brunch Menu, Takeout Available, Walk,
+                     Weekend Dining, Weekend Lunch}
+	->  class American  [0.653]
+
+Rule 3/13: (16.8/5.6, lift 17.0)
+	occasion = Short Drive
+	price = $15-$30
+	style = Carry in Wine and Beer
+	->  class Cuban  [0.649]
+
+Rule 3/14: (431/239, lift 11.6)
+	atmosphere in {Excellent Decor, Extraordinary Food,
+                       Health Conscious Menus, Quirky, Up and Coming}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining After the Theater, Dining Outdoors, Entertainment,
+                     Margaritas, none, Open on Mondays, Open on Sundays,
+                     Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining}
+	price = below $15
+	style = none
+	->  class Cuban  [0.446]
+
+Rule 3/15: (145.4/100.6, lift 160.4)
+	atmosphere in {An Historic Spot, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good Service, Health Conscious Menus, No Reservations,
+                       Place for Singles, Quirky, Up and Coming,
+                       Wheelchair Access}
+	occasion in {Open on Mondays, Open on Sundays}
+	price = $15-$30
+	style = none
+	->  class Jamaican  [0.310]
+
+Rule 3/16: (20.8/2.3, lift 3.0)
+	atmosphere in {Good Decor, Good for Younger Kids, Good Service,
+                       Pub Feel, Warm spots by the fire}
+	occasion in {Special Brunch Menu, Weekend Dining}
+	price = $15-$30
+	style = Soulfood
+	->  class Mexican  [0.857]
+
+Rule 3/17: (98.9/14.8, lift 2.9)
+	occasion in {Delivery Available, Dining Outdoors, none,
+                     Takeout Available, Weekend Dining}
+	price = below $15
+	style in {Californian, Carry in Wine and Beer}
+	->  class Mexican  [0.844]
+
+Rule 3/18: (117.6/20.6, lift 2.8)
+	atmosphere in {An Out Of The Way Find, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Good Decor, Good Food, Good Service, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Up and Coming, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Delivery Available, none, Weekend Brunch}
+	price = $15-$30
+	style in {Californian, Soulfood, Southern}
+	->  class Mexican  [0.819]
+
+Rule 3/19: (65.8/11.7, lift 2.8)
+	atmosphere in {Authentic, Fair Food, Near-perfect Food}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Takeout Available}
+	price = $15-$30
+	style in {Cab, none, Traditional}
+	->  class Mexican  [0.812]
+
+Rule 3/20: (186.4/45.2, lift 2.6)
+	atmosphere in {Authentic, Creative, Excellent Food, Excellent Service,
+                       Fair Decor, Fair Food, Good Decor, Good for Younger Kids,
+                       Good Service, No Reservations, Parking/Valet, Poor Decor,
+                       Wheelchair Access}
+	occasion in {Dining After the Theater, Entertainment, Margaritas, none}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.755]
+
+Rule 3/21: (394.7/118.5, lift 2.4)
+	atmosphere in {An Historic Spot, Authentic, Cafe/Garden Dining,
+                       Creative, Extraordinary Decor, Extraordinary Service,
+                       Fair Service, Little Known But Well Liked,
+                       No Smoking Allowed, People Keep Coming Back,
+                       Singles Scene, Warm spots by the fire}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.699]
+
+Rule 3/22: (277.8/83.6, lift 2.4)
+	atmosphere in {Creative, Good Decor, Good for Younger Kids,
+                       Good Service, Hip Place To Be, No Smoking Allowed,
+                       On the Beach, People Keep Coming Back, Pub Feel,
+                       Singles Scene, Warm spots by the fire}
+	occasion = Weekend Lunch
+	price = $15-$30
+	style in {Cab, none, Southern}
+	->  class Mexican  [0.698]
+
+Rule 3/23: (191/59.2, lift 2.4)
+	atmosphere in {Authentic, Fair Decor, Fair Service, Near-perfect Food}
+	price = $15-$30
+	style in {Cab, none, Soulfood, Southern, Southwestern, Traditional}
+	->  class Mexican  [0.688]
+
+Rule 3/24: (653.8/222.8, lift 2.3)
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining, Weekend Lunch}
+	price = below $15
+	style in {Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.659]
+
+Rule 3/25: (390.9/165.7, lift 2.0)
+	occasion in {After Hours Dining, Prix Fixe Menus, Weekend Lunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.576]
+
+Rule 3/26: (842.9/392.9, lift 1.8)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       Good Decor, Good for Younger Kids, Hip Place To Be,
+                       No Reservations, Up and Coming, Wheelchair Access}
+	price in {$15-$30, below $15}
+	style = Southwestern
+	->  class Mexican  [0.534]
+
+Rule 3/27: (952.6/455.1, lift 1.8)
+	atmosphere in {An Historic Spot, Authentic, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       On the Beach, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Pub Feel, Quirky,
+                       Singles Scene, Up and Coming, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Late Night Menu, Open for Breakfast, Short Drive,
+                     Weekend Brunch, Weekend Jazz Brunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.522]
+
+Rule 3/28: (3821.7/1845.8, lift 1.8)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Authentic,
+                       Creative, Credit cards are not accepted, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, Near-perfect Food,
+                       No Reservations, No Smoking Allowed, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quirky, Romantic,
+                       Singles Scene, Up and Coming, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Dancing, Delivery Available, Entertainment,
+                     Fine for Dining Alone, Happy Hour, Long Drive, Margaritas,
+                     none, Short Drive, Weekend Brunch, Weekend Jazz Brunch}
+	price = $15-$30
+	style in {Cab, none}
+	->  class Mexican  [0.517]
+
+Rule 3/29: (4905.2/2806.6, lift 1.5)
+	price in {$15-$30, below $15}
+	style in {Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.428]
+
+Rule 3/30: (6249.6/3609, lift 1.5)
+	atmosphere in {An Historic Spot, Authentic, Creative,
+                       Credit cards are not accepted, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       No Smoking Allowed, On the Beach, Parking/Valet,
+                       People Keep Coming Back, Place for Singles, Poor Decor,
+                       Pub Feel, Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	price = below $15
+	style in {Cab, Californian, Carry in Wine and Beer, none, Power Brokers,
+                  Soulfood, Southern, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.423]
+
+Default class: American
+
+-----  Trial 4:  -----
+
+Rules:
+
+Rule 4/1: (4805.9/152.5, lift 1.6)
+	style in {Cafeterias, Coffee Houses, Coffee Shops, Continental, Deli,
+                  Diners, Eclectic, Frankfurters, Grills, Hamburgers,
+                  Health Food, High Tea, Omelettes, Oyster Bars, Pastries,
+                  Pizza, Po' Boys, Southern Comfort, Steakhouses}
+	->  class American  [0.968]
+
+Rule 4/2: (25.5, lift 1.6)
+	occasion in {Dancing, Entertainment, Open for Breakfast, Weekend Brunch}
+	price = $15-$30
+	style = Southwestern
+	->  class American  [0.964]
+
+Rule 4/3: (19.4, lift 1.6)
+	price = $30-$50
+	style = Southwestern
+	->  class American  [0.953]
+
+Rule 4/4: (2680.3/162.2, lift 1.6)
+	price in {$30-$50, below $15, over $50}
+	style in {Cab, Californian, Power Brokers, Soulfood, Southern,
+                  Traditional}
+	->  class American  [0.939]
+
+Rule 4/5: (295.5/20.2, lift 1.5)
+	atmosphere in {Buffet Dining, Business Scene, Health Conscious Menus,
+                       Near-perfect Food, Very Busy - Reservations a Must}
+	style = none
+	->  class American  [0.929]
+
+Rule 4/6: (1891.4/549.6, lift 1.2)
+	occasion in {Dancing, Fine for Dining Alone, Game, Happy Hour,
+                     Late Night Menu, Long Drive, Open for Breakfast, Picnics,
+                     See the Game, Short Drive, Weekend Brunch,
+                     Weekend Jazz Brunch}
+	price = below $15
+	->  class American  [0.709]
+
+Rule 4/7: (26749.8/9889.9, lift 1.0)
+	price in {$15-$30, $30-$50, over $50}
+	->  class American  [0.630]
+
+Rule 4/8: (26.5, lift 3.2)
+	occasion in {Margaritas, Short Drive}
+	price = $15-$30
+	style in {Cab, Traditional}
+	->  class Mexican  [0.965]
+
+Rule 4/9: (43.8/1.9, lift 3.1)
+	atmosphere in {Extraordinary Decor, Extraordinary Service,
+                       Good Out of Town Business, Quiet for Conversation,
+                       Romantic}
+	style in {Carry in Wine and Beer, Southwestern}
+	->  class Mexican  [0.936]
+
+Rule 4/10: (262.5/57.5, lift 2.6)
+	atmosphere in {Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Up and Coming,
+                       Wheelchair Access}
+	occasion in {Margaritas, Weekend Jazz Brunch}
+	price in {$15-$30, $30-$50}
+	style = none
+	->  class Mexican  [0.779]
+
+Rule 4/11: (29/7.7, lift 2.4)
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Weekend Dining}
+	style = Carry in Wine and Beer
+	->  class Mexican  [0.719]
+
+Rule 4/12: (623.1/190.1, lift 2.3)
+	atmosphere in {Creative, No Smoking Allowed, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Entertainment, Margaritas, Private Rooms Available,
+                     Takeout Available, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.694]
+
+Rule 4/13: (498.4/157, lift 2.3)
+	price = below $15
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.684]
+
+Rule 4/14: (279.9/90.2, lift 2.2)
+	atmosphere in {Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       Fair Food, For the Young and Young at Heart, Good Decor,
+                       Good Food, Good for Younger Kids, Good Service,
+                       Health Conscious Menus, Hip Place To Be, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Dining After the Theater,
+                     Fine for Dining Alone, Game, Late Night Menu, none,
+                     Prix Fixe Menus}
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.677]
+
+Rule 4/15: (96.4/34.6, lift 2.1)
+	atmosphere in {Authentic, Excellent Decor, Excellent Food,
+                       Excellent Service, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good Service,
+                       People Keep Coming Back, Place for Singles, Pub Feel,
+                       Up and Coming}
+	occasion in {After Hours Dining, Dancing, Entertainment,
+                     Late Night Menu, none, Special Brunch Menu}
+	price = $15-$30
+	style = Soulfood
+	->  class Mexican  [0.638]
+
+Rule 4/16: (389.8/171.2, lift 1.8)
+	atmosphere in {For the Young and Young at Heart, Good for Younger Kids,
+                       Wheelchair Access}
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.561]
+
+Rule 4/17: (258.4/113.8, lift 1.8)
+	atmosphere in {Authentic, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Little Known But Well Liked,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Up and Coming,
+                       Wheelchair Access}
+	occasion in {Delivery Available, Fine for Dining Alone, Long Drive,
+                     none, Open for Breakfast, Takeout Available,
+                     Weekend Brunch}
+	price = $30-$50
+	style = none
+	->  class Mexican  [0.559]
+
+Rule 4/18: (1036/485.5, lift 1.8)
+	atmosphere in {An Historic Spot, Authentic, Buffet Dining,
+                       Business Scene, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Food, For the Young and Young at Heart, Good Decor,
+                       Good Food, Good for Younger Kids, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       No Reservations, No Smoking Allowed, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Relaxed Senior Scene,
+                       Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {Catering for Special Events, Weekend Lunch}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.531]
+
+Rule 4/19: (1850.9/908.8, lift 1.7)
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.509]
+
+Rule 4/20: (10775.1/6460.6, lift 1.3)
+	atmosphere in {An Historic Spot, Authentic, Buffet Dining,
+                       Business Scene, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Food, No Reservations, No Smoking Allowed,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Dining}
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.400]
+
+Rule 4/21: (5612.8/3375.5, lift 1.3)
+	atmosphere in {An Historic Spot, Authentic, Business Scene, Creative,
+                       Credit cards are not accepted, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       No Reservations, No Smoking Allowed, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.399]
+
+Default class: American
+
+-----  Trial 5:  -----
+
+Rules:
+
+Rule 5/1: (920.9, lift 1.8)
+	atmosphere in {Buffet Dining, Business Scene, Cafe/Garden Dining,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Near-perfect Decor,
+                       Near-perfect Food, Near-perfect Service, Need To Dress,
+                       No Liquor Served, Old World Cafe Charm,
+                       Quiet for Conversation, Very Busy - Reservations a Must}
+	style in {Carry in Wine and Beer, none}
+	->  class American  [0.999]
+
+Rule 5/2: (439.4, lift 1.8)
+	occasion in {Dining After the Theater, Early Dining, Game,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, See the Game, Walk}
+	price = $15-$30
+	->  class American  [0.998]
+
+Rule 5/3: (559.2, lift 1.8)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining After the Theater,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Pre-theater Dining, Prix Fixe Menus, See the Game,
+                     Takeout Available, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	style in {Cab, Soulfood, Southern}
+	->  class American  [0.998]
+
+Rule 5/4: (163.7, lift 1.8)
+	atmosphere in {Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Good Decor, Good for Younger Kids,
+                       Place for Singles}
+	price in {$30-$50, over $50}
+	style in {Cab, Californian, Power Brokers, Soulfood, Southern,
+                  Southwestern, Traditional}
+	->  class American  [0.994]
+
+Rule 5/5: (70.4, lift 1.8)
+	atmosphere in {An Out Of The Way Find, Classic Hotel Dining,
+                       Extraordinary Food, Fabulous Views, Fabulous Wine Lists,
+                       Fair Decor, Focus on Dessert, Good Out of Town Business,
+                       Health Conscious Menus, Near-perfect Decor,
+                       Need To Dress, On the Beach, Quiet for Conversation,
+                       Relaxed Senior Scene, Romantic, Tourist Appeal}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style in {Californian, Power Brokers, Southwestern, Traditional}
+	->  class American  [0.986]
+
+Rule 5/6: (1791.7/42.4, lift 1.7)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining After the Theater, Dining Outdoors, Early Dining,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, Short Drive, Special Brunch Menu, Walk,
+                     Weekend Brunch, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class American  [0.976]
+
+Rule 5/7: (3758.1/146.3, lift 1.7)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Buffet Dining,
+                       Business Scene, Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Food,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert, Good Food,
+                       Good Out of Town Business, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Smoking Allowed,
+                       Old World Cafe Charm, Parking/Valet,
+                       People Keep Coming Back, Pub Feel,
+                       Quiet for Conversation, Quirky, Relaxed Senior Scene,
+                       Romantic, Singles Scene, Up and Coming,
+                       Very Busy - Reservations a Must, Warm spots by the fire,
+                       Wheelchair Access}
+	price in {$30-$50, over $50}
+	->  class American  [0.961]
+
+Rule 5/8: (500.7/25.8, lift 1.7)
+	occasion in {Dancing, Dining After the Theater, Game,
+                     Great Place to Meet for a Drink, Open for Breakfast,
+                     Open on Mondays, Open on Sundays, Prix Fixe Menus,
+                     See the Game}
+	style in {Californian, Power Brokers, Southwestern, Traditional}
+	->  class American  [0.947]
+
+Rule 5/9: (4548.5/318.1, lift 1.7)
+	style in {Cafeterias, Central, Coffee Houses, Coffee Shops, Continental,
+                  Deli, Diners, Eclectic, Frankfurters, Grills, Hamburgers,
+                  Health Food, High Tea, Omelettes, Oyster Bars, Pancakes,
+                  Pastries, Pizza, Po' Boys, Southern Comfort, Steakhouses}
+	->  class American  [0.930]
+
+Rule 5/10: (792.5/264.6, lift 1.2)
+	atmosphere in {An Historic Spot, Excellent Food, Excellent Service,
+                       Extraordinary Service, Pub Feel, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	style in {Californian, Power Brokers, Tacos, Traditional}
+	->  class American  [0.666]
+
+Rule 5/11: (2235.2/810.2, lift 1.1)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Creative,
+                       Credit cards are not accepted, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Food,
+                       Good for Younger Kids, Great for People Watching,
+                       Hip Place To Be, Little Known But Well Liked,
+                       No Smoking Allowed, On the Beach,
+                       People Keep Coming Back, Place for Singles, Poor Decor,
+                       Pub Feel, Relaxed Senior Scene, Singles Scene,
+                       Warm spots by the fire}
+	price = below $15
+	->  class American  [0.637]
+
+Rule 5/12: (22460/9253.4, lift 1.0)
+	occasion in {After Hours Dining, Dancing, Delivery Available,
+                     Dining After the Theater, Early Dining, Entertainment,
+                     Fine for Dining Alone, Game, Happy Hour, Late Night Menu,
+                     Long Drive, Margaritas, none, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     See the Game, Short Drive, Takeout Available, Walk,
+                     Weekend Brunch, Weekend Jazz Brunch}
+	->  class American  [0.588]
+
+Rule 5/13: (4630.9/2136.3, lift 1.0)
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Special Brunch Menu}
+	->  class American  [0.539]
+
+Rule 5/14: (487.1/256.6, lift 9.9)
+	atmosphere in {Excellent Decor, Extraordinary Food,
+                       Health Conscious Menus, Quirky, Up and Coming}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Margaritas, none, Open on Mondays,
+                     Open on Sundays, Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining}
+	price = below $15
+	style = none
+	->  class Cuban  [0.473]
+
+Rule 5/15: (74.5, lift 3.0)
+	style = Tacos
+	->  class Mexican  [0.987]
+
+Rule 5/16: (352.7/66.4, lift 2.4)
+	occasion in {Dining Outdoors, Fine for Dining Alone, Weekend Dining}
+	price = below $15
+	style in {Californian, Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.810]
+
+Rule 5/17: (191.1/36.7, lift 2.4)
+	atmosphere in {Authentic, Creative, Extraordinary Decor,
+                       People Keep Coming Back}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Californian, Power Brokers, Southwestern, Traditional}
+	->  class Mexican  [0.805]
+
+Rule 5/18: (447.2/143.8, lift 2.0)
+	atmosphere in {Authentic, Extraordinary Decor, Extraordinary Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good Service, Near-perfect Food, No Reservations}
+	occasion in {Dancing, Dining Outdoors, Entertainment, Margaritas, none,
+                     Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Weekend Brunch}
+	price = $15-$30
+	style in {Cab, Soulfood, Southern}
+	->  class Mexican  [0.678]
+
+Rule 5/19: (202.3/73.8, lift 1.9)
+	atmosphere in {Authentic, Credit cards are not accepted, Fair Decor,
+                       Fair Service}
+	price = $15-$30
+	style in {Cab, none, Soulfood, Southern, Southwestern, Traditional}
+	->  class Mexican  [0.634]
+
+Rule 5/20: (795.7/299.8, lift 1.9)
+	atmosphere in {Good Decor, Good for Younger Kids, Hip Place To Be,
+                       On the Beach, People Keep Coming Back, Pub Feel,
+                       Romantic, Singles Scene}
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Special Brunch Menu, Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.623]
+
+Rule 5/21: (547.5/215.2, lift 1.8)
+	atmosphere in {An Historic Spot, Authentic, Creative, Excellent Food,
+                       Excellent Service, Extraordinary Food, Good Decor,
+                       Little Known But Well Liked, Quirky}
+	occasion in {Dancing, Dining After the Theater, Entertainment,
+                     Fine for Dining Alone, Game, Late Night Menu, Long Drive,
+                     Open for Breakfast, Picnics, See the Game, Short Drive,
+                     Weekend Brunch, Weekend Jazz Brunch}
+	price = below $15
+	style = none
+	->  class Mexican  [0.607]
+
+Rule 5/22: (862.6/375.4, lift 1.7)
+	atmosphere in {An Historic Spot, Authentic, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Hip Place To Be, Parking/Valet,
+                       People Keep Coming Back, Place for Singles, Pub Feel,
+                       Singles Scene, Up and Coming, Warm spots by the fire}
+	occasion in {After Hours Dining, Entertainment, Late Night Menu, none,
+                     Short Drive, Weekend Brunch, Weekend Jazz Brunch}
+	price = $15-$30
+	style in {Californian, Southwestern, Traditional}
+	->  class Mexican  [0.565]
+
+Rule 5/23: (1809.3/795.4, lift 1.7)
+	atmosphere in {Authentic, Excellent Service, Extraordinary Food,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be, On the Beach,
+                       People Keep Coming Back, Pub Feel, Quirky, Singles Scene}
+	occasion in {Delivery Available, Fine for Dining Alone, Happy Hour,
+                     Long Drive, Margaritas, Open for Breakfast,
+                     Takeout Available, Weekend Brunch, Weekend Jazz Brunch}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.560]
+
+Rule 5/24: (647.9/305.8, lift 1.6)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, For the Young and Young at Heart,
+                       Good Decor, Good for Younger Kids, Place for Singles}
+	occasion in {Dancing, Delivery Available, Entertainment, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Takeout Available, Weekend Dining}
+	price in {$30-$50, over $50}
+	style = none
+	->  class Mexican  [0.528]
+
+Rule 5/25: (1451.5/686.2, lift 1.6)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Creative,
+                       Extraordinary Food, Fair Decor, Fair Food, Good Decor,
+                       Good for Younger Kids, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be, No Reservations,
+                       No Smoking Allowed, On the Beach, Pub Feel,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Warm spots by the fire}
+	occasion in {After Hours Dining, Dancing, Entertainment,
+                     Late Night Menu, Private Parties, Private Rooms Available,
+                     Short Drive}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.527]
+
+Rule 5/26: (1209/584, lift 1.6)
+	atmosphere in {An Historic Spot, Authentic, Creative, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Late Night Menu, Short Drive}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.517]
+
+Rule 5/27: (1709.9/860.5, lift 1.5)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Authentic,
+                       Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       No Reservations, No Smoking Allowed, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Prix Fixe Menus, Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.497]
+
+Rule 5/28: (4438.5/2410, lift 1.4)
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Margaritas,
+                     Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Californian, Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.457]
+
+Rule 5/29: (5755.8/3188.1, lift 1.3)
+	price in {$15-$30, below $15}
+	style in {Californian, Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.446]
+
+Rule 5/30: (18587.5/10619.8, lift 1.3)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Authentic,
+                       Creative, Credit cards are not accepted, Excellent Decor,
+                       Excellent Food, Excellent Service, Extraordinary Food,
+                       Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Health Conscious Menus,
+                       Hip Place To Be, Little Known But Well Liked,
+                       No Reservations, No Smoking Allowed, On the Beach,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Pub Feel, Quirky,
+                       Relaxed Senior Scene, Romantic, Singles Scene,
+                       Up and Coming, Warm spots by the fire, Wheelchair Access}
+	price in {$15-$30, below $15}
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.429]
+
+Default class: American
+
+-----  Trial 6:  -----
+
+Rules:
+
+Rule 6/1: (3828.1, lift 1.8)
+	style in {Cafeterias, Central, Coffee Houses, Coffee Shops, Continental,
+                  Deli, Diners, Eclectic, Frankfurters, Grills, Hamburgers,
+                  Health Food, High Tea, Omelettes, Oyster Bars, Pastries,
+                  Pizza, Po' Boys, Southern Comfort, Steakhouses}
+	->  class American  [1.000]
+
+Rule 6/2: (423.6, lift 1.7)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining After the Theater,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Late Night Menu,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Pre-theater Dining, Prix Fixe Menus,
+                     See the Game, Weekend Jazz Brunch, Weekend Lunch}
+	style in {Cab, Californian, Soulfood, Southern}
+	->  class American  [0.998]
+
+Rule 6/3: (134.2, lift 1.7)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Creative,
+                       Credit cards are not accepted, Fair Food,
+                       Hip Place To Be, No Smoking Allowed, On the Beach,
+                       Pub Feel, Relaxed Senior Scene, Romantic, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {Dining After the Theater, Early Dining,
+                     Fine for Dining Alone, Game, none, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, See the Game, Walk}
+	style = none
+	->  class American  [0.993]
+
+Rule 6/4: (125.9, lift 1.7)
+	occasion = Special Brunch Menu
+	style in {Power Brokers, Traditional}
+	->  class American  [0.992]
+
+Rule 6/5: (931.8/12.7, lift 1.7)
+	atmosphere in {Buffet Dining, Business Scene, Cafe/Garden Dining,
+                       Classic Hotel Dining, Extraordinary Decor,
+                       Extraordinary Service, Fabulous Views,
+                       Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Liquor Served,
+                       Old World Cafe Charm, Quiet for Conversation,
+                       Very Busy - Reservations a Must}
+	style in {Carry in Wine and Beer, none}
+	->  class American  [0.985]
+
+Rule 6/6: (3911.4/305.7, lift 1.6)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Dining After the Theater, Dining Outdoors, Early Dining,
+                     Entertainment, Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Short Drive, Special Brunch Menu, Walk, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class American  [0.922]
+
+Rule 6/7: (1263.2/245.1, lift 1.4)
+	atmosphere in {An Historic Spot, An Out Of The Way Find,
+                       No Smoking Allowed, Pub Feel, Relaxed Senior Scene,
+                       Romantic}
+	->  class American  [0.805]
+
+Rule 6/8: (1363.6/335.8, lift 1.3)
+	occasion in {Dancing, Dining Outdoors, Entertainment, Private Parties,
+                     Private Rooms Available, Weekend Brunch, Weekend Dining}
+	style in {Cab, Californian, Soulfood, Southern}
+	->  class American  [0.753]
+
+Rule 6/9: (326.6/89.3, lift 1.3)
+	atmosphere in {Extraordinary Food, Good for Younger Kids,
+                       Great for People Watching, No Reservations,
+                       Up and Coming}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Short Drive}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class American  [0.725]
+
+Rule 6/10: (1214.6/343.7, lift 1.3)
+	occasion in {Delivery Available, Dining After the Theater, Early Dining,
+                     Fine for Dining Alone, Game, Happy Hour, Long Drive,
+                     Open for Breakfast, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Prix Fixe Menus, See the Game, Walk}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class American  [0.717]
+
+Rule 6/11: (1696.5/483.9, lift 1.3)
+	occasion in {After Hours Dining, Dancing, Dining After the Theater,
+                     Early Dining, Entertainment, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Margaritas, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, See the Game, Short Drive, Weekend Brunch,
+                     Weekend Jazz Brunch}
+	style in {Power Brokers, Southwestern, Tacos, Traditional}
+	->  class American  [0.715]
+
+Rule 6/12: (972/362.3, lift 1.1)
+	occasion = Dancing
+	->  class American  [0.627]
+
+Rule 6/13: (1785/735.8, lift 1.0)
+	atmosphere = Parking/Valet
+	->  class American  [0.588]
+
+Rule 6/14: (21985.5/9899.4, lift 1.0)
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Margaritas, none, Open on Mondays,
+                     Open on Sundays, Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining}
+	->  class American  [0.550]
+
+Rule 6/15: (43.6/9.4, lift 782.8)
+	style = Pancakes
+	->  class Canadian  [0.771]
+
+Rule 6/16: (56.4/20.7, lift 14.6)
+	atmosphere in {Little Known But Well Liked, Place for Singles}
+	occasion in {Dancing, Entertainment}
+	price = $15-$30
+	style = none
+	->  class Cuban  [0.629]
+
+Rule 6/17: (163.3, lift 3.1)
+	occasion = Margaritas
+	->  class Mexican  [0.994]
+
+Rule 6/18: (189.3/54.3, lift 2.2)
+	occasion in {Margaritas, none}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.711]
+
+Rule 6/19: (247.3/72.4, lift 2.2)
+	atmosphere in {Authentic, Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food,
+                       For the Young and Young at Heart, Good for Younger Kids,
+                       Place for Singles, Relaxed Senior Scene,
+                       Wheelchair Access}
+	occasion in {Delivery Available, Margaritas, Takeout Available}
+	price = $30-$50
+	style = none
+	->  class Mexican  [0.706]
+
+Rule 6/20: (41.3/11.9, lift 2.2)
+	atmosphere = Authentic
+	occasion in {Catering for Special Events, Dining Outdoors, Long Drive,
+                     Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	->  class Mexican  [0.701]
+
+Rule 6/21: (28.5/9.8, lift 2.0)
+	occasion in {Catering for Special Events, Dining Outdoors,
+                     Weekend Dining}
+	style = Carry in Wine and Beer
+	->  class Mexican  [0.647]
+
+Rule 6/22: (336.6/127.5, lift 1.9)
+	atmosphere in {Creative, Excellent Food, Extraordinary Decor,
+                       Extraordinary Service, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, No Reservations, People Keep Coming Back,
+                       Place for Singles, Pub Feel, Quirky, Up and Coming,
+                       Wheelchair Access}
+	occasion in {Margaritas, none, Special Brunch Menu, Takeout Available}
+	price in {$15-$30, below $15}
+	style in {Cab, Californian, Soulfood, Southern}
+	->  class Mexican  [0.620]
+
+Rule 6/23: (1672.3/825.5, lift 1.6)
+	atmosphere in {Creative, Credit cards are not accepted, Fair Food,
+                       Hip Place To Be, On the Beach, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining Outdoors, Entertainment,
+                     Happy Hour, Late Night Menu, Long Drive, Open on Mondays,
+                     Open on Sundays, Private Parties, Private Rooms Available,
+                     Short Drive, Special Brunch Menu, Takeout Available,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.506]
+
+Rule 6/24: (1572.8/787.6, lift 1.5)
+	atmosphere in {Authentic, Excellent Food, Good Food, Good Service,
+                       People Keep Coming Back, Place for Singles, Quirky,
+                       Wheelchair Access}
+	occasion in {After Hours Dining, Late Night Menu, Private Parties,
+                     Private Rooms Available, Short Drive}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.499]
+
+Rule 6/25: (875.3/480.4, lift 1.4)
+	atmosphere in {Business Scene, Excellent Food, Excellent Service,
+                       Good Decor, Good for Younger Kids, Hip Place To Be,
+                       Up and Coming}
+	occasion in {Delivery Available, Dining Outdoors, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style in {Power Brokers, Southwestern, Traditional}
+	->  class Mexican  [0.451]
+
+Rule 6/26: (441.8/248.6, lift 1.4)
+	atmosphere in {Buffet Dining, Good Food, Good Service,
+                       Great for People Watching,
+                       Very Busy - Reservations a Must}
+	occasion in {Delivery Available, Dining Outdoors, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Power Brokers, Traditional}
+	->  class Mexican  [0.438]
+
+Rule 6/27: (17080.4/10082.4, lift 1.3)
+	atmosphere in {Authentic, Excellent Decor, Excellent Food,
+                       Excellent Service, Extraordinary Food, Fair Decor,
+                       Fair Service, For the Young and Young at Heart,
+                       Good Decor, Good Food, Good for Younger Kids,
+                       Good Service, Great for People Watching,
+                       Little Known But Well Liked, No Reservations,
+                       Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Quirky, Up and Coming,
+                       Wheelchair Access}
+	price in {$15-$30, below $15}
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.410]
+
+Rule 6/28: (4308.2/2614.8, lift 1.2)
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining, Weekend Lunch}
+	price in {$15-$30, below $15}
+	style in {Power Brokers, Southwestern, Tacos, Traditional}
+	->  class Mexican  [0.393]
+
+Rule 6/29: (332.6/164.1, lift 9.4)
+	atmosphere in {Buffet Dining, Business Scene, Excellent Decor,
+                       Excellent Food, Excellent Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       No Reservations, Parking/Valet, Place for Singles,
+                       Quirky, Up and Coming, Very Busy - Reservations a Must,
+                       Wheelchair Access}
+	occasion in {Catering for Special Events, Fine for Dining Alone}
+	price = $15-$30
+	style in {Power Brokers, Southwestern, Traditional}
+	->  class Salvadoran  [0.507]
+
+Rule 6/30: (840.4/441.9, lift 8.8)
+	atmosphere in {Excellent Decor, For the Young and Young at Heart,
+                       Good Food, Good Service, Great for People Watching,
+                       No Reservations, Parking/Valet, Place for Singles,
+                       Quirky, Wheelchair Access}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Private Parties, Private Rooms Available,
+                     Special Brunch Menu, Takeout Available, Weekend Dining,
+                     Weekend Lunch}
+	price = $15-$30
+	style = Southwestern
+	->  class Salvadoran  [0.474]
+
+Rule 6/31: (2157.4/1309.4, lift 7.3)
+	atmosphere in {Buffet Dining, Excellent Decor,
+                       For the Young and Young at Heart, Good Food,
+                       Good Service, Great for People Watching, No Reservations,
+                       Parking/Valet, Place for Singles, Quirky,
+                       Very Busy - Reservations a Must, Wheelchair Access}
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Fine for Dining Alone, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style in {Power Brokers, Southwestern, Traditional}
+	->  class Salvadoran  [0.393]
+
+Default class: American
+
+-----  Trial 7:  -----
+
+Rules:
+
+Rule 7/1: (3172.6, lift 1.7)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Dining After the Theater, Dining Outdoors, Early Dining,
+                     Entertainment, Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Private Parties, Private Rooms Available, Prix Fixe Menus,
+                     Short Drive, Special Brunch Menu, Walk, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch, Weekend Lunch}
+	price = $30-$50
+	->  class American  [1.000]
+
+Rule 7/2: (199.8, lift 1.7)
+	price = over $50
+	->  class American  [0.995]
+
+Rule 7/3: (66.7, lift 1.7)
+	atmosphere in {Fair Food, Great for People Watching, Hip Place To Be}
+	price = below $15
+	style in {none, Traditional}
+	->  class American  [0.985]
+
+Rule 7/4: (24.6, lift 1.6)
+	occasion in {Catering for Special Events, Long Drive, Takeout Available}
+	style = Carry in Wine and Beer
+	->  class American  [0.962]
+
+Rule 7/5: (562.6/29.2, lift 1.6)
+	occasion in {Dining After the Theater, Early Dining, Game,
+                     Great Place to Meet for a Drink, Open for Breakfast,
+                     Parties and Occasions, Picnics, Pre-theater Dining,
+                     Prix Fixe Menus, See the Game, Special Brunch Menu, Walk}
+	price = $15-$30
+	style in {none, Traditional}
+	->  class American  [0.947]
+
+Rule 7/6: (1721.2/149.1, lift 1.6)
+	atmosphere in {An Historic Spot, An Out Of The Way Find, Buffet Dining,
+                       Business Scene, Cafe/Garden Dining, Classic Hotel Dining,
+                       Extraordinary Decor, Extraordinary Service,
+                       Fabulous Views, Fabulous Wine Lists, Focus on Dessert,
+                       Good Out of Town Business, Health Conscious Menus,
+                       Near-perfect Decor, Near-perfect Food,
+                       Near-perfect Service, Need To Dress, No Liquor Served,
+                       No Smoking Allowed, Old World Cafe Charm, Pub Feel,
+                       Quiet for Conversation, Relaxed Senior Scene, Romantic,
+                       Tourist Appeal, Very Busy - Reservations a Must}
+	style in {Carry in Wine and Beer, none, Traditional}
+	->  class American  [0.913]
+
+Rule 7/7: (7401.3/666.4, lift 1.6)
+	style in {Cab, Cafeterias, Californian, Central, Coffee Houses,
+                  Coffee Shops, Continental, Deli, Diners, Eclectic,
+                  Frankfurters, Grills, Hamburgers, Health Food, High Tea,
+                  Omelettes, Oyster Bars, Pancakes, Pastries, Pizza, Po' Boys,
+                  Power Brokers, Soulfood, Southern, Southern Comfort,
+                  Steakhouses}
+	->  class American  [0.910]
+
+Rule 7/8: (150.2/12.9, lift 1.6)
+	atmosphere in {Fair Food, Fair Service, Good for Younger Kids,
+                       Great for People Watching, Hip Place To Be, On the Beach,
+                       Poor Decor, Up and Coming}
+	occasion in {Dancing, Dining After the Theater, Fine for Dining Alone,
+                     Game, Late Night Menu, Long Drive, Open for Breakfast,
+                     Picnics, See the Game, Short Drive, Takeout Available,
+                     Weekend Brunch, Weekend Jazz Brunch}
+	price = below $15
+	style in {none, Traditional}
+	->  class American  [0.908]
+
+Rule 7/9: (534.7/144.6, lift 1.2)
+	atmosphere in {Credit cards are not accepted, Fair Service,
+                       Little Known But Well Liked, Parking/Valet,
+                       Place for Singles}
+	occasion in {Catering for Special Events, Dancing,
+                     Fine for Dining Alone, Happy Hour, Long Drive, none,
+                     Open on Mondays, Open on Sundays, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none, Traditional}
+	->  class American  [0.729]
+
+Rule 7/10: (1499.6/427.7, lift 1.2)
+	occasion in {Dancing, Fine for Dining Alone, Game, Happy Hour,
+                     Long Drive, Open for Breakfast, Picnics, See the Game,
+                     Short Drive, Weekend Brunch}
+	price = below $15
+	->  class American  [0.714]
+
+Rule 7/11: (475.3/158, lift 1.1)
+	price = below $15
+	style in {Carry in Wine and Beer, Traditional}
+	->  class American  [0.667]
+
+Rule 7/12: (1338.6/456.6, lift 1.1)
+	atmosphere in {Creative, Excellent Decor, Excellent Food,
+                       Excellent Service, For the Young and Young at Heart,
+                       Good for Younger Kids, Hip Place To Be, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Catering for Special Events, Fine for Dining Alone,
+                     Long Drive, Open on Mondays, Open on Sundays,
+                     Private Parties, Takeout Available}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none, Traditional}
+	->  class American  [0.659]
+
+Rule 7/13: (3027.8/1070.3, lift 1.1)
+	occasion in {Dancing, Weekend Brunch}
+	->  class American  [0.646]
+
+Rule 7/14: (1767.8/638.9, lift 1.1)
+	occasion in {Delivery Available, Dining Outdoors, Weekend Lunch}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none}
+	->  class American  [0.638]
+
+Rule 7/15: (5965.7/2239.9, lift 1.1)
+	occasion in {Private Parties, Private Rooms Available}
+	->  class American  [0.625]
+
+Rule 7/16: (26.6/11.9, lift 15.2)
+	occasion = Short Drive
+	price = $15-$30
+	style = Carry in Wine and Beer
+	->  class Cuban  [0.549]
+
+Rule 7/17: (171, lift 3.1)
+	occasion = Margaritas
+	->  class Mexican  [0.994]
+
+Rule 7/18: (28.4, lift 3.0)
+	occasion in {none, Weekend Dining}
+	style = Carry in Wine and Beer
+	->  class Mexican  [0.967]
+
+Rule 7/19: (349.2/106.6, lift 2.2)
+	atmosphere in {Authentic, Fair Decor, Fair Food,
+                       People Keep Coming Back}
+	occasion in {Catering for Special Events, Dancing,
+                     Fine for Dining Alone, Long Drive, none, Private Parties,
+                     Private Rooms Available, Takeout Available, Weekend Brunch,
+                     Weekend Dining, Weekend Jazz Brunch}
+	price = $15-$30
+	style in {none, Southwestern, Traditional}
+	->  class Mexican  [0.694]
+
+Rule 7/20: (381.3/155.9, lift 1.9)
+	atmosphere in {Good Decor, Singles Scene}
+	occasion in {Catering for Special Events, Fine for Dining Alone,
+                     Long Drive, Open on Mondays, Open on Sundays,
+                     Private Parties, Takeout Available}
+	price = $15-$30
+	style in {none, Traditional}
+	->  class Mexican  [0.591]
+
+Rule 7/21: (2397.4/1079.5, lift 1.7)
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.550]
+
+Rule 7/22: (2115.1/956.6, lift 1.7)
+	atmosphere in {Creative, Excellent Food, Good Decor,
+                       Good for Younger Kids, Hip Place To Be, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Happy Hour, none, Private Rooms Available, Weekend Dining,
+                     Weekend Jazz Brunch}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none, Southwestern, Traditional}
+	->  class Mexican  [0.548]
+
+Rule 7/23: (858.5/391, lift 1.7)
+	atmosphere in {Authentic, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good Service, Little Known But Well Liked,
+                       No Reservations, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Quirky, Singles Scene,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {Dining After the Theater, Entertainment, Late Night Menu,
+                     Takeout Available, Weekend Jazz Brunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none}
+	->  class Mexican  [0.544]
+
+Rule 7/24: (4230.9/2326.2, lift 1.4)
+	occasion in {Catering for Special Events, Delivery Available,
+                     Dining Outdoors, Margaritas, none, Private Parties,
+                     Private Rooms Available, Weekend Dining}
+	price = below $15
+	style in {Carry in Wine and Beer, none, Southwestern, Tacos,
+                  Traditional}
+	->  class Mexican  [0.450]
+
+Rule 7/25: (24729.6/14485.6, lift 1.3)
+	atmosphere in {Authentic, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor, Fair Food, Fair Service,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Great for People Watching, Hip Place To Be,
+                       Little Known But Well Liked, No Reservations,
+                       On the Beach, Parking/Valet, People Keep Coming Back,
+                       Place for Singles, Poor Decor, Quirky, Singles Scene,
+                       Up and Coming, Warm spots by the fire, Wheelchair Access}
+	style in {Carry in Wine and Beer, none, Southwestern, Tacos,
+                  Traditional}
+	->  class Mexican  [0.414]
+
+Default class: American
+
+-----  Trial 8:  -----
+
+Rules:
+
+Rule 8/1: (5644.7/6.3, lift 1.5)
+	style in {Cab, Cafeterias, Central, Coffee Houses, Coffee Shops,
+                  Continental, Deli, Diners, Eclectic, Frankfurters, Grills,
+                  Hamburgers, Health Food, High Tea, Omelettes, Oyster Bars,
+                  Pancakes, Pastries, Pizza, Po' Boys, Power Brokers,
+                  Southern Comfort, Steakhouses}
+	->  class American  [0.999]
+
+Rule 8/2: (167.4/22.6, lift 1.3)
+	atmosphere in {Fair Decor, No Reservations}
+	occasion in {Weekend Brunch, Weekend Lunch}
+	->  class American  [0.861]
+
+Rule 8/3: (1570.7/365.3, lift 1.1)
+	atmosphere in {Extraordinary Food, Quirky, Up and Coming}
+	price in {$15-$30, $30-$50, over $50}
+	->  class American  [0.767]
+
+Rule 8/4: (24999.8/7454.3, lift 1.0)
+	style in {Californian, Carry in Wine and Beer, none, Soulfood, Southern,
+                  Traditional}
+	->  class American  [0.702]
+
+Rule 8/5: (164.8, lift 4.0)
+	occasion = Margaritas
+	->  class Mexican  [0.994]
+
+Rule 8/6: (54.1, lift 4.0)
+	occasion in {Margaritas, Prix Fixe Menus}
+	price = below $15
+	->  class Mexican  [0.982]
+
+Rule 8/7: (163.2/14.5, lift 3.7)
+	atmosphere = Authentic
+	style in {none, Soulfood, Southern, Traditional}
+	->  class Mexican  [0.906]
+
+Rule 8/8: (100.6/29.3, lift 2.8)
+	atmosphere in {For the Young and Young at Heart,
+                       Great for People Watching}
+	occasion in {Long Drive, none, Weekend Brunch, Weekend Jazz Brunch}
+	price in {$15-$30, $30-$50}
+	style = none
+	->  class Mexican  [0.704]
+
+Rule 8/9: (1732.5/522.3, lift 2.8)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Delivery Available, Dining Outdoors, Fine for Dining Alone,
+                     Late Night Menu, none, Private Parties,
+                     Private Rooms Available, Special Brunch Menu,
+                     Takeout Available, Weekend Dining}
+	price in {$15-$30, below $15}
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.698]
+
+Rule 8/10: (2007.5/730, lift 2.6)
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.636]
+
+Rule 8/11: (1114.5/455.4, lift 2.4)
+	atmosphere in {Creative, Excellent Food, Good Decor,
+                       Good for Younger Kids, Good Service, Hip Place To Be,
+                       On the Beach, People Keep Coming Back, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {Weekend Brunch, Weekend Lunch}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.591]
+
+Rule 8/12: (1383.9/616.2, lift 2.2)
+	atmosphere in {Creative, Excellent Food, Good Decor,
+                       Good for Younger Kids, Good Service, Hip Place To Be,
+                       On the Beach, People Keep Coming Back, Singles Scene,
+                       Warm spots by the fire}
+	occasion in {Weekend Brunch, Weekend Lunch}
+	price in {$15-$30, below $15}
+	style = none
+	->  class Mexican  [0.555]
+
+Default class: American
+
+-----  Trial 9:  -----
+
+Rules:
+
+Rule 9/1: (5677.8, lift 1.6)
+	occasion in {After Hours Dining, Catering for Special Events, Dancing,
+                     Delivery Available, Dining After the Theater,
+                     Dining Outdoors, Early Dining, Entertainment,
+                     Fine for Dining Alone, Game,
+                     Great Place to Meet for a Drink, Happy Hour,
+                     Late Night Menu, Long Drive, Menus in Braille, none,
+                     Open for Breakfast, Open on Mondays, Open on Sundays,
+                     Other Quick Food, Parties and Occasions, Picnics,
+                     Pre-theater Dining, Private Parties,
+                     Private Rooms Available, Prix Fixe Menus, See the Game,
+                     Short Drive, Special Brunch Menu, Takeout Available,
+                     Weekend Brunch, Weekend Dining, Weekend Jazz Brunch,
+                     Weekend Lunch}
+	style in {Cab, Cafeterias, Californian, Central, Coffee Houses,
+                  Coffee Shops, Continental, Deli, Diners, Eclectic,
+                  Frankfurters, Grills, Hamburgers, Health Food, High Tea,
+                  Omelettes, Oyster Bars, Pancakes, Pastries, Pizza, Po' Boys,
+                  Power Brokers, Southern, Southern Comfort, Steakhouses}
+	->  class American  [1.000]
+
+Rule 9/2: (1358.6, lift 1.6)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Entertainment, Late Night Menu, none,
+                     Open on Mondays, Open on Sundays, Short Drive,
+                     Special Brunch Menu, Weekend Brunch, Weekend Dining,
+                     Weekend Lunch}
+	price in {$30-$50, over $50}
+	->  class American  [0.999]
+
+Rule 9/3: (190.5, lift 1.6)
+	occasion in {Entertainment, Short Drive, Weekend Brunch}
+	style in {Carry in Wine and Beer, Southwestern}
+	->  class American  [0.995]
+
+Rule 9/4: (208, lift 1.6)
+	atmosphere in {An Historic Spot, Business Scene, Cafe/Garden Dining,
+                       Extraordinary Service, Fair Food, Fair Service,
+                       Focus on Dessert, Great for People Watching,
+                       Health Conscious Menus, Hip Place To Be,
+                       No Smoking Allowed, Place for Singles, Pub Feel,
+                       Relaxed Senior Scene}
+	price = below $15
+	style in {none, Traditional}
+	->  class American  [0.995]
+
+Rule 9/5: (78.8, lift 1.6)
+	occasion in {After Hours Dining, Entertainment, Late Night Menu, none,
+                     Weekend Dining}
+	style = Soulfood
+	->  class American  [0.988]
+
+Rule 9/6: (715.3/13.1, lift 1.6)
+	occasion in {Catering for Special Events, Short Drive,
+                     Special Brunch Menu, Weekend Brunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none, Traditional}
+	->  class American  [0.980]
+
+Rule 9/7: (417.2/57.4, lift 1.4)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Entertainment, Short Drive, Weekend Brunch}
+	style = Traditional
+	->  class American  [0.861]
+
+Rule 9/8: (25279.8/9034.4, lift 1.0)
+	style in {Carry in Wine and Beer, none, Soulfood, Southwestern, Tacos,
+                  Traditional}
+	->  class American  [0.643]
+
+Rule 9/9: (276.8, lift 3.8)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Late Night Menu, Weekend Dining,
+                     Weekend Lunch}
+	price = below $15
+	style in {Southwestern, Tacos}
+	->  class Mexican  [0.996]
+
+Rule 9/10: (205.3, lift 3.8)
+	occasion = Margaritas
+	->  class Mexican  [0.995]
+
+Rule 9/11: (1399.1/35.2, lift 3.7)
+	occasion in {Margaritas, Weekend Jazz Brunch}
+	style = none
+	->  class Mexican  [0.974]
+
+Rule 9/12: (175.9/15.7, lift 3.5)
+	atmosphere in {Authentic, Fair Decor}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Entertainment, Late Night Menu, none, Special Brunch Menu,
+                     Weekend Brunch, Weekend Dining, Weekend Lunch}
+	price = $15-$30
+	style in {none, Traditional}
+	->  class Mexican  [0.906]
+
+Rule 9/13: (4004.7/804, lift 3.1)
+	atmosphere in {Authentic, Creative, Credit cards are not accepted,
+                       Excellent Decor, Excellent Food, Excellent Service,
+                       Extraordinary Food, Fair Decor,
+                       For the Young and Young at Heart, Good Decor, Good Food,
+                       Good for Younger Kids, Good Service,
+                       Little Known But Well Liked, No Reservations,
+                       Parking/Valet, People Keep Coming Back, Poor Decor,
+                       Quirky, Singles Scene, Up and Coming,
+                       Warm spots by the fire, Wheelchair Access}
+	occasion in {After Hours Dining, Entertainment, Late Night Menu, none,
+                     Weekend Dining, Weekend Lunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none, Soulfood, Southwestern, Tacos,
+                  Traditional}
+	->  class Mexican  [0.799]
+
+Rule 9/14: (119.9/25.7, lift 3.0)
+	atmosphere in {Authentic, Fair Food}
+	occasion in {Dancing, Delivery Available, Dining After the Theater,
+                     Long Drive, Open for Breakfast, Private Parties,
+                     Private Rooms Available, Takeout Available}
+	style in {none, Soulfood, Traditional}
+	->  class Mexican  [0.781]
+
+Rule 9/15: (1146.1/293.3, lift 2.8)
+	atmosphere in {Fair Food, Good Decor, Good for Younger Kids,
+                       On the Beach, People Keep Coming Back,
+                       Warm spots by the fire}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Entertainment, Short Drive, Weekend Brunch}
+	price = $15-$30
+	style = none
+	->  class Mexican  [0.744]
+
+Rule 9/16: (2973.4/882.7, lift 2.7)
+	atmosphere in {Extraordinary Food, Fair Decor, Good Decor, Good Service,
+                       No Reservations, Wheelchair Access}
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Entertainment, Late Night Menu, none,
+                     Open on Mondays, Open on Sundays, Short Drive,
+                     Special Brunch Menu, Weekend Brunch, Weekend Dining,
+                     Weekend Lunch}
+	price = below $15
+	style in {Carry in Wine and Beer, none, Soulfood, Southwestern, Tacos,
+                  Traditional}
+	->  class Mexican  [0.703]
+
+Rule 9/17: (1385.9/425.1, lift 2.6)
+	occasion in {After Hours Dining, Catering for Special Events,
+                     Dining Outdoors, Entertainment, Late Night Menu, none,
+                     Short Drive, Special Brunch Menu, Weekend Brunch,
+                     Weekend Dining, Weekend Lunch}
+	style in {Carry in Wine and Beer, Southwestern}
+	->  class Mexican  [0.693]
+
+Rule 9/18: (922.4/324.4, lift 2.5)
+	atmosphere in {For the Young and Young at Heart, Good Food,
+                       Good Service}
+	occasion in {After Hours Dining, Dining Outdoors, Short Drive,
+                     Weekend Brunch}
+	price = $15-$30
+	style in {Carry in Wine and Beer, none, Soulfood, Southwestern,
+                  Traditional}
+	->  class Mexican  [0.648]
+
+Default class: American
+
+
+Evaluation on training data (34684 cases):
+
+Trial	        Rules     
+-----	  ----------------
+	    No      Errors
+
+   0	    20 4436(12.8%)
+   1	    18 5971(17.2%)
+   2	    29 6850(19.7%)
+   3	    30 5995(17.3%)
+   4	    21 5013(14.5%)
+   5	    30 7098(20.5%)
+   6	    31 5971(17.2%)
+   7	    25 5732(16.5%)
+   8	    12 4596(13.3%)
+   9	    18 4622(13.3%)
+boost	       4206(12.1%)   <<
+
+
+	   (a)   (b)   (c)   (d)   (e)   (f)   (g)   (h)    <-classified as
+	  ----  ----  ----  ----  ----  ----  ----  ----
+	 28493                           604                (a): class American
+	    15                                              (b): class Canadian
+	   305                            53                (c): class Cuban
+	    12                                              (d): class Guatemalan
+	    18                                              (e): class Jamaican
+	  2810                          1985                (f): class Mexican
+	    24                                              (g): class Nicaraguan
+	   212                           153                (h): class Salvadoran
+
+
+	Attribute usage:
+
+	100.00%	occasion
+	100.00%	style
+	 97.38%	price
+	 83.77%	atmosphere
+
+
+Time: 1.6 secs
+
