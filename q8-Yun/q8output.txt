@@ -1,0 +1,1353 @@
+1. Atlanta: The user should go to the “0000014	Le Rendez-Vous” restaurant.
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     city-res
+Instances:    18
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+atmosphere = An Historic Spot: 0000011 (0.0)
+atmosphere = An Out Of The Way Find: 0000011 (0.0)
+atmosphere = Authentic: 0000011 (0.0)
+atmosphere = Buffet Dining: 0000011 (0.0)
+atmosphere = Business Scene: 0000011 (0.0)
+atmosphere = CafeGarden Dining: 0000011 (0.0)
+atmosphere = Classic Hotel Dining: 0000011 (0.0)
+atmosphere = Creative: 0000011 (0.0)
+atmosphere = Credit cards are not accepted: 0000011 (0.0)
+atmosphere = Excellent Decor: 0000014 (9.0/8.0)
+atmosphere = Excellent Food: 0000011 (0.0)
+atmosphere = Excellent Service: 0000011 (0.0)
+atmosphere = Extraordinary Decor
+|   price = 15-30: 0000011 (2.0/1.0)
+|   price = 30-50: 0000169 (3.0/2.0)
+|   price = below 15: 0000011 (0.0)
+|   price = over 50: 0000011 (0.0)
+atmosphere = Extraordinary Food: 0000011 (0.0)
+atmosphere = Extraordinary Service: 0000011 (0.0)
+atmosphere = Fabulous Views: 0000011 (0.0)
+atmosphere = Fabulous Wine Lists: 0000011 (0.0)
+atmosphere = Fair Decor: 0000093 (2.0/1.0)
+atmosphere = Fair Food: 0000011 (0.0)
+atmosphere = Fair Service: 0000011 (0.0)
+atmosphere = Focus on Dessert: 0000011 (0.0)
+atmosphere = For the Young and Young at Heart: 0000011 (0.0)
+atmosphere = Good Decor: 0000236 (2.0/1.0)
+atmosphere = Good Food: 0000011 (0.0)
+atmosphere = Good Out of Town Business: 0000011 (0.0)
+atmosphere = Good Service: 0000011 (0.0)
+atmosphere = Good for Younger Kids: 0000011 (0.0)
+atmosphere = Great for People Watching: 0000011 (0.0)
+atmosphere = Health Conscious Menus: 0000011 (0.0)
+atmosphere = Hip Place To Be: 0000011 (0.0)
+atmosphere = Little Known But Well Liked: 0000011 (0.0)
+atmosphere = Near-perfect Decor: 0000011 (0.0)
+atmosphere = Near-perfect Food: 0000011 (0.0)
+atmosphere = Near-perfect Service: 0000011 (0.0)
+atmosphere = Need To Dress: 0000011 (0.0)
+atmosphere = No Liquor Served: 0000011 (0.0)
+atmosphere = No Reservations: 0000011 (0.0)
+atmosphere = No Smoking Allowed: 0000011 (0.0)
+atmosphere = Old World Cafe Charm: 0000011 (0.0)
+atmosphere = On the Beach: 0000011 (0.0)
+atmosphere = ParkingValet: 0000011 (0.0)
+atmosphere = People Keep Coming Back: 0000011 (0.0)
+atmosphere = Place for Singles: 0000011 (0.0)
+atmosphere = Poor Decor: 0000011 (0.0)
+atmosphere = Pub Feel: 0000011 (0.0)
+atmosphere = Quiet for Conversation: 0000011 (0.0)
+atmosphere = Quirky: 0000011 (0.0)
+atmosphere = Relaxed Senior Scene: 0000011 (0.0)
+atmosphere = Romantic: 0000011 (0.0)
+atmosphere = Singles Scene: 0000011 (0.0)
+atmosphere = Tourist Appeal: 0000011 (0.0)
+atmosphere = Up and Coming: 0000011 (0.0)
+atmosphere = Very Busy - Reservations a Must: 0000011 (0.0)
+atmosphere = Warm spots by the fire: 0000011 (0.0)
+atmosphere = Wheelchair Access: 0000011 (0.0)
+
+Number of Leaves  : 	58
+
+Size of the tree : 	60
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances           5               27.7778 %
+Incorrectly Classified Instances        13               72.2222 %
+Kappa statistic                          0.2353
+Mean absolute error                      0.0802
+Root mean squared error                  0.2003
+Relative absolute error                 76.4706 %
+Root relative squared error             87.4475 %
+Total Number of Instances               18     
+
+=== Detailed Accuracy By Class ===
+       TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.059      0.5       1         0.667      0.971    0000011
+                 1         0.471      0.111     1         0.2        0.765    0000014
+                 0         0          0         0         0          0.765    0000050
+                 0         0          0         0         0          0.765    0000052
+                 0         0          0         0         0          0.765    0000054
+                 0         0          0         0         0          0.765    0000062
+                 0         0          0         0         0          0.765    0000085
+                 1         0.059      0.5       1         0.667      0.971    0000093
+                 0         0          0         0         0          0.765    0000125
+                 0         0          0         0         0          0.971    0000149
+                 0         0          0         0         0          0.971    0000163
+                 1         0.118      0.333     1         0.5        0.941    0000169
+                 0         0          0         0         0          0.765    0000185
+                 0         0          0         0         0          0.941    0000200
+                 0         0          0         0         0          0.765    0000213
+                 0         0          0         0         0          0.941    0000230
+                 1         0.059      0.5       1         0.667      0.971    0000236
+                 0         0          0         0         0          0.971    0000264
+Weighted Avg.    0.278     0.042      0.108     0.278     0.15       0.863
+
+=== Confusion Matrix ===
+
+ a b c d e f g h i j k l m n o p q r   <-- classified as
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | a = 0000011
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | b = 0000014
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | c = 0000050
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | d = 0000052
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | e = 0000054
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | f = 0000062
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | g = 0000085
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 | h = 0000093
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | i = 0000125
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 | j = 0000149
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | k = 0000163
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 | l = 0000169
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | m = 0000185
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 | n = 0000200
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | o = 0000213
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 | p = 0000230
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 | q = 0000236
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 | r = 0000264
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Europe-city
+Instances:     unknown (yet). Reading incrementally
+Attributes:   5
+
+=== Predictions on test set ===
+
+inst#,    actual, predicted, error, probability distribution
+     1          ?  2:0000014      +   0     *0.111  0.111  0.111  0.111  0.111  0.111  0      0.111  0      0      0      0.111  0      0.111  0      0      0    
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  1     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        0000011
+                 0         0          0         0         0          ?        0000014
+                 0         0          0         0         0          ?        0000050
+                 0         0          0         0         0          ?        0000052
+                 0         0          0         0         0          ?        0000054
+                 0         0          0         0         0          ?        0000062
+                 0         0          0         0         0          ?        0000085
+                 0         0          0         0         0          ?        0000093
+                 0         0          0         0         0          ?        0000125
+                 0         0          0         0         0          ?        0000149
+                 0         0          0         0         0          ?        0000163
+                 0         0          0         0         0          ?        0000169
+                 0         0          0         0         0          ?        0000185
+                 0         0          0         0         0          ?        0000200
+                 0         0          0         0         0          ?        0000213
+                 0         0          0         0         0          ?        0000230
+                 0         0          0         0         0          ?        0000236
+                 0         0          0         0         0          ?        0000264
+Weighted Avg.  NaN       NaN        NaN       NaN       NaN        NaN    
+
+=== Confusion Matrix ===
+
+ a b c d e f g h i j k l m n o p q r   <-- classified as
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | a = 0000011
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | b = 0000014
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | c = 0000050
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | d = 0000052
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | e = 0000054
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | f = 0000062
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | g = 0000085
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | h = 0000093
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | i = 0000125
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | j = 0000149
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | k = 0000163
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | l = 0000169
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | m = 0000185
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | n = 0000200
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | o = 0000213
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | p = 0000230
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | q = 0000236
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | r = 0000264
+
+2. Boston
+The user should go to “0000108	Alexander's” restaurant.
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     boston-res
+Instances:    23
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+atmosphere = An Historic Spot: 0000006 (0.0)
+atmosphere = An Out Of The Way Find: 0000006 (0.0)
+atmosphere = Authentic: 0000006 (0.0)
+atmosphere = Buffet Dining: 0000006 (0.0)
+atmosphere = Business Scene: 0000006 (0.0)
+atmosphere = CafeGarden Dining: 0000006 (0.0)
+atmosphere = Classic Hotel Dining: 0000006 (0.0)
+atmosphere = Creative: 0000006 (0.0)
+atmosphere = Credit cards are not accepted: 0000006 (0.0)
+atmosphere = Excellent Decor: 0000108 (2.0/1.0)
+atmosphere = Excellent Food: 0000006 (0.0)
+atmosphere = Excellent Service: 0000006 (0.0)
+atmosphere = Extraordinary Decor: 0000143 (2.0/1.0)
+atmosphere = Extraordinary Food: 0000006 (0.0)
+atmosphere = Extraordinary Service: 0000006 (0.0)
+atmosphere = Fabulous Views: 0000006 (0.0)
+atmosphere = Fabulous Wine Lists: 0000006 (0.0)
+atmosphere = Fair Decor: 0000313 (2.0/1.0)
+atmosphere = Fair Food: 0000006 (0.0)
+atmosphere = Fair Service: 0000006 (0.0)
+atmosphere = Focus on Dessert: 0000006 (0.0)
+atmosphere = For the Young and Young at Heart: 0000006 (0.0)
+atmosphere = Good Decor
+|   price = 15-30: 0000009 (11.0/10.0)
+|   price = 30-50: 0000006 (0.0)
+|   price = below 15: 0000006 (5.0/4.0)
+|   price = over 50: 0000006 (0.0)
+atmosphere = Good Food: 0000006 (0.0)
+atmosphere = Good Out of Town Business: 0000006 (0.0)
+atmosphere = Good Service: 0000006 (0.0)
+atmosphere = Good for Younger Kids: 0000006 (0.0)
+atmosphere = Great for People Watching: 0000006 (0.0)
+atmosphere = Health Conscious Menus: 0000006 (0.0)
+atmosphere = Hip Place To Be: 0000006 (0.0)
+atmosphere = Little Known But Well Liked: 0000006 (0.0)
+atmosphere = Near-perfect Decor: 0000006 (0.0)
+atmosphere = Near-perfect Food: 0000006 (0.0)
+atmosphere = Near-perfect Service: 0000006 (0.0)
+atmosphere = Need To Dress: 0000006 (0.0)
+atmosphere = No Liquor Served: 0000006 (0.0)
+atmosphere = No Reservations: 0000006 (0.0)
+atmosphere = No Smoking Allowed: 0000006 (0.0)
+atmosphere = Old World Cafe Charm: 0000006 (0.0)
+atmosphere = On the Beach: 0000006 (0.0)
+atmosphere = ParkingValet: 0000006 (0.0)
+atmosphere = People Keep Coming Back: 0000006 (0.0)
+atmosphere = Place for Singles: 0000006 (0.0)
+atmosphere = Poor Decor: 0000208 (1.0)
+atmosphere = Pub Feel: 0000006 (0.0)
+atmosphere = Quiet for Conversation: 0000006 (0.0)
+atmosphere = Quirky: 0000006 (0.0)
+atmosphere = Relaxed Senior Scene: 0000006 (0.0)
+atmosphere = Romantic: 0000006 (0.0)
+atmosphere = Singles Scene: 0000006 (0.0)
+atmosphere = Tourist Appeal: 0000006 (0.0)
+atmosphere = Up and Coming: 0000006 (0.0)
+atmosphere = Very Busy - Reservations a Must: 0000006 (0.0)
+atmosphere = Warm spots by the fire: 0000006 (0.0)
+atmosphere = Wheelchair Access: 0000006 (0.0)
+
+Number of Leaves  : 	58
+
+Size of the tree : 	60
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances           6               26.087  %
+Incorrectly Classified Instances        17               73.913  %
+Kappa statistic                          0.2273
+Mean absolute error                      0.0643
+Root mean squared error                  0.1793
+Relative absolute error                 77.2727 %
+Root relative squared error             87.9049 %
+Total Number of Instances               23     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.182      0.2       1         0.333      0.909    0000006
+                 1         0.455      0.091     1         0.167      0.773    0000009
+                 0         0          0         0         0          0.773    0000054
+                 0         0          0         0         0          0.773    0000056
+                 0         0          0         0         0          0.909    0000101
+                 1         0.045      0.5       1         0.667      0.977    0000108
+                 0         0          0         0         0          0.773    0000114
+                 1         0.045      0.5       1         0.667      0.977    0000143
+                 0         0          0         0         0          0.773    0000146
+                 0         0          0         0         0          0.977    0000198
+                 0         0          0         0         0          0.773    0000206
+                 1         0          1         1         1          1        0000208
+                 0         0          0         0         0          0.773    0000211
+                 0         0          0         0         0          0.773    0000224
+                 0         0          0         0         0          0.909    0000309
+                 1         0.045      0.5       1         0.667      0.977    0000313
+                 0         0          0         0         0          0.977    0000321
+                 0         0          0         0         0          0.909    0000353
+                 0         0          0         0         0          0.773    0000356
+                 0         0          0         0         0          0.773    0000370
+                 0         0          0         0         0          0.773    0000409
+                 0         0          0         0         0          0.977    0000417
+                 0         0          0         0         0          0.909    0000432
+Weighted Avg.    0.261     0.034      0.121     0.261     0.152      0.866
+
+=== Confusion Matrix ===
+
+ a b c d e f g h i j k l m n o p q r s t u v w   <-- classified as
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | a = 0000006
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | b = 0000009
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | c = 0000054
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | d = 0000056
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | e = 0000101
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | f = 0000108
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | g = 0000114
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | h = 0000143
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | i = 0000146
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | j = 0000198
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | k = 0000206
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 | l = 0000208
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | m = 0000211
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | n = 0000224
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | o = 0000309
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 | p = 0000313
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 | q = 0000321
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | r = 0000353
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | s = 0000356
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | t = 0000370
+ 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | u = 0000409
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | v = 0000417
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | w = 0000432
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     boston-res
+Instances:     unknown (yet). Reading incrementally
+Attributes:   5
+
+=== Predictions on test set ===
+
+inst#,    actual, predicted, error, probability distribution
+     1          ?  6:0000108      +   0      0      0      0      0     *0.5    0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0.5    0    
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  1     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        0000006
+                 0         0          0         0         0          ?        0000009
+                 0         0          0         0         0          ?        0000054
+                 0         0          0         0         0          ?        0000056
+                 0         0          0         0         0          ?        0000101
+                 0         0          0         0         0          ?        0000108
+                 0         0          0         0         0          ?        0000114
+                 0         0          0         0         0          ?        0000143
+                 0         0          0         0         0          ?        0000146
+                 0         0          0         0         0          ?        0000198
+                 0         0          0         0         0          ?        0000206
+                 0         0          0         0         0          ?        0000208
+                 0         0          0         0         0          ?        0000211
+                 0         0          0         0         0          ?        0000224
+                 0         0          0         0         0          ?        0000309
+                 0         0          0         0         0          ?        0000313
+                 0         0          0         0         0          ?        0000321
+                 0         0          0         0         0          ?        0000353
+                 0         0          0         0         0          ?        0000356
+                 0         0          0         0         0          ?        0000370
+                 0         0          0         0         0          ?        0000409
+                 0         0          0         0         0          ?        0000417
+                 0         0          0         0         0          ?        0000432
+Weighted Avg.  NaN       NaN        NaN       NaN       NaN        NaN    
+
+=== Confusion Matrix ===
+
+ a b c d e f g h i j k l m n o p q r s t u v w   <-- classified as
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | a = 0000006
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | b = 0000009
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | c = 0000054
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | d = 0000056
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | e = 0000101
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | f = 0000108
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | g = 0000114
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | h = 0000143
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | i = 0000146
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | j = 0000198
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | k = 0000206
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | l = 0000208
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | m = 0000211
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | n = 0000224
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | o = 0000309
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | p = 0000313
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | q = 0000321
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | r = 0000353
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | s = 0000356
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | t = 0000370
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | u = 0000409
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | v = 0000417
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | w = 0000432
+
+3. Chicago:
+The user should go to “0000534	Convito Italiano” restaurant.
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     city-res
+Instances:    231
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+atmosphere = An Historic Spot: 0000001 (0.0)
+atmosphere = An Out Of The Way Find: 0000001 (0.0)
+atmosphere = Authentic: 0000001 (0.0)
+atmosphere = Buffet Dining: 0000001 (0.0)
+atmosphere = Business Scene: 0000001 (0.0)
+atmosphere = CafeGarden Dining: 0000001 (0.0)
+atmosphere = Classic Hotel Dining: 0000001 (0.0)
+atmosphere = Creative: 0000001 (0.0)
+atmosphere = Credit cards are not accepted: 0000001 (0.0)
+atmosphere = Excellent Decor
+|   occasion = Game: 0000011 (0.0)
+|   occasion = After Hours Dining: 0000011 (0.0)
+|   occasion = Catering for Special Events: 0000534 (1.06/0.06)
+|   occasion = Dancing: 0000011 (0.0)
+|   occasion = Delivery Available: 0000011 (0.0)
+|   occasion = Dining After the Theater: 0000011 (0.0)
+|   occasion = Dining Outdoors: 0000046 (11.65/10.65)
+|   occasion = Early Dining: 0000011 (0.0)
+|   occasion = Entertainment: 0000125 (4.24/3.24)
+|   occasion = Fine for Dining Alone: 0000011 (0.0)
+|   occasion = Great Place to Meet for a Drink: 0000011 (0.0)
+|   occasion = Happy Hour: 0000011 (0.0)
+|   occasion = Late Night Menu: 0000011 (0.0)
+|   occasion = Long Drive: 0000072 (2.12/1.12)
+|   occasion = Margaritas: 0000011 (0.0)
+|   occasion = Menus in Braille: 0000011 (0.0)
+|   occasion = Open for Breakfast: 0000011 (0.0)
+|   occasion = Open on Mondays: 0000011 (0.0)
+|   occasion = Open on Sundays: 0000011 (0.0)
+|   occasion = Other Quick Food: 0000011 (0.0)
+|   occasion = Parties and Occasions: 0000011 (0.0)
+|   occasion = Picnics: 0000011 (0.0)
+|   occasion = Pre-theater Dining: 0000011 (0.0)
+|   occasion = Private Parties: 0000011 (0.0)
+|   occasion = Private Rooms Available: 0000014 (22.25/21.25)
+|   occasion = Prix Fixe Menus: 0000127 (3.18/2.18)
+|   occasion = See the Game: 0000011 (0.0)
+|   occasion = Short Drive: 0000083 (1.06/0.06)
+|   occasion = Special Brunch Menu: 0000011 (0.0)
+|   occasion = Takeout Available: 0000011 (0.0)
+|   occasion = Walk: 0000011 (0.0)
+|   occasion = Weekend Brunch: 0000011 (43.44/42.44)
+|   occasion = Weekend Dining: 0000011 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000011 (0.0)
+|   occasion = Weekend Lunch: 0000011 (0.0)
+atmosphere = Excellent Food: 0000001 (0.0)
+atmosphere = Excellent Service: 0000001 (0.0)
+atmosphere = Extraordinary Decor
+|   occasion = Game: 0000001 (0.0)
+|   occasion = After Hours Dining: 0000001 (0.0)
+|   occasion = Catering for Special Events: 0000001 (0.0)
+|   occasion = Dancing: 0000001 (0.0)
+|   occasion = Delivery Available: 0000001 (0.0)
+|   occasion = Dining After the Theater: 0000001 (0.0)
+|   occasion = Dining Outdoors
+|   |   price = 15-30: 0000299 (2.17/1.17)
+|   |   price = 30-50: 0000223 (3.17/2.17)
+|   |   price = below 15: 0000223 (0.0)
+|   |   price = over 50: 0000223 (0.0)
+|   occasion = Early Dining: 0000001 (0.0)
+|   occasion = Entertainment: 0000169 (2.13/1.13)
+|   occasion = Fine for Dining Alone: 0000001 (0.0)
+|   occasion = Great Place to Meet for a Drink: 0000001 (0.0)
+|   occasion = Happy Hour: 0000001 (0.0)
+|   occasion = Late Night Menu: 0000001 (0.0)
+|   occasion = Long Drive: 0000123 (2.13/1.13)
+|   occasion = Margaritas: 0000001 (0.0)
+|   occasion = Menus in Braille: 0000001 (0.0)
+|   occasion = Open for Breakfast: 0000001 (0.0)
+|   occasion = Open on Mondays: 0000001 (0.0)
+|   occasion = Open on Sundays: 0000001 (0.0)
+|   occasion = Other Quick Food: 0000001 (0.0)
+|   occasion = Parties and Occasions: 0000001 (0.0)
+|   occasion = Picnics: 0000001 (0.0)
+|   occasion = Pre-theater Dining: 0000001 (0.0)
+|   occasion = Private Parties: 0000001 (0.0)
+|   occasion = Private Rooms Available
+|   |   price = 15-30: 0000001 (6.37/5.37)
+|   |   price = 30-50: 0000242 (5.37/4.37)
+|   |   price = below 15: 0000001 (0.0)
+|   |   price = over 50: 0000001 (0.0)
+|   occasion = Prix Fixe Menus: 0000001 (0.0)
+|   occasion = See the Game: 0000001 (0.0)
+|   occasion = Short Drive: 0000001 (0.0)
+|   occasion = Special Brunch Menu: 0000001 (0.0)
+|   occasion = Takeout Available: 0000001 (0.0)
+|   occasion = Walk
+|   |   price = 15-30: 0000047 (2.17/1.17)
+|   |   price = 30-50: 0000283 (3.17/2.17)
+|   |   price = below 15: 0000047 (0.0)
+|   |   price = over 50: 0000047 (0.0)
+|   occasion = Weekend Brunch: 0000189 (5.33/4.33)
+|   occasion = Weekend Dining: 0000001 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000001 (0.0)
+|   occasion = Weekend Lunch: 0000001 (0.0)
+atmosphere = Extraordinary Food: 0000001 (0.0)
+atmosphere = Extraordinary Service: 0000001 (0.0)
+atmosphere = Fabulous Views: 0000001 (0.0)
+atmosphere = Fabulous Wine Lists: 0000001 (0.0)
+atmosphere = Fair Decor
+|   occasion = Game: 0000012 (0.0)
+|   occasion = After Hours Dining: 0000012 (0.0)
+|   occasion = Catering for Special Events: 0000480 (1.0)
+|   occasion = Dancing: 0000012 (0.0)
+|   occasion = Delivery Available: 0000012 (0.0)
+|   occasion = Dining After the Theater: 0000012 (0.0)
+|   occasion = Dining Outdoors: 0000012 (0.0)
+|   occasion = Early Dining: 0000012 (0.0)
+|   occasion = Entertainment: 0000012 (0.0)
+|   occasion = Fine for Dining Alone: 0000012 (0.0)
+|   occasion = Great Place to Meet for a Drink: 0000012 (0.0)
+|   occasion = Happy Hour: 0000012 (0.0)
+|   occasion = Late Night Menu: 0000012 (0.0)
+|   occasion = Long Drive: 0000424 (1.0)
+|   occasion = Margaritas: 0000012 (0.0)
+|   occasion = Menus in Braille: 0000012 (0.0)
+|   occasion = Open for Breakfast: 0000583 (1.0)
+|   occasion = Open on Mondays: 0000012 (0.0)
+|   occasion = Open on Sundays: 0000012 (0.0)
+|   occasion = Other Quick Food: 0000012 (0.0)
+|   occasion = Parties and Occasions: 0000012 (0.0)
+|   occasion = Picnics: 0000012 (0.0)
+|   occasion = Pre-theater Dining: 0000012 (0.0)
+|   occasion = Private Parties: 0000012 (0.0)
+|   occasion = Private Rooms Available: 0000012 (0.0)
+|   occasion = Prix Fixe Menus: 0000012 (0.0)
+|   occasion = See the Game: 0000012 (0.0)
+|   occasion = Short Drive: 0000012 (0.0)
+|   occasion = Special Brunch Menu: 0000012 (0.0)
+|   occasion = Takeout Available: 0000131 (4.0/3.0)
+|   occasion = Walk: 0000012 (0.0)
+|   occasion = Weekend Brunch: 0000012 (7.0/6.0)
+|   occasion = Weekend Dining: 0000012 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000012 (0.0)
+|   occasion = Weekend Lunch: 0000012 (0.0)
+atmosphere = Fair Food: 0000001 (0.0)
+atmosphere = Fair Service: 0000001 (0.0)
+atmosphere = Focus on Dessert: 0000001 (0.0)
+atmosphere = For the Young and Young at Heart: 0000001 (0.0)
+atmosphere = Good Decor
+|   occasion = Game: 0000006 (0.0)
+|   occasion = After Hours Dining: 0000006 (0.0)
+|   occasion = Catering for Special Events: 0000006 (0.0)
+|   occasion = Dancing: 0000006 (0.0)
+|   occasion = Delivery Available: 0000006 (0.0)
+|   occasion = Dining After the Theater: 0000006 (0.0)
+|   occasion = Dining Outdoors: 0000233 (7.66/6.66)
+|   occasion = Early Dining: 0000006 (0.0)
+|   occasion = Entertainment: 0000037 (7.66/6.66)
+|   occasion = Fine for Dining Alone: 0000006 (0.0)
+|   occasion = Great Place to Meet for a Drink: 0000006 (0.0)
+|   occasion = Happy Hour: 0000006 (0.0)
+|   occasion = Late Night Menu: 0000020 (3.28/2.28)
+|   occasion = Long Drive: 0000039 (8.75/7.75)
+|   occasion = Margaritas: 0000006 (0.0)
+|   occasion = Menus in Braille: 0000006 (0.0)
+|   occasion = Open for Breakfast: 0000006 (0.0)
+|   occasion = Open on Mondays: 0000006 (0.0)
+|   occasion = Open on Sundays: 0000006 (0.0)
+|   occasion = Other Quick Food: 0000006 (0.0)
+|   occasion = Parties and Occasions: 0000006 (0.0)
+|   occasion = Picnics: 0000006 (0.0)
+|   occasion = Pre-theater Dining: 0000006 (0.0)
+|   occasion = Private Parties: 0000006 (0.0)
+|   occasion = Private Rooms Available
+|   |   price = 15-30: 0000134 (12.32/11.32)
+|   |   price = 30-50: 0000134 (0.0)
+|   |   price = below 15: 0000315 (3.0/2.0)
+|   |   price = over 50: 0000134 (0.0)
+|   occasion = Prix Fixe Menus: 0000006 (0.0)
+|   occasion = See the Game: 0000006 (0.0)
+|   occasion = Short Drive: 0000006 (9.85/8.85)
+|   occasion = Special Brunch Menu: 0000006 (0.0)
+|   occasion = Takeout Available: 0000452 (2.19/1.19)
+|   occasion = Walk: 0000006 (0.0)
+|   occasion = Weekend Brunch
+|   |   price = 15-30: 0000018 (33.29/32.29)
+|   |   price = 30-50: 0000018 (0.0)
+|   |   price = below 15: 0000095 (5.0/4.0)
+|   |   price = over 50: 0000018 (0.0)
+|   occasion = Weekend Dining: 0000006 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000006 (0.0)
+|   occasion = Weekend Lunch: 0000006 (0.0)
+atmosphere = Good Food: 0000001 (0.0)
+atmosphere = Good Out of Town Business: 0000001 (0.0)
+atmosphere = Good Service: 0000001 (0.0)
+atmosphere = Good for Younger Kids: 0000001 (0.0)
+atmosphere = Great for People Watching: 0000001 (0.0)
+atmosphere = Health Conscious Menus: 0000001 (0.0)
+atmosphere = Hip Place To Be: 0000001 (0.0)
+atmosphere = Little Known But Well Liked: 0000001 (0.0)
+atmosphere = Near-perfect Decor: 0000260 (3.0/2.0)
+atmosphere = Near-perfect Food: 0000001 (0.0)
+atmosphere = Near-perfect Service: 0000001 (0.0)
+atmosphere = Need To Dress: 0000001 (0.0)
+atmosphere = No Liquor Served: 0000001 (0.0)
+atmosphere = No Reservations: 0000001 (0.0)
+atmosphere = No Smoking Allowed: 0000001 (0.0)
+atmosphere = Old World Cafe Charm: 0000001 (0.0)
+atmosphere = On the Beach: 0000001 (0.0)
+atmosphere = ParkingValet: 0000001 (0.0)
+atmosphere = People Keep Coming Back: 0000001 (0.0)
+atmosphere = Place for Singles: 0000001 (0.0)
+atmosphere = Poor Decor: 0000001 (0.0)
+atmosphere = Pub Feel: 0000001 (0.0)
+atmosphere = Quiet for Conversation: 0000001 (0.0)
+atmosphere = Quirky: 0000001 (0.0)
+atmosphere = Relaxed Senior Scene: 0000001 (0.0)
+atmosphere = Romantic: 0000001 (0.0)
+atmosphere = Singles Scene: 0000001 (0.0)
+atmosphere = Tourist Appeal: 0000001 (0.0)
+atmosphere = Up and Coming: 0000001 (0.0)
+atmosphere = Very Busy - Reservations a Must: 0000001 (0.0)
+atmosphere = Warm spots by the fire: 0000001 (0.0)
+atmosphere = Wheelchair Access: 0000001 (0.0)
+
+Number of Leaves  : 	206
+
+Size of the tree : 	216
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances          33               14.2857 %
+Incorrectly Classified Instances       198               85.7143 %
+Kappa statistic                          0.1391
+Mean absolute error                      0.0075
+Root mean squared error                  0.0609
+Relative absolute error                 86.7326 %
+Root relative squared error             92.8083 %
+Total Number of Instances              231     
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     city-res
+Instances:    104
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+atmosphere = An Historic Spot: 0000000 (0.0)
+atmosphere = An Out Of The Way Find: 0000000 (0.0)
+atmosphere = Authentic: 0000000 (0.0)
+atmosphere = Buffet Dining: 0000000 (0.0)
+atmosphere = Business Scene: 0000000 (0.0)
+atmosphere = CafeGarden Dining: 0000000 (0.0)
+atmosphere = Classic Hotel Dining: 0000000 (0.0)
+atmosphere = Creative: 0000000 (0.0)
+atmosphere = Credit cards are not accepted: 0000000 (0.0)
+atmosphere = Excellent Decor
+|   price = 15-30: 0000000 (43.0/42.0)
+|   price = 30-50: 0000083 (12.0/11.0)
+|   price = below 15: 0000000 (0.0)
+|   price = over 50: 0000000 (0.0)
+atmosphere = Excellent Food: 0000000 (0.0)
+atmosphere = Excellent Service: 0000000 (0.0)
+atmosphere = Extraordinary Decor
+|   price = 15-30: 0000011 (6.0/5.0)
+|   price = 30-50: 0000050 (3.0/2.0)
+|   price = below 15: 0000011 (0.0)
+|   price = over 50: 0000011 (0.0)
+atmosphere = Extraordinary Food: 0000000 (0.0)
+atmosphere = Extraordinary Service: 0000000 (0.0)
+atmosphere = Fabulous Views: 0000000 (0.0)
+atmosphere = Fabulous Wine Lists: 0000000 (0.0)
+atmosphere = Fair Decor: 0000122 (4.0/3.0)
+atmosphere = Fair Food: 0000000 (0.0)
+atmosphere = Fair Service: 0000000 (0.0)
+atmosphere = Focus on Dessert: 0000000 (0.0)
+atmosphere = For the Young and Young at Heart: 0000000 (0.0)
+atmosphere = Good Decor: 0000008 (34.0/33.0)
+atmosphere = Good Food: 0000000 (0.0)
+atmosphere = Good Out of Town Business: 0000000 (0.0)
+atmosphere = Good Service: 0000000 (0.0)
+atmosphere = Good for Younger Kids: 0000000 (0.0)
+atmosphere = Great for People Watching: 0000000 (0.0)
+atmosphere = Health Conscious Menus: 0000000 (0.0)
+atmosphere = Hip Place To Be: 0000000 (0.0)
+atmosphere = Little Known But Well Liked: 0000000 (0.0)
+atmosphere = Near-perfect Decor: 0000289 (1.0)
+atmosphere = Near-perfect Food: 0000000 (0.0)
+atmosphere = Near-perfect Service: 0000000 (0.0)
+atmosphere = Need To Dress: 0000000 (0.0)
+atmosphere = No Liquor Served: 0000000 (0.0)
+atmosphere = No Reservations: 0000000 (0.0)
+atmosphere = No Smoking Allowed: 0000000 (0.0)
+atmosphere = Old World Cafe Charm: 0000000 (0.0)
+atmosphere = On the Beach: 0000000 (0.0)
+atmosphere = ParkingValet: 0000000 (0.0)
+atmosphere = People Keep Coming Back: 0000000 (0.0)
+atmosphere = Place for Singles: 0000000 (0.0)
+atmosphere = Poor Decor: 0000016 (1.0)
+atmosphere = Pub Feel: 0000000 (0.0)
+atmosphere = Quiet for Conversation: 0000000 (0.0)
+atmosphere = Quirky: 0000000 (0.0)
+atmosphere = Relaxed Senior Scene: 0000000 (0.0)
+atmosphere = Romantic: 0000000 (0.0)
+atmosphere = Singles Scene: 0000000 (0.0)
+atmosphere = Tourist Appeal: 0000000 (0.0)
+atmosphere = Up and Coming: 0000000 (0.0)
+atmosphere = Very Busy - Reservations a Must: 0000000 (0.0)
+atmosphere = Warm spots by the fire: 0000000 (0.0)
+atmosphere = Wheelchair Access: 0000000 (0.0)
+
+Number of Leaves  : 	61
+
+Size of the tree : 	64
+
+
+Time taken to build model: 0 seconds
+
+6. New York:
+The user should go to the “0000011	Le Train Bleu” restaurant.
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     city-res
+Instances:    410
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+atmosphere = An Historic Spot: 0000000 (0.0)
+atmosphere = An Out Of The Way Find: 0000000 (0.0)
+atmosphere = Authentic: 0000000 (0.0)
+atmosphere = Buffet Dining: 0000000 (0.0)
+atmosphere = Business Scene: 0000000 (0.0)
+atmosphere = CafeGarden Dining: 0000000 (0.0)
+atmosphere = Classic Hotel Dining: 0000000 (0.0)
+atmosphere = Creative: 0000000 (0.0)
+atmosphere = Credit cards are not accepted: 0000000 (0.0)
+atmosphere = Excellent Decor
+|   occasion = Game: 0000216 (3.4/2.4)
+|   occasion = After Hours Dining: 0000011 (0.0)
+|   occasion = Catering for Special Events: 0000011 (0.0)
+|   occasion = Dancing: 0000011 (0.0)
+|   occasion = Delivery Available: 0000011 (0.0)
+|   occasion = Dining After the Theater: 0000011 (0.0)
+|   occasion = Dining Outdoors: 0000019 (28.94/27.94)
+|   occasion = Early Dining: 0000011 (0.0)
+|   occasion = Entertainment: 0000068 (27.23/26.23)
+|   occasion = Fine for Dining Alone
+|   |   price = 15-30: 0000011 (2.55/1.55)
+|   |   price = 30-50: 0000793 (4.17/3.17)
+|   |   price = below 15: 0000011 (0.0)
+|   |   price = over 50: 0000354 (0.09/0.04)
+|   occasion = Great Place to Meet for a Drink: 0000163 (3.4/2.4)
+|   occasion = Happy Hour: 0000011 (0.0)
+|   occasion = Late Night Menu
+|   |   price = 15-30: 0000097 (9.52/8.52)
+|   |   price = 30-50: 0000095 (8.97/7.97)
+|   |   price = below 15: 0000095 (0.0)
+|   |   price = over 50: 0000354 (0.23/0.12)
+|   occasion = Long Drive: 0000011 (0.0)
+|   occasion = Margaritas: 0000011 (0.0)
+|   occasion = Menus in Braille: 0001074 (1.7/0.7)
+|   occasion = Open for Breakfast: 0000011 (0.0)
+|   occasion = Open on Mondays: 0000011 (0.0)
+|   occasion = Open on Sundays: 0000011 (0.0)
+|   occasion = Other Quick Food: 0000011 (0.0)
+|   occasion = Parties and Occasions: 0000011 (0.0)
+|   occasion = Picnics: 0000011 (0.0)
+|   occasion = Pre-theater Dining: 0000052 (3.4/2.4)
+|   occasion = Private Parties: 0000011 (0.0)
+|   occasion = Private Rooms Available: 0000109 (6.81/5.81)
+|   occasion = Prix Fixe Menus
+|   |   price = 15-30: 0000493 (2.52/1.52)
+|   |   price = 30-50: 0000051 (15.97/14.97)
+|   |   price = below 15: 0000051 (0.0)
+|   |   price = over 50: 0000354 (0.23/0.12)
+|   occasion = See the Game: 0000011 (0.0)
+|   occasion = Short Drive: 0000011 (0.0)
+|   occasion = Special Brunch Menu
+|   |   price = 15-30: 0000440 (2.55/1.55)
+|   |   price = 30-50: 0000278 (4.17/3.17)
+|   |   price = below 15: 0000278 (0.0)
+|   |   price = over 50: 0000354 (0.09/0.04)
+|   occasion = Takeout Available: 0000107 (22.13/21.13)
+|   occasion = Walk: 0000011 (0.0)
+|   occasion = Weekend Brunch: 0000011 (0.0)
+|   occasion = Weekend Dining: 0000023 (11.91/10.91)
+|   occasion = Weekend Jazz Brunch: 0000011 (0.0)
+|   occasion = Weekend Lunch: 0000011 (0.0)
+atmosphere = Excellent Food: 0000000 (0.0)
+atmosphere = Excellent Service: 0000000 (0.0)
+atmosphere = Extraordinary Decor
+|   occasion = Game
+|   |   style = A: 0000017 (0.0)
+|   |   style = Southern: 0000017 (0.0)
+|   |   style = French: 0000017 (9.15/8.15)
+|   |   style = Japanese: 0000017 (0.0)
+|   |   style = Southwestern: 0000017 (0.0)
+|   |   style = Swiss: 0000017 (0.0)
+|   |   style = Asian: 0000017 (0.0)
+|   |   style = Southeast Asian: 0000017 (0.0)
+|   |   style = International: 0000017 (0.0)
+|   |   style = Southern Comfort: 0000017 (0.0)
+|   |   style = Deli: 0000017 (0.0)
+|   |   style = Kosher: 0000017 (0.0)
+|   |   style = Afghanistan: 0000017 (0.0)
+|   |   style = Argentinean: 0000017 (0.0)
+|   |   style = Eclectic: 0000017 (0.0)
+|   |   style = Continental: 0000017 (0.0)
+|   |   style = Bakeries: 0000017 (0.0)
+|   |   style = Belgian: 0000017 (0.0)
+|   |   style = Brasserie: 0000017 (0.0)
+|   |   style = Cab: 0000017 (0.0)
+|   |   style = CafeEspresso Bars: 0000017 (0.0)
+|   |   style = Cafeterias: 0000017 (0.0)
+|   |   style = Californian: 0000017 (0.0)
+|   |   style = Wine and Beer: 0000017 (0.0)
+|   |   style = Carry in Wine and Beer: 0000017 (0.0)
+|   |   style = Caviar: 0000017 (0.0)
+|   |   style = Central: 0000017 (0.0)
+|   |   style = Coffee Houses: 0000017 (0.0)
+|   |   style = Coffee Shops: 0000017 (0.0)
+|   |   style = Coffeehouses: 0000017 (0.0)
+|   |   style = Czech: 0000017 (0.0)
+|   |   style = Diners: 0000017 (0.0)
+|   |   style = Down-Home: 0000017 (0.0)
+|   |   style = Eastern European: 0000017 (0.0)
+|   |   style = Egyptian: 0000017 (0.0)
+|   |   style = English: 0000017 (0.0)
+|   |   style = Fast Food: 0000017 (0.0)
+|   |   style = Fondue: 0000017 (0.0)
+|   |   style = Franco-Russian: 0000017 (0.0)
+|   |   style = Frankfurters: 0000017 (0.0)
+|   |   style = French-Japanese: 0000017 (0.0)
+|   |   style = Grills: 0000017 (0.0)
+|   |   style = Guatemalan: 0000017 (0.0)
+|   |   style = Hamburgers: 0000017 (0.0)
+|   |   style = Health Food: 0000017 (0.0)
+|   |   style = High Tea: 0000017 (0.0)
+|   |   style = Jewish: 0000322 (0.43/0.08)
+|   |   style = Latin: 0000017 (0.0)
+|   |   style = Lithuanian: 0000017 (0.0)
+|   |   style = Middle Eastern: 0000017 (0.0)
+|   |   style = N: 0000017 (0.0)
+|   |   style = Nicaraguan: 0000017 (0.0)
+|   |   style = Noodle Houses: 0000017 (0.0)
+|   |   style = Noodle Shops: 0000017 (0.0)
+|   |   style = Omelettes: 0000017 (0.0)
+|   |   style = Oyster Bars: 0000017 (0.0)
+|   |   style = Pancakes: 0000017 (0.0)
+|   |   style = Pastries: 0000017 (0.0)
+|   |   style = Pastry Shops: 0000017 (0.0)
+|   |   style = Pizza: 0000017 (0.0)
+|   |   style = Pizzerias: 0000017 (0.0)
+|   |   style = Po Boys: 0000017 (0.0)
+|   |   style = Power Brokers: 0000295 (2.49/1.49)
+|   |   style = Roumanian: 0000017 (0.0)
+|   |   style = Russian: 0000017 (0.0)
+|   |   style = Salvadoran: 0000017 (0.0)
+|   |   style = Scottish: 0000017 (0.0)
+|   |   style = Soul Food: 0000017 (0.0)
+|   |   style = Soulfood: 0000017 (0.0)
+|   |   style = Steakhouses: 0000017 (0.0)
+|   |   style = Swiss-French: 0000017 (0.0)
+|   |   style = Tacos: 0000017 (0.0)
+|   |   style = Traditional: 0000017 (0.0)
+|   |   style = Ukrainian: 0000017 (0.0)
+|   |   style = Ukranian: 0000017 (0.0)
+|   |   style = Venezuelan: 0000017 (0.0)
+|   |   style = Yogurt Bar: 0000017 (0.0)
+|   |   style = Yugoslavian: 0000017 (0.0)
+|   occasion = After Hours Dining: 0000003 (0.0)
+|   occasion = Catering for Special Events: 0000003 (0.0)
+|   occasion = Dancing: 0000003 (0.0)
+|   occasion = Delivery Available: 0000003 (0.0)
+|   occasion = Dining After the Theater: 0000003 (0.0)
+|   occasion = Dining Outdoors: 0000116 (3.62/2.62)
+|   occasion = Early Dining: 0000003 (0.0)
+|   occasion = Entertainment: 0000818 (1.21/0.21)
+|   occasion = Fine for Dining Alone: 0000003 (0.0)
+|   occasion = Great Place to Meet for a Drink: 0000003 (0.0)
+|   occasion = Happy Hour: 0000003 (0.0)
+|   occasion = Late Night Menu: 0000106 (2.41/1.41)
+|   occasion = Long Drive: 0000003 (0.0)
+|   occasion = Margaritas: 0000003 (0.0)
+|   occasion = Menus in Braille: 0000044 (2.41/1.41)
+|   occasion = Open for Breakfast: 0000003 (0.0)
+|   occasion = Open on Mondays: 0000003 (0.0)
+|   occasion = Open on Sundays: 0000003 (0.0)
+|   occasion = Other Quick Food: 0000003 (0.0)
+|   occasion = Parties and Occasions: 0000003 (0.0)
+|   occasion = Picnics: 0000003 (0.0)
+|   occasion = Pre-theater Dining: 0000003 (0.0)
+|   occasion = Private Parties: 0000003 (0.0)
+|   occasion = Private Rooms Available: 0000246 (1.21/0.21)
+|   occasion = Prix Fixe Menus
+|   |   price = 15-30: 0000014 (0.0)
+|   |   price = 30-50: 0000014 (3.69/2.69)
+|   |   price = below 15: 0000014 (0.0)
+|   |   price = over 50: 0000046 (2.34/1.34)
+|   occasion = See the Game: 0000003 (0.0)
+|   occasion = Short Drive: 0000003 (0.0)
+|   occasion = Special Brunch Menu: 0000003 (4.83/3.83)
+|   occasion = Takeout Available: 0000181 (1.21/0.21)
+|   occasion = Walk: 0000003 (0.0)
+|   occasion = Weekend Brunch: 0000003 (0.0)
+|   occasion = Weekend Dining: 0000003 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000003 (0.0)
+|   occasion = Weekend Lunch: 0000003 (0.0)
+atmosphere = Extraordinary Food: 0000000 (0.0)
+atmosphere = Extraordinary Service: 0000000 (0.0)
+atmosphere = Fabulous Views: 0000000 (0.0)
+atmosphere = Fabulous Wine Lists: 0000000 (0.0)
+atmosphere = Fair Decor
+|   occasion = Game: 0000103 (0.0)
+|   occasion = After Hours Dining: 0000103 (0.0)
+|   occasion = Catering for Special Events: 0000103 (0.0)
+|   occasion = Dancing: 0000103 (0.0)
+|   occasion = Delivery Available: 0000103 (0.0)
+|   occasion = Dining After the Theater: 0000103 (0.0)
+|   occasion = Dining Outdoors: 0000687 (1.77/0.77)
+|   occasion = Early Dining: 0000103 (0.0)
+|   occasion = Entertainment: 0000306 (3.54/2.54)
+|   occasion = Fine for Dining Alone: 0001005 (1.77/0.77)
+|   occasion = Great Place to Meet for a Drink: 0000103 (0.0)
+|   occasion = Happy Hour: 0000103 (0.0)
+|   occasion = Late Night Menu: 0000491 (5.31/4.31)
+|   occasion = Long Drive: 0000103 (0.0)
+|   occasion = Margaritas: 0000103 (0.0)
+|   occasion = Menus in Braille: 0000610 (1.77/0.77)
+|   occasion = Open for Breakfast: 0000103 (3.54/2.54)
+|   occasion = Open on Mondays: 0000103 (0.0)
+|   occasion = Open on Sundays: 0000103 (0.0)
+|   occasion = Other Quick Food: 0000103 (0.0)
+|   occasion = Parties and Occasions: 0000103 (0.0)
+|   occasion = Picnics: 0000103 (0.0)
+|   occasion = Pre-theater Dining: 0000103 (0.0)
+|   occasion = Private Parties: 0000103 (0.0)
+|   occasion = Private Rooms Available: 0000103 (0.0)
+|   occasion = Prix Fixe Menus: 0001020 (1.77/0.77)
+|   occasion = See the Game: 0000103 (0.0)
+|   occasion = Short Drive: 0000103 (0.0)
+|   occasion = Special Brunch Menu: 0000103 (0.0)
+|   occasion = Takeout Available: 0001086 (1.77/0.77)
+|   occasion = Walk: 0000103 (0.0)
+|   occasion = Weekend Brunch: 0000103 (0.0)
+|   occasion = Weekend Dining: 0001099 (1.77/0.77)
+|   occasion = Weekend Jazz Brunch: 0000103 (0.0)
+|   occasion = Weekend Lunch: 0000103 (0.0)
+atmosphere = Fair Food: 0000000 (0.0)
+atmosphere = Fair Service: 0000000 (0.0)
+atmosphere = Focus on Dessert: 0000000 (0.0)
+atmosphere = For the Young and Young at Heart: 0000000 (0.0)
+atmosphere = Good Decor
+|   occasion = Game
+|   |   price = 15-30: 0000621 (3.1/2.1)
+|   |   price = 30-50: 0000335 (2.77/1.77)
+|   |   price = below 15: 0001128 (0.03)
+|   |   price = over 50: 0000335 (0.0)
+|   occasion = After Hours Dining: 0000000 (0.0)
+|   occasion = Catering for Special Events: 0000000 (0.0)
+|   occasion = Dancing: 0000000 (0.0)
+|   occasion = Delivery Available: 0000000 (0.0)
+|   occasion = Dining After the Theater: 0000000 (0.0)
+|   occasion = Dining Outdoors
+|   |   price = 15-30: 0000179 (26.2/25.2)
+|   |   price = 30-50: 0000165 (5.09/4.09)
+|   |   price = below 15: 0001128 (0.18)
+|   |   price = over 50: 0000165 (0.0)
+|   occasion = Early Dining: 0000000 (0.0)
+|   occasion = Entertainment
+|   |   price = 15-30: 0000021 (17.7/16.7)
+|   |   price = 30-50: 0000633 (3.81/2.81)
+|   |   price = below 15: 0001128 (0.12)
+|   |   price = over 50: 0000021 (0.0)
+|   occasion = Fine for Dining Alone: 0000031 (7.87/6.87)
+|   occasion = Great Place to Meet for a Drink: 0000000 (0.0)
+|   occasion = Happy Hour: 0000000 (0.0)
+|   occasion = Late Night Menu
+|   |   price = 15-30: 0000032 (27.3/26.3)
+|   |   price = 30-50: 0000224 (9.86/8.86)
+|   |   price = below 15: 0001128 (0.21)
+|   |   price = over 50: 0000032 (0.0)
+|   occasion = Long Drive: 0000000 (0.0)
+|   occasion = Margaritas: 0000000 (0.0)
+|   occasion = Menus in Braille: 0000000 (0.0)
+|   occasion = Open for Breakfast: 0000008 (3.93/2.93)
+|   occasion = Open on Mondays: 0000000 (0.0)
+|   occasion = Open on Sundays: 0000000 (0.0)
+|   occasion = Other Quick Food: 0000000 (0.0)
+|   occasion = Parties and Occasions: 0000000 (0.0)
+|   occasion = Picnics: 0000000 (0.0)
+|   occasion = Pre-theater Dining: 0000000 (0.0)
+|   occasion = Private Parties: 0000000 (0.0)
+|   occasion = Private Rooms Available
+|   |   price = 15-30: 0000905 (3.1/2.1)
+|   |   price = 30-50: 0000101 (2.77/1.77)
+|   |   price = below 15: 0001128 (0.03)
+|   |   price = over 50: 0000101 (0.0)
+|   occasion = Prix Fixe Menus
+|   |   price = 15-30: 0000060 (8.6/7.6)
+|   |   price = 30-50: 0000067 (7.04/6.04)
+|   |   price = below 15: 0001128 (0.09)
+|   |   price = over 50: 0000060 (0.0)
+|   occasion = See the Game: 0000000 (0.0)
+|   occasion = Short Drive: 0000893 (1.97/0.97)
+|   occasion = Special Brunch Menu
+|   |   price = 15-30: 0000720 (5.8/4.8)
+|   |   price = 30-50: 0000030 (2.02/1.02)
+|   |   price = below 15: 0001128 (0.04)
+|   |   price = over 50: 0000030 (0.0)
+|   occasion = Takeout Available
+|   |   price = 15-30: 0000081 (17.4/16.4)
+|   |   price = 30-50: 0000147 (6.07/5.07)
+|   |   price = below 15: 0001128 (0.13)
+|   |   price = over 50: 0000081 (0.0)
+|   occasion = Walk: 0000000 (0.0)
+|   occasion = Weekend Brunch: 0000000 (0.0)
+|   occasion = Weekend Dining
+|   |   price = 15-30: 0000173 (9.9/8.9)
+|   |   price = 30-50: 0000748 (3.79/2.79)
+|   |   price = below 15: 0001128 (0.08)
+|   |   price = over 50: 0000173 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000000 (0.0)
+|   occasion = Weekend Lunch: 0000000 (0.0)
+atmosphere = Good Food: 0000000 (0.0)
+atmosphere = Good Out of Town Business: 0000000 (0.0)
+atmosphere = Good Service: 0000000 (0.0)
+atmosphere = Good for Younger Kids: 0000000 (0.0)
+atmosphere = Great for People Watching: 0000000 (0.0)
+atmosphere = Health Conscious Menus: 0000000 (0.0)
+atmosphere = Hip Place To Be: 0000000 (0.0)
+atmosphere = Little Known But Well Liked: 0000000 (0.0)
+atmosphere = Near-perfect Decor
+|   occasion = Game: 0000045 (5.38/4.38)
+|   occasion = After Hours Dining: 0000045 (0.0)
+|   occasion = Catering for Special Events: 0000045 (0.0)
+|   occasion = Dancing: 0000045 (0.0)
+|   occasion = Delivery Available: 0000045 (0.0)
+|   occasion = Dining After the Theater: 0000045 (0.0)
+|   occasion = Dining Outdoors: 0000045 (0.0)
+|   occasion = Early Dining: 0000045 (0.0)
+|   occasion = Entertainment: 0001021 (1.08/0.08)
+|   occasion = Fine for Dining Alone: 0000045 (0.0)
+|   occasion = Great Place to Meet for a Drink: 0000045 (0.0)
+|   occasion = Happy Hour: 0000045 (0.0)
+|   occasion = Late Night Menu: 0000045 (0.0)
+|   occasion = Long Drive: 0000045 (0.0)
+|   occasion = Margaritas: 0000045 (0.0)
+|   occasion = Menus in Braille: 0000045 (0.0)
+|   occasion = Open for Breakfast: 0000830 (3.23/2.23)
+|   occasion = Open on Mondays: 0000045 (0.0)
+|   occasion = Open on Sundays: 0000045 (0.0)
+|   occasion = Other Quick Food: 0000045 (0.0)
+|   occasion = Parties and Occasions: 0000045 (0.0)
+|   occasion = Picnics: 0000045 (0.0)
+|   occasion = Pre-theater Dining: 0000045 (0.0)
+|   occasion = Private Parties: 0000045 (0.0)
+|   occasion = Private Rooms Available: 0000161 (1.08/0.08)
+|   occasion = Prix Fixe Menus: 0000045 (0.0)
+|   occasion = See the Game: 0000045 (0.0)
+|   occasion = Short Drive: 0000045 (0.0)
+|   occasion = Special Brunch Menu: 0000353 (3.23/2.23)
+|   occasion = Takeout Available: 0000045 (0.0)
+|   occasion = Walk: 0000045 (0.0)
+|   occasion = Weekend Brunch: 0000045 (0.0)
+|   occasion = Weekend Dining: 0000045 (0.0)
+|   occasion = Weekend Jazz Brunch: 0000045 (0.0)
+|   occasion = Weekend Lunch: 0000045 (0.0)
+atmosphere = Near-perfect Food: 0000000 (0.0)
+atmosphere = Near-perfect Service: 0000000 (0.0)
+atmosphere = Need To Dress: 0000000 (0.0)
+atmosphere = No Liquor Served: 0000000 (0.0)
+atmosphere = No Reservations: 0000000 (0.0)
+atmosphere = No Smoking Allowed: 0000000 (0.0)
+atmosphere = Old World Cafe Charm: 0000000 (0.0)
+atmosphere = On the Beach: 0000000 (0.0)
+atmosphere = ParkingValet: 0000000 (0.0)
+atmosphere = People Keep Coming Back: 0000000 (0.0)
+atmosphere = Place for Singles: 0000000 (0.0)
+atmosphere = Poor Decor: 0000741 (1.0)
+atmosphere = Pub Feel: 0000000 (0.0)
+atmosphere = Quiet for Conversation: 0000000 (0.0)
+atmosphere = Quirky: 0000000 (0.0)
+atmosphere = Relaxed Senior Scene: 0000000 (0.0)
+atmosphere = Romantic: 0000000 (0.0)
+atmosphere = Singles Scene: 0000000 (0.0)
+atmosphere = Tourist Appeal: 0000000 (0.0)
+atmosphere = Up and Coming: 0000000 (0.0)
+atmosphere = Very Busy - Reservations a Must: 0000000 (0.0)
+atmosphere = Warm spots by the fire: 0000000 (0.0)
+atmosphere = Wheelchair Access: 0000000 (0.0)
+
+Number of Leaves  : 	344
+
+Size of the tree : 	365
+
+
+Time taken to build model: 0.11 seconds
+
+7. San Francisco:
+The user should go to the “0000181	Sol y Luna” restaurant.
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     city-res
+Instances:    8
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+occasion = Game: 0000024 (0.0)
+occasion = After Hours Dining: 0000024 (0.0)
+occasion = Catering for Special Events: 0000181 (2.0/1.0)
+occasion = Dancing: 0000024 (0.0)
+occasion = Delivery Available: 0000024 (0.0)
+occasion = Dining After the Theater: 0000024 (0.0)
+occasion = Dining Outdoors: 0000024 (1.0)
+occasion = Early Dining: 0000024 (0.0)
+occasion = Entertainment: 0000374 (1.0)
+occasion = Fine for Dining Alone: 0000024 (0.0)
+occasion = Great Place to Meet for a Drink: 0000024 (0.0)
+occasion = Happy Hour: 0000024 (0.0)
+occasion = Late Night Menu: 0000024 (0.0)
+occasion = Long Drive: 0000024 (0.0)
+occasion = Margaritas: 0000024 (0.0)
+occasion = Menus in Braille: 0000024 (0.0)
+occasion = Open for Breakfast: 0000217 (1.0)
+occasion = Open on Mondays: 0000024 (0.0)
+occasion = Open on Sundays: 0000024 (0.0)
+occasion = Other Quick Food: 0000024 (0.0)
+occasion = Parties and Occasions: 0000024 (0.0)
+occasion = Picnics: 0000024 (0.0)
+occasion = Pre-theater Dining: 0000024 (0.0)
+occasion = Private Parties: 0000024 (0.0)
+occasion = Private Rooms Available: 0000033 (1.0)
+occasion = Prix Fixe Menus: 0000024 (0.0)
+occasion = See the Game: 0000024 (0.0)
+occasion = Short Drive: 0000024 (0.0)
+occasion = Special Brunch Menu: 0000024 (0.0)
+occasion = Takeout Available: 0000024 (0.0)
+occasion = Walk: 0000024 (0.0)
+occasion = Weekend Brunch: 0000024 (0.0)
+occasion = Weekend Dining: 0000144 (2.0/1.0)
+occasion = Weekend Jazz Brunch: 0000024 (0.0)
+occasion = Weekend Lunch: 0000024 (0.0)
+
+Number of Leaves  : 	35
+
+Size of the tree : 	36
+
+
+Time taken to build model: 0 seconds
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances           6               75      %
+Incorrectly Classified Instances         2               25      %
+Kappa statistic                          0.7143
+Mean absolute error                      0.0625
+Root mean squared error                  0.1768
+Relative absolute error                 28.5714 %
+Root relative squared error             53.4522 %
+Total Number of Instances                8     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        0000024
+                 1         0          1         1         1          1        0000033
+                 1         0.143      0.5       1         0.667      0.929    0000144
+                 1         0.143      0.5       1         0.667      0.929    0000181
+                 1         0          1         1         1          1        0000217
+                 0         0          0         0         0          0.929    0000227
+                 0         0          0         0         0          0.929    0000262
+                 1         0          1         1         1          1        0000374
+Weighted Avg.    0.75      0.036      0.625     0.75      0.667      0.964
+
+8. Washington DC:
+The user should go to the “0000004	Notte Luna” restaurant.
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     city-res
+Instances:    56
+Attributes:   5
+              restaurant
+              atmosphere
+              style
+              price
+              occasion
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+atmosphere = An Historic Spot: 0000004 (0.0)
+atmosphere = An Out Of The Way Find: 0000004 (0.0)
+atmosphere = Authentic: 0000004 (0.0)
+atmosphere = Buffet Dining: 0000004 (0.0)
+atmosphere = Business Scene: 0000004 (0.0)
+atmosphere = CafeGarden Dining: 0000004 (0.0)
+atmosphere = Classic Hotel Dining: 0000004 (0.0)
+atmosphere = Creative: 0000004 (0.0)
+atmosphere = Credit cards are not accepted: 0000004 (0.0)
+atmosphere = Excellent Decor: 0000004 (30.0/29.0)
+atmosphere = Excellent Food: 0000004 (0.0)
+atmosphere = Excellent Service: 0000004 (0.0)
+atmosphere = Extraordinary Decor: 0000048 (8.0/7.0)
+atmosphere = Extraordinary Food: 0000004 (0.0)
+atmosphere = Extraordinary Service: 0000004 (0.0)
+atmosphere = Fabulous Views: 0000004 (0.0)
+atmosphere = Fabulous Wine Lists: 0000004 (0.0)
+atmosphere = Fair Decor: 0000104 (1.0)
+atmosphere = Fair Food: 0000004 (0.0)
+atmosphere = Fair Service: 0000004 (0.0)
+atmosphere = Focus on Dessert: 0000004 (0.0)
+atmosphere = For the Young and Young at Heart: 0000004 (0.0)
+atmosphere = Good Decor
+|   price = 15-30: 0000018 (14.0/13.0)
+|   price = 30-50: 0000018 (0.0)
+|   price = below 15: 0000197 (2.0/1.0)
+|   price = over 50: 0000018 (0.0)
+atmosphere = Good Food: 0000004 (0.0)
+atmosphere = Good Out of Town Business: 0000004 (0.0)
+atmosphere = Good Service: 0000004 (0.0)
+atmosphere = Good for Younger Kids: 0000004 (0.0)
+atmosphere = Great for People Watching: 0000004 (0.0)
+atmosphere = Health Conscious Menus: 0000004 (0.0)
+atmosphere = Hip Place To Be: 0000004 (0.0)
+atmosphere = Little Known But Well Liked: 0000004 (0.0)
+atmosphere = Near-perfect Decor: 0000227 (1.0)
+atmosphere = Near-perfect Food: 0000004 (0.0)
+atmosphere = Near-perfect Service: 0000004 (0.0)
+atmosphere = Need To Dress: 0000004 (0.0)
+atmosphere = No Liquor Served: 0000004 (0.0)
+atmosphere = No Reservations: 0000004 (0.0)
+atmosphere = No Smoking Allowed: 0000004 (0.0)
+atmosphere = Old World Cafe Charm: 0000004 (0.0)
+atmosphere = On the Beach: 0000004 (0.0)
+atmosphere = ParkingValet: 0000004 (0.0)
+atmosphere = People Keep Coming Back: 0000004 (0.0)
+atmosphere = Place for Singles: 0000004 (0.0)
+atmosphere = Poor Decor: 0000004 (0.0)
+atmosphere = Pub Feel: 0000004 (0.0)
+atmosphere = Quiet for Conversation: 0000004 (0.0)
+atmosphere = Quirky: 0000004 (0.0)
+atmosphere = Relaxed Senior Scene: 0000004 (0.0)
+atmosphere = Romantic: 0000004 (0.0)
+atmosphere = Singles Scene: 0000004 (0.0)
+atmosphere = Tourist Appeal: 0000004 (0.0)
+atmosphere = Up and Coming: 0000004 (0.0)
+atmosphere = Very Busy - Reservations a Must: 0000004 (0.0)
+atmosphere = Warm spots by the fire: 0000004 (0.0)
+atmosphere = Wheelchair Access: 0000004 (0.0)
+
+Number of Leaves  : 	58
+
+Size of the tree : 	60
+
+
+Time taken to build model: 0 seconds
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances           6               10.7143 %
+Incorrectly Classified Instances        50               89.2857 %
+Kappa statistic                          0.0909
+Mean absolute error                      0.0319
+Root mean squared error                  0.1263
+Relative absolute error                 90.9091 %
+Root relative squared error             95.3463 %
+Total Number of Instances               56     
+
+
+

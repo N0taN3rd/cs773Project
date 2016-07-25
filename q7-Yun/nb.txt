@@ -1,0 +1,245 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     Europe-city
+Instances:    896
+Attributes:   5
+              atmosphere
+              style
+              price
+              occasion
+              city
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                             Class
+Attribute                                  atlanta        boston       chicago   los_angeles   new_orleans      new_york san_francisco washington_dc
+                                            (0.02)        (0.03)        (0.26)        (0.12)        (0.05)        (0.45)        (0.01)        (0.06)
+=====================================================================================================================================================
+atmosphere
+  An Historic Spot                              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  An Out Of The Way Find                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Authentic                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Buffet Dining                                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Business Scene                                1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  CafeGarden Dining                             1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Classic Hotel Dining                          1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Creative                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Credit cards are not accepted                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Excellent Decor                              10.0           3.0          90.0          56.0          10.0         161.0           4.0          31.0
+  Excellent Food                                1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Excellent Service                             1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Extraordinary Decor                           6.0           3.0          33.0          10.0           7.0          36.0           2.0           9.0
+  Extraordinary Food                            1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Extraordinary Service                         1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Fabulous Views                                1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Fabulous Wine Lists                           1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Fair Decor                                    3.0           3.0          15.0           5.0           8.0          24.0           1.0           2.0
+  Fair Food                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Fair Service                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Focus on Dessert                              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  For the Young and Young at Heart              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Good Decor                                    3.0          17.0          94.0          35.0          25.0         178.0           5.0          17.0
+  Good Food                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Good Out of Town Business                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Good Service                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Good for Younger Kids                         1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Great for People Watching                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Health Conscious Menus                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Hip Place To Be                               1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Little Known But Well Liked                   1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Near-perfect Decor                            1.0           1.0           4.0           2.0           1.0          15.0           1.0           2.0
+  Near-perfect Food                             1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Near-perfect Service                          1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Need To Dress                                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  No Liquor Served                              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  No Reservations                               1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  No Smoking Allowed                            1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Old World Cafe Charm                          1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  On the Beach                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  ParkingValet                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  People Keep Coming Back                       1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Place for Singles                             1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Poor Decor                                    1.0           2.0           1.0           2.0           1.0           2.0           1.0           1.0
+  Pub Feel                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Quiet for Conversation                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Quirky                                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Relaxed Senior Scene                          1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Romantic                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Singles Scene                                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Tourist Appeal                                1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Up and Coming                                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Very Busy - Reservations a Must               1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Warm spots by the fire                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Wheelchair Access                             1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  [total]                                      73.0          78.0         286.0         159.0         101.0         465.0          63.0         111.0
+
+style
+  A                                             1.0           3.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Southern                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  French                                       10.0           1.0          16.0           1.0           1.0          40.0           1.0           1.0
+  Japanese                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Southwestern                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           3.0
+  Swiss                                         2.0           1.0           1.0           1.0           1.0           5.0           1.0           1.0
+  Asian                                         1.0           1.0           2.0           1.0           1.0           1.0           1.0           1.0
+  Southeast Asian                               1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  International                                 1.0           2.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Southern Comfort                              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Deli                                          1.0           1.0           1.0           1.0           1.0           1.0           1.0           2.0
+  Kosher                                        1.0           1.0           1.0           2.0           1.0           1.0           1.0           1.0
+  Afghanistan                                   1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Argentinean                                   1.0           1.0           1.0           1.0           1.0           2.0           1.0           1.0
+  Eclectic                                      1.0           1.0           2.0           1.0           1.0           1.0           1.0           1.0
+  Continental                                   2.0           2.0           4.0           3.0           1.0           4.0           2.0           1.0
+  Bakeries                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Belgian                                       1.0           1.0           1.0           1.0           1.0           2.0           1.0           1.0
+  Brasserie                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Cab                                           1.0           1.0          57.0           2.0           1.0           5.0           1.0           1.0
+  CafeEspresso Bars                             1.0           1.0           1.0           2.0           1.0           1.0           1.0           1.0
+  Cafeterias                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Californian                                   1.0           1.0           1.0           6.0           1.0           1.0           1.0           1.0
+  Wine and Beer                                 1.0           1.0           1.0           2.0           1.0           1.0           1.0           3.0
+  Carry in Wine and Beer                        1.0           2.0           6.0           1.0           1.0           1.0           1.0           1.0
+  Caviar                                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Central                                       1.0           1.0           1.0           2.0           1.0           1.0           1.0           1.0
+  Coffee Houses                                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Coffee Shops                                  1.0           1.0           1.0           1.0           1.0           4.0           1.0           1.0
+  Coffeehouses                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Czech                                         1.0           1.0           3.0           1.0           1.0           2.0           1.0           1.0
+  Diners                                        1.0           1.0           2.0           1.0           1.0           2.0           1.0           1.0
+  Down-Home                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Eastern European                              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Egyptian                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  English                                       1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Fast Food                                     1.0           1.0           1.0           2.0           1.0           1.0           1.0           1.0
+  Fondue                                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Franco-Russian                                1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Frankfurters                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  French-Japanese                               1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Grills                                        1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Guatemalan                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Hamburgers                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           2.0
+  Health Food                                   1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  High Tea                                      1.0           1.0           1.0           1.0           1.0           2.0           1.0           1.0
+  Jewish                                        1.0           1.0           1.0           1.0           1.0           6.0           1.0           1.0
+  Latin                                         1.0           1.0           1.0           1.0           1.0           1.0           1.0           2.0
+  Lithuanian                                    1.0           1.0           3.0           1.0           1.0           1.0           1.0           1.0
+  Middle Eastern                                1.0           4.0           1.0           1.0           1.0           2.0           2.0           1.0
+  N                                             1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Nicaraguan                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Noodle Houses                                 1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Noodle Shops                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Omelettes                                     1.0           1.0           1.0           1.0           1.0           2.0           1.0           1.0
+  Oyster Bars                                   1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Pancakes                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Pastries                                      1.0           1.0           1.0           1.0           1.0           2.0           1.0           1.0
+  Pastry Shops                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Pizza                                         1.0           1.0          22.0           1.0           3.0          15.0           1.0          17.0
+  Pizzerias                                     1.0           1.0           1.0           5.0           1.0           1.0           1.0           1.0
+  Po Boys                                       1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Power Brokers                                 1.0           2.0          11.0           7.0           1.0           8.0           1.0           2.0
+  Roumanian                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Russian                                       1.0           1.0           1.0           1.0           1.0           4.0           1.0           1.0
+  Salvadoran                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           2.0
+  Scottish                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Soul Food                                     1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Soulfood                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Steakhouses                                   1.0           1.0           3.0           1.0           1.0           5.0           1.0           1.0
+  Swiss-French                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Tacos                                         1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Traditional                                   2.0           3.0          16.0           7.0           3.0          28.0           1.0           5.0
+  Ukrainian                                     1.0           1.0           1.0           1.0           1.0           3.0           1.0           1.0
+  Ukranian                                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Venezuelan                                    1.0           1.0           1.0           1.0           1.0           2.0           1.0           1.0
+  Yogurt Bar                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Yugoslavian                                   1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  [total]                                      90.0          89.0         212.0         107.0          82.0         202.0          80.0         107.0
+
+price
+  15-30                                        14.0          16.0         186.0          86.0          37.0         186.0           9.0          50.0
+  30-50                                         4.0           2.0          22.0          17.0           2.0         187.0           1.0           3.0
+  below 15                                      3.0           8.0          24.0           4.0          10.0          10.0           1.0           6.0
+  over 50                                       1.0           1.0           3.0           1.0           1.0          31.0           1.0           1.0
+  [total]                                      22.0          27.0         235.0         108.0          50.0         414.0          12.0          60.0
+
+occasion
+  Game                                          1.0           4.0           1.0           1.0           3.0          21.0           1.0           1.0
+  After Hours Dining                            1.0           1.0           1.0           2.0           1.0           1.0           1.0           1.0
+  Catering for Special Events                  11.0           2.0           3.0           1.0           1.0           1.0           3.0           9.0
+  Dancing                                       2.0           2.0           1.0           5.0           1.0           1.0           1.0           1.0
+  Delivery Available                            2.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Dining After the Theater                      1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Dining Outdoors                               2.0           1.0          24.0          10.0           2.0          38.0           2.0           7.0
+  Early Dining                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Entertainment                                 5.0           4.0          14.0          16.0           4.0          32.0           2.0           6.0
+  Fine for Dining Alone                         1.0           2.0           1.0           1.0           4.0          10.0           1.0           1.0
+  Great Place to Meet for a Drink               1.0           1.0           1.0           1.0           1.0           3.0           1.0           1.0
+  Happy Hour                                    1.0           2.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Late Night Menu                               1.0           3.0           4.0           6.0           5.0          36.0           1.0           1.0
+  Long Drive                                    1.0           1.0          14.0           1.0           1.0           1.0           1.0           1.0
+  Margaritas                                    1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Menus in Braille                              1.0           1.0           1.0           1.0           1.0           5.0           1.0           1.0
+  Open for Breakfast                            1.0           3.0           2.0           5.0           2.0           8.0           2.0           3.0
+  Open on Mondays                               1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Open on Sundays                               1.0           1.0           1.0           1.0          11.0           1.0           1.0           1.0
+  Other Quick Food                              1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Parties and Occasions                         1.0           1.0           1.0           3.0           1.0           1.0           1.0           1.0
+  Picnics                                       1.0           1.0           1.0           6.0           1.0           1.0           1.0           1.0
+  Pre-theater Dining                            1.0           1.0           1.0           2.0           1.0           3.0           1.0           1.0
+  Private Parties                               1.0           4.0           1.0           1.0          10.0           1.0           1.0           1.0
+  Private Rooms Available                       2.0           1.0          48.0          13.0           5.0          10.0           2.0           4.0
+  Prix Fixe Menus                               1.0           1.0           5.0           1.0           1.0          26.0           1.0           2.0
+  See the Game                                  1.0           1.0           1.0           1.0           1.0           1.0           1.0           1.0
+  Short Drive                                   1.0           1.0          11.0           1.0           1.0           2.0           1.0           1.0
+  Special Brunch Menu                           1.0           1.0           1.0           1.0           3.0          16.0           1.0          13.0
+  Takeout Available                             1.0           2.0           7.0           1.0           1.0          29.0           1.0          10.0
+  Walk                                          1.0           1.0           7.0           1.0           1.0           1.0           1.0           1.0
+  Weekend Brunch                                1.0           1.0          89.0          27.0           1.0           1.0           1.0           1.0
+  Weekend Dining                                1.0           4.0           1.0           1.0           1.0          16.0           3.0           4.0
+  Weekend Jazz Brunch                           1.0           1.0           1.0          14.0           1.0           1.0           1.0           1.0
+  Weekend Lunch                                 1.0           1.0           1.0           4.0           1.0           1.0           1.0           6.0
+  [total]                                      53.0          56.0         251.0         135.0          74.0         275.0          43.0          89.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         620               69.1964 %
+Incorrectly Classified Instances       276               30.8036 %
+Kappa statistic                          0.5134
+Mean absolute error                      0.1086
+Root mean squared error                  0.2384
+Relative absolute error                 61.6621 %
+Root relative squared error             80.419  %
+Total Number of Instances              896     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0.001      0         0         0          0.851    atlanta
+                 0         0.001      0         0         0          0.832    boston
+                 0.805     0.125      0.691     0.805     0.744      0.901    chicago
+                 0.221     0.004      0.885     0.221     0.354      0.849    los_angeles
+                 0.37      0.011      0.654     0.37      0.472      0.865    new_orleans
+                 0.937     0.352      0.692     0.937     0.796      0.872    new_york
+                 0         0          0         0         0          0.682    san_francisco
+                 0.179     0.01       0.556     0.179     0.27       0.874    washington_dc
+Weighted Avg.    0.692     0.195      0.666     0.692     0.638      0.873
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+   0   0   7   1   0   9   0   1 |   a = atlanta
+   0   0   4   0   4  15   0   0 |   b = boston
+   1   0 186   0   1  42   0   1 |   c = chicago
+   0   1  36  23   0  41   0   3 |   d = los_angeles
+   0   0   6   0  17  23   0   0 |   e = new_orleans
+   0   0  21   0   4 384   0   1 |   f = new_york
+   0   0   1   0   0   5   0   2 |   g = san_francisco
+   0   0   8   2   0  36   0  10 |   h = washington_dc

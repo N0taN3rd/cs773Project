@@ -1,0 +1,240 @@
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Europe-city
+Instances:    896
+Attributes:   5
+              atmosphere
+              style
+              price
+              occasion
+              city
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+occasion = Game: new_york (32.18/6.08)
+occasion = After Hours Dining: los_angeles (1.29/0.28)
+occasion = Catering for Special Events
+|   style = A: boston (0.06/0.03)
+|   style = Southern: atlanta (0.0)
+|   style = French: atlanta (10.82/3.72)
+|   style = Japanese: atlanta (0.0)
+|   style = Southwestern: atlanta (0.0)
+|   style = Swiss: new_york (0.12/0.03)
+|   style = Asian: atlanta (0.0)
+|   style = Southeast Asian: atlanta (0.0)
+|   style = International: atlanta (0.0)
+|   style = Southern Comfort: atlanta (0.0)
+|   style = Deli: atlanta (0.0)
+|   style = Kosher: atlanta (0.0)
+|   style = Afghanistan: atlanta (0.0)
+|   style = Argentinean: new_york (0.06/0.02)
+|   style = Eclectic: atlanta (0.0)
+|   style = Continental: boston (1.88/0.88)
+|   style = Bakeries: atlanta (0.0)
+|   style = Belgian: atlanta (0.0)
+|   style = Brasserie: atlanta (0.0)
+|   style = Cab: chicago (0.76/0.31)
+|   style = CafeEspresso Bars: atlanta (0.0)
+|   style = Cafeterias: atlanta (0.0)
+|   style = Californian: atlanta (0.0)
+|   style = Wine and Beer: washington_dc (1.76/0.7)
+|   style = Carry in Wine and Beer: atlanta (0.0)
+|   style = Caviar: atlanta (0.0)
+|   style = Central: atlanta (0.0)
+|   style = Coffee Houses: atlanta (0.0)
+|   style = Coffee Shops: new_york (0.06/0.02)
+|   style = Coffeehouses: atlanta (0.0)
+|   style = Czech: new_york (0.06/0.02)
+|   style = Diners: atlanta (0.0)
+|   style = Down-Home: atlanta (0.0)
+|   style = Eastern European: atlanta (0.0)
+|   style = Egyptian: atlanta (0.0)
+|   style = English: atlanta (0.0)
+|   style = Fast Food: atlanta (0.0)
+|   style = Fondue: atlanta (0.0)
+|   style = Franco-Russian: atlanta (0.0)
+|   style = Frankfurters: atlanta (0.0)
+|   style = French-Japanese: atlanta (0.0)
+|   style = Grills: atlanta (0.0)
+|   style = Guatemalan: atlanta (0.0)
+|   style = Hamburgers: atlanta (0.0)
+|   style = Health Food: atlanta (0.0)
+|   style = High Tea: new_york (0.06/0.02)
+|   style = Jewish: new_york (0.12/0.03)
+|   style = Latin: washington_dc (1.76/0.7)
+|   style = Lithuanian: atlanta (0.0)
+|   style = Middle Eastern: atlanta (0.0)
+|   style = N: atlanta (0.0)
+|   style = Nicaraguan: atlanta (0.0)
+|   style = Noodle Houses: atlanta (0.0)
+|   style = Noodle Shops: atlanta (0.0)
+|   style = Omelettes: atlanta (0.0)
+|   style = Oyster Bars: atlanta (0.0)
+|   style = Pancakes: atlanta (0.0)
+|   style = Pastries: atlanta (0.0)
+|   style = Pastry Shops: atlanta (0.0)
+|   style = Pizza: washington_dc (7.29/3.03)
+|   style = Pizzerias: atlanta (0.0)
+|   style = Po Boys: atlanta (0.0)
+|   style = Power Brokers: washington_dc (2.0/0.93)
+|   style = Roumanian: atlanta (0.0)
+|   style = Russian: new_york (0.06/0.02)
+|   style = Salvadoran: atlanta (0.0)
+|   style = Scottish: atlanta (0.0)
+|   style = Soul Food: atlanta (0.0)
+|   style = Soulfood: atlanta (0.0)
+|   style = Steakhouses: atlanta (0.0)
+|   style = Swiss-French: atlanta (0.0)
+|   style = Tacos: atlanta (0.0)
+|   style = Traditional: atlanta (2.76/1.48)
+|   style = Ukrainian: atlanta (0.0)
+|   style = Ukranian: atlanta (0.0)
+|   style = Venezuelan: atlanta (0.0)
+|   style = Yogurt Bar: atlanta (0.0)
+|   style = Yugoslavian: atlanta (0.0)
+occasion = Dancing: los_angeles (7.72/3.69)
+occasion = Delivery Available: atlanta (1.29/0.29)
+occasion = Dining After the Theater: new_york (0.0)
+occasion = Dining Outdoors: new_york (100.41/44.36)
+occasion = Early Dining: new_york (0.0)
+occasion = Entertainment: new_york (96.55/47.23)
+occasion = Fine for Dining Alone: new_york (16.74/4.56)
+occasion = Great Place to Meet for a Drink: new_york (2.57/0.09)
+occasion = Happy Hour: boston (1.29/0.28)
+occasion = Late Night Menu: new_york (63.08/16.11)
+occasion = Long Drive: chicago (16.74/3.46)
+occasion = Margaritas: new_york (0.0)
+occasion = Menus in Braille: new_york (5.15/0.17)
+occasion = Open for Breakfast: new_york (23.17/11.78)
+occasion = Open on Mondays: new_york (0.0)
+occasion = Open on Sundays: new_orleans (12.87/2.77)
+occasion = Other Quick Food: new_york (0.0)
+occasion = Parties and Occasions: los_angeles (2.57/0.56)
+occasion = Picnics: los_angeles (6.44/1.41)
+occasion = Pre-theater Dining: new_york (3.86/1.13)
+occasion = Private Parties
+|   price = 15-30: new_orleans (10.93/2.81)
+|   price = 30-50: new_york (1.36/0.02)
+|   price = below 15: boston (3.07/1.05)
+|   price = over 50: new_york (0.09)
+occasion = Private Rooms Available: chicago (99.13/50.47)
+occasion = Prix Fixe Menus: new_york (38.62/6.29)
+occasion = See the Game: new_york (0.0)
+occasion = Short Drive: chicago (14.16/3.92)
+occasion = Special Brunch Menu: new_york (37.33/15.25)
+occasion = Takeout Available
+|   price = 15-30
+|   |   atmosphere = An Historic Spot: new_york (0.0)
+|   |   atmosphere = An Out Of The Way Find: new_york (0.0)
+|   |   atmosphere = Authentic: new_york (0.0)
+|   |   atmosphere = Buffet Dining: new_york (0.0)
+|   |   atmosphere = Business Scene: new_york (0.0)
+|   |   atmosphere = CafeGarden Dining: new_york (0.0)
+|   |   atmosphere = Classic Hotel Dining: new_york (0.0)
+|   |   atmosphere = Creative: new_york (0.0)
+|   |   atmosphere = Credit cards are not accepted: new_york (0.0)
+|   |   atmosphere = Excellent Decor: washington_dc (7.33/1.26)
+|   |   atmosphere = Excellent Food: new_york (0.0)
+|   |   atmosphere = Excellent Service: new_york (0.0)
+|   |   atmosphere = Extraordinary Decor: washington_dc (3.19/0.19)
+|   |   atmosphere = Extraordinary Food: new_york (0.0)
+|   |   atmosphere = Extraordinary Service: new_york (0.0)
+|   |   atmosphere = Fabulous Views: new_york (0.0)
+|   |   atmosphere = Fabulous Wine Lists: new_york (0.0)
+|   |   atmosphere = Fair Decor: new_york (2.57/1.06)
+|   |   atmosphere = Fair Food: new_york (0.0)
+|   |   atmosphere = Fair Service: new_york (0.0)
+|   |   atmosphere = Focus on Dessert: new_york (0.0)
+|   |   atmosphere = For the Young and Young at Heart: new_york (0.0)
+|   |   atmosphere = Good Decor: new_york (15.99/3.01)
+|   |   atmosphere = Good Food: new_york (0.0)
+|   |   atmosphere = Good Out of Town Business: new_york (0.0)
+|   |   atmosphere = Good Service: new_york (0.0)
+|   |   atmosphere = Good for Younger Kids: new_york (0.0)
+|   |   atmosphere = Great for People Watching: new_york (0.0)
+|   |   atmosphere = Health Conscious Menus: new_york (0.0)
+|   |   atmosphere = Hip Place To Be: new_york (0.0)
+|   |   atmosphere = Little Known But Well Liked: new_york (0.0)
+|   |   atmosphere = Near-perfect Decor: new_york (0.0)
+|   |   atmosphere = Near-perfect Food: new_york (0.0)
+|   |   atmosphere = Near-perfect Service: new_york (0.0)
+|   |   atmosphere = Need To Dress: new_york (0.0)
+|   |   atmosphere = No Liquor Served: new_york (0.0)
+|   |   atmosphere = No Reservations: new_york (0.0)
+|   |   atmosphere = No Smoking Allowed: new_york (0.0)
+|   |   atmosphere = Old World Cafe Charm: new_york (0.0)
+|   |   atmosphere = On the Beach: new_york (0.0)
+|   |   atmosphere = ParkingValet: new_york (0.0)
+|   |   atmosphere = People Keep Coming Back: new_york (0.0)
+|   |   atmosphere = Place for Singles: new_york (0.0)
+|   |   atmosphere = Poor Decor: new_york (0.0)
+|   |   atmosphere = Pub Feel: new_york (0.0)
+|   |   atmosphere = Quiet for Conversation: new_york (0.0)
+|   |   atmosphere = Quirky: new_york (0.0)
+|   |   atmosphere = Relaxed Senior Scene: new_york (0.0)
+|   |   atmosphere = Romantic: new_york (0.0)
+|   |   atmosphere = Singles Scene: new_york (0.0)
+|   |   atmosphere = Tourist Appeal: new_york (0.0)
+|   |   atmosphere = Up and Coming: new_york (0.0)
+|   |   atmosphere = Very Busy - Reservations a Must: new_york (0.0)
+|   |   atmosphere = Warm spots by the fire: new_york (0.0)
+|   |   atmosphere = Wheelchair Access: new_york (0.0)
+|   price = 30-50: new_york (21.99/0.06)
+|   price = below 15: chicago (5.25/1.25)
+|   price = over 50: new_york (0.32)
+occasion = Walk: chicago (7.72/1.59)
+occasion = Weekend Brunch
+|   price = 15-30: chicago (115.34/39.05)
+|   price = 30-50: new_york (16.94/4.16)
+|   price = below 15: chicago (13.66/1.66)
+|   price = over 50: new_york (0.82)
+occasion = Weekend Dining: new_york (29.61/8.99)
+occasion = Weekend Jazz Brunch: los_angeles (16.74/3.66)
+occasion = Weekend Lunch: washington_dc (10.3/5.28)
+
+Number of Leaves  : 	175
+
+Size of the tree : 	181
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         626               69.8661 %
+Incorrectly Classified Instances       270               30.1339 %
+Kappa statistic                          0.5251
+Mean absolute error                      0.1273
+Root mean squared error                  0.248 
+Relative absolute error                 72.2554 %
+Root relative squared error             83.6457 %
+Total Number of Instances              896     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.333     0.011      0.375     0.333     0.353      0.806    atlanta
+                 0         0.001      0         0         0          0.705    boston
+                 0.727     0.098      0.721     0.727     0.724      0.865    chicago
+                 0.221     0.01       0.742     0.221     0.341      0.76     los_angeles
+                 0.391     0.004      0.857     0.391     0.537      0.776    new_orleans
+                 0.963     0.36       0.693     0.963     0.806      0.83     new_york
+                 0         0          0         0         0          0.597    san_francisco
+                 0.286     0.01       0.667     0.286     0.4        0.788    washington_dc
+Weighted Avg.    0.699     0.192      0.682     0.699     0.655      0.82 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+   6   0   1   1   0   7   0   3 |   a = atlanta
+   1   0   0   1   3  18   0   0 |   b = boston
+   2   0 168   2   0  59   0   0 |   c = chicago
+   0   0  40  23   0  38   0   3 |   d = los_angeles
+   0   1   4   0  18  23   0   0 |   e = new_orleans
+   0   0  12   1   0 395   0   2 |   f = new_york
+   2   0   2   0   0   4   0   0 |   g = san_francisco
+   5   0   6   3   0  26   0  16 |   h = washington_dc

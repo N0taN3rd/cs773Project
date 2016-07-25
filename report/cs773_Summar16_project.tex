@@ -242,6 +242,11 @@ Analyze and form rules to characterize the following five types of cuisine: (i) 
 rules based on data available from all cities.
 \end{verbatim}
 \subsection*{Results}
+\begin{enumerate}
+\item[] Assumptions 
+\item There would be clear and concise rules 
+\item Low error margin when generating rules
+\end{enumerate} 
 The results for task ii were generated from an R script seen in listing \hyperref[lst:tii]{\ref{lst:tii}} which uses the C50 decision tree algorithm to produce rules. Data used in this script was generated using a python file \verb+rules.py+ which accompanies this report. The classification was aided through using boosting which is indicated by setting the \textit{trialNum} to ten. The \textit{rules} R script can be seen in this listing \hyperref[lst:apendixRF]{\ref{lst:apendixRF}} in the appendices for this report. We also set the flag of rules to true in order to decompose the tree into the bare rules. \newline\newline
 Overall the classification of the data the features \textit{price}, \textit{style}, \textit{occasion} were heavily used when generating the rules as seen in table \hyperref[tab:tii_au]{\ref{tab:tii_au}}. Boosting resulted in a \verb+38.7%+ error margin with trials 0, 7 and 8 resulting in least error. The entire rule set for each trial can be found in the files \textit{c50\_10Trial(2).txt} which accompanies this report.
 Trial 0 generated the most number of rules which was 118 with the average number of rules being between 40-60. We omit listing the rules here as the file is 5977 lines long but include notable rules as seen below. This is a sampling seen in figure \hyperref[fig:c50]{\ref{fig:c50}} is taken from all trials.
@@ -663,78 +668,44 @@ features. (Choose your own features or categories that are most relevant)
 \end{verbatim}
 \subsection*{Results}
 \begin{enumerate}
-\item Assumptions 
-\begin{enumerate}
+\item[] Assumptions 
 \item Each restaurant has one feature in each category. If multiple features are found, the last one was chosen.
 \item Any of the features that contain European geographical information are considered “Europe continent” and the restaurants are included.
-\item Weka is used to determine the city based on the features. NaiveBayes method is employed.
-\end{enumerate} 
+\item Weka is used to determine the city based on the features. NaiveBayes listing \hyperref[lst:vii_nb]{\ref{lst:vii_nb}} and J48 method listing \hyperref[lst:vii_j48]{\ref{lst:vii_j48}} are employed.
 \end{enumerate}
+The code used to produce the arff file is seen in listing \hyperref[lst:vii]{\ref{lst:vii}}
+\lstinputlisting[
+frame=single,
+caption={Task vii NaiveBayes Output},label=lst:vii_nb,captionpos=b,numbers=left]{../q7-Yun/nb.txt}
 
-\begin{table}[H]
-\centering
-\setlength\tabcolsep{2pt}
-\begin{minipage}{0.38\textwidth}
-\caption{Task vii Classification Errors}
+\lstinputlisting[
+frame=single,
+caption={Task vii J48 Output},label=lst:vii_j48,captionpos=b,numbers=left]{../q7-Yun/j48.txt}
+\clearpage
+\newpage
+\section*{Task viii}
+\addcontentsline{toc}{section}{Task viii}
+\index{Task viii}
 \begin{verbatim}
-Evaluation on training data (29414 cases):
-
-Trial	        Rules     
------	  ----------------
-	    No      Errors
-
-   0	    57 7711(26.2%)
-   1	    22 8551(29.1%)
-   2	    27 8940(30.4%)
-   3	    38 8752(29.8%)
-   4	    33 9137(31.1%)
-   5	    33 9848(33.5%)
-   6	    36 8883(30.2%)
-   7	    45 9217(31.3%)
-   8	    37 8217(27.9%)
-   9	    30 8220(27.9%)
-boost	       7778(26.4%)   <<
+Finally, given that a user likes a specific continent food and provides the feature set
+(you can limit these if you like), you should have rules to determine which restaurant
+they should visit for each city.
 \end{verbatim}
-\label{tab:tvii_err} 
-\end{minipage}
-\begin{minipage}{0.48\textwidth}
-\centering
-\caption{Task vii Attribute Usage} 
-\begin{verbatim}
-Attribute usage:
-100.00%	price
-100.00%	style
-99.81%	atmosphere
-99.04%	occasion
-\end{verbatim}
- \label{tab:tvii_au} 
-\end{minipage}
-\begin{minipage}{\textwidth}
-\centering
-\caption{Task vii Classification Confusion Matrix} 
-\begin{tabu}{rrrrrrrrrrrrrrrrr}
-\hline
-a & b & c & d & e & f & g & h & i & j & k & l & m & n & o & p & classified as \\ \hline
- &  &  &  &  &  &  &  &  & 7 &  &  &  &  &  &  & (a): class Armenian \\ \hline
- &  &  &  & 14 &  &  &  &  & 40 &  &  &  &  &  &  & (b): class Austrian \\ \hline
- &  & 21 &  &  &  &  &  &  & 3 &  &  &  &  &  &  & (c): class Belgian \\ \hline
- &  &  &  & 12 &  &  &  &  & 40 &  &  &  &  &  &  & (d): class Czech \\ \hline
- &  &  &  & 6122 &  &  &  &  & 3395 &  &  &  &  &  &  & (e): class French \\ \hline
- &  &  &  & 26 & 56 &  &  &  & 407 &  &  &  &  &  &  & (f): class German \\ \hline
- &  &  &  & 41 &  & 106 &  &  & 603 &  &  &  &  &  &  & (g): class Greek \\ \hline
- &  &  &  & 12 &  &  &  &  & 124 &  &  &  &  &  &  & (h): class Hungarian \\ \hline
- &  &  &  & 12 &  &  &  &  & 115 &  &  &  &  &  &  & (i): class Irish \\ \hline
- &  &  &  & 1443 &  & 48 &  &  & 15211 &  &  &  & 48 &  &  & (j): class Italian \\ \hline
- &  &  &  & 12 &  &  &  &  & 159 &  &  &  &  &  &  & (k): class Polish \\ \hline
- &  &  &  &  &  &  &  &  & 115 &  & 45 &  &  &  &  & (l): class Portuguese \\ \hline
- &  &  &  &  &  &  &  &  & 30 &  &  &  &  &  &  & (m): class Romanian \\ \hline
- &  &  &  & 68 &  &  &  &  & 871 &  &  &  & 75 &  &  & (n): class Spanish \\ \hline
- &  &  &  & 6 &  &  &  &  & 120 &  &  &  &  &  &  & (o): class Swiss \\ \hline
- &  &  &  &  &  &  &  &  & 7 &  &  &  &  &  &  & (p): class Ukrainian \\ \hline
-\end{tabu}
- \label{tab:tii_cm} 
-\end{minipage} 
-\end{table}
+\subsection*{Results}
+\begin{enumerate}
+\item[] Assumptions
+\item The user lies “Europe” food. The features he likes are: 
+Atmosphere: “Excellent Decor”,
+Style: "French",
+Price: "$15-$30",
+Occasion: "Catering for Special Events"
+\item Weka was used and method of decision trees (J48) was employed to determine the rules.
+\end{enumerate}
+The perl code used to generate the arff file is seen in listing \hyperref[lst:viii]{\ref{lst:viii}} and the results are seen in listing \hyperref[lst:viii_j48]{\ref{lst:viii_j48}}
+\lstinputlisting[
+frame=single,
+caption={Task viii J48 Output},label=lst:viii_j48,captionpos=b,numbers=left]{../q8-Yun/q8output.txt}
+\clearpage
 \newpage
 \begin{appendices}
 \section*{Perl Scripts}
@@ -744,6 +715,12 @@ caption={Task v Perl script},label=lst:v,captionpos=b,numbers=left]{../q5-Yun/q5
 \lstinputlisting[language=Perl,
 frame=single,
 caption={Task vi Perl script},label=lst:vi,captionpos=b,numbers=left]{../q6-Yun/q6-prez.pl}
+\lstinputlisting[language=Perl,
+frame=single,
+caption={Task vii Perl script},label=lst:vii,captionpos=b,numbers=left]{../q7-Yun/q7.pl}
+\lstinputlisting[language=Perl,
+frame=single,
+caption={Task viii Perl script},label=lst:viii,captionpos=b,numbers=left]{../q8-Yun/q8.pl}
 \section*{Python Scripts}
 \lstinputlisting[language=Python,
 frame=single,
