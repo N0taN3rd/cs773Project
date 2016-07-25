@@ -1,0 +1,6 @@
+"rules","support","confidence","lift","conviction","lhs","rhs"
+"{atmosphere=Near-perfect Decor,price=over $50} => {cuisine=French}",0.00104262742110117,0.619047619047619,6.03722740562787,2.35583670850543,"atmosphere=Near-perfect Decor,price=over $50","cuisine=French"
+"{atmosphere=Near-perfect Decor,price=over $50} => {style=Power Brokers}",0.000942374784456831,0.55952380952381,3.35163229356119,1.89126978363855,"atmosphere=Near-perfect Decor,price=over $50","style=Power Brokers"
+"{atmosphere=Extraordinary Decor,price=over $50} => {cuisine=French}",0.000621566347194931,0.525423728813559,5.12416563372066,1.89107980682749,"atmosphere=Extraordinary Decor,price=over $50","cuisine=French"
+"{atmosphere=Extraordinary Decor,price=over $50} => {style=Power Brokers}",0.000761920038497012,0.644067796610169,3.85806357051833,2.34049996467288,"atmosphere=Extraordinary Decor,price=over $50","style=Power Brokers"
+"{atmosphere=Extraordinary Decor,price=$15-$30} => {cuisine=American}",0.00467177286762642,0.638356164383562,1.74690674032734,1.75470746888219,"atmosphere=Extraordinary Decor,price=$15-$30","cuisine=American"

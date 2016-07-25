@@ -1,0 +1,28 @@
+\{atmosphere=Cafe/Garden Dining,price=\$30-\$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Need To Dress,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Very Busy - Reservations a Must,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Business Scene,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Fabulous Wine Lists,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Great for People Watching,price=below \$15\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Near-perfect Food,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Quiet for Conversation,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Up and Coming,price=below \$15\} =\textgreater \{style=Tacos\} & \{atmosphere=Parking/Valet,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Hip Place To Be,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Near-perfect Service,price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 
+\{atmosphere=Parking/Valet,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Near-perfect Service,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Hip Place To Be,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Near-perfect Food,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=An Historic Spot,price=below \$15\} =\textgreater \{cuisine=American\} & \{atmosphere=Credit cards are not accepted,price=below \$15\} =\textgreater \{cuisine=Fountain and Ice Cream\} \\ 
+\{atmosphere=Romantic,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=An Historic Spot,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Extraordinary Decor,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Extraordinary Decor,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=People Keep Coming Back,price=\$15-\$30\} =\textgreater \{cuisine=American\} & \{atmosphere=Pub Feel,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Romantic,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Need To Dress,price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 
+\{atmosphere=Classic Hotel Dining,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Good Out of Town Business,price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 
+\{atmosphere=Very Busy - Reservations a Must,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Near-perfect Decor,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Fabulous Views,price=\$15-\$30\} =\textgreater \{cuisine=American\} & \{atmosphere=Quiet for Conversation,price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 
+\{atmosphere=Fabulous Wine Lists,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Focus on Dessert,price=below \$15\} =\textgreater \{cuisine=Fountain and Ice Cream\} \\ 
+\{atmosphere=Relaxed Senior Scene,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Fabulous Views,price=\$15-\$30\} =\textgreater \{style=Pizza\} \\ 
+\{atmosphere=Health Conscious Menus,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Business Scene,price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 
+\{atmosphere=Near-perfect Decor,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Quiet for Conversation,price=\$30-\$50\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Hip Place To Be,price=\$30-\$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=People Keep Coming Back,price=below \$15\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Extraordinary Service,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Classic Hotel Dining,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Classic Hotel Dining,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Tourist Appeal,price=\$15-\$30\} =\textgreater \{style=Cab\} \\ 
+\{atmosphere=Great for People Watching,price=\$30-\$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Extraordinary Decor,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Place for Singles,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Singles Scene,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Singles Scene,price=\$30-\$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Good Out of Town Business,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Place for Singles,price=\$15-\$30\} =\textgreater \{cuisine=American\} & \{atmosphere=Fabulous Views,price=\$30-\$50\} =\textgreater \{cuisine=Fountain and Ice Cream\} \\ 
+\{atmosphere=Need To Dress,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Classic Hotel Dining,price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 

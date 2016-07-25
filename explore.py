@@ -315,36 +315,8 @@ if __name__ == '__main__':
                 for food in map(cleanFood, fin):
                     restaurants.append(Restaurant(file, food, features))
 
-    with open('q1/q1Labels.json', 'r') as cin:
-        ls = json.load(cin)
-
-    # for r in restaurants:
-    #     print(r)
-    #     for feature in r.featureVector:
-    #         for k,v in ls.items():
-    #             for vv in v:
-    #                 if feature == vv:
-    #                     print(k,feature)
     with open('allCities.csv', 'w+') as cout:
         cout.write('restaurant,city,features\n')
         for r in restaurants:
             print(r)
             cout.write(r.dump_csv())
-            # with open('q1/q1Labels.json', 'w+') as cout:
-            #     json.dump(labels, cout, indent=2, sort_keys=1)
-            # #
-
-            # southern
-            # american
-            # asian
-            # italian
-            #
-            # french
-
-
-
-            #
-            # print(sorted(knownCuisine))
-            # print(sorted(cuisineCounter.keys()))
-            # print(cuisineCounter)
-            # print(len(knownCuisine),len(list(cuisineCounter.keys())))

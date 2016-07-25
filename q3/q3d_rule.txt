@@ -1,0 +1,50 @@
+\{cuisine=Pacific Rim\} =\textgreater \{style=none\} & \{cuisine=Pacific Rim\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Austrian\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Burritos\} =\textgreater \{style=Tacos\} \\ 
+\{cuisine=Burritos\} =\textgreater \{price=below \$15\} & \{cuisine=Afghanistan\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Ethiopian\} =\textgreater \{style=none\} & \{cuisine=German,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Vietnamese,occasion=Weekend Lunch\} =\textgreater \{style=none\} & \{cuisine=Tapas,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Greek,occasion=Entertainment\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Greek,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Caribbean,occasion=Private Parties\} =\textgreater \{style=none\} & \{cuisine=Indian,occasion=Delivery Available\} =\textgreater \{style=none\} \\ 
+\{cuisine=Indian,occasion=Private Parties\} =\textgreater \{style=none\} & \{cuisine=Cajun,occasion=Open on Sundays\} =\textgreater \{style=none\} \\ 
+\{cuisine=Chinese,occasion=Open on Sundays\} =\textgreater \{style=none\} & \{cuisine=Fountain and Ice Cream,occasion=Open on Sundays\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Cajun,occasion=Open on Mondays\} =\textgreater \{style=none\} & \{cuisine=Chinese,occasion=Open on Mondays\} =\textgreater \{style=none\} \\ 
+\{cuisine=Fountain and Ice Cream,occasion=Open on Mondays\} =\textgreater \{price=below \$15\} & \{cuisine=Chinese,occasion=Long Drive\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Vegetarian,occasion=Fine for Dining Alone\} =\textgreater \{price=below \$15\} & \{cuisine=Mexican,occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Italian,occasion=Weekend Jazz Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Swiss\} =\textgreater \{style=none\} \\ 
+\{cuisine=Spanish,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=French,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Greek,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} & \{cuisine=French,occasion=Open on Sundays\} =\textgreater \{style=none\} \\ 
+\{cuisine=French,occasion=Open on Mondays\} =\textgreater \{style=none\} & \{cuisine=Indian,occasion=Weekend Dining\} =\textgreater \{style=none\} \\ 
+\{cuisine=Creole,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Asian\} =\textgreater \{style=none\} \\ 
+\{cuisine=Wine and Beer,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Fountain and Ice Cream,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Cajun,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Indian,occasion=Private Rooms Available\} =\textgreater \{style=none\} \\ 
+\{cuisine=German,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Caribbean,occasion=Dancing\} =\textgreater \{style=none\} \\ 
+\{cuisine=Seafood,occasion=Open for Breakfast\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Caribbean,occasion=Takeout Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Korean,occasion=Weekend Dining\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Dim Sum,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Thai,occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=American,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Chinese,occasion=After Hours Dining\} =\textgreater \{style=none\} & \{cuisine=German\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Vegetarian,occasion=Open for Breakfast\} =\textgreater \{price=below \$15\} & \{cuisine=German,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Italian,occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Spanish,occasion=Weekend Dining\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Japanese,occasion=Catering for Special Events\} =\textgreater \{style=none\} \\ 
+\{cuisine=Italian,occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} & \{cuisine=French,occasion=Picnics\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Caribbean,occasion=Catering for Special Events\} =\textgreater \{style=none\} & \{cuisine=Korean\} =\textgreater \{style=none\} \\ 
+\{cuisine=Chinese,occasion=Weekend Jazz Brunch\} =\textgreater \{style=none\} & \{cuisine=Italian,occasion=Open on Sundays\} =\textgreater \{style=none\} \\ 
+\{cuisine=Italian,occasion=Open on Mondays\} =\textgreater \{style=none\} & \{cuisine=Cuban\} =\textgreater \{style=none\} \\ 
+\{cuisine=Italian,occasion=Fine for Dining Alone\} =\textgreater \{style=none\} & \{cuisine=Cajun,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Indian,occasion=Catering for Special Events\} =\textgreater \{style=none\} & \{cuisine=Ethiopian\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Dim Sum,occasion=Private Rooms Available\} =\textgreater \{style=none\} & \{cuisine=Vegetarian,occasion=Weekend Brunch\} =\textgreater \{style=Health Food\} \\ 
+\{cuisine=Chinese,occasion=Long Drive\} =\textgreater \{style=none\} & \{cuisine=Caribbean,occasion=Entertainment\} =\textgreater \{style=none\} \\ 
+\{cuisine=Thai,occasion=Private Rooms Available\} =\textgreater \{style=none\} & \{cuisine=Chinese,occasion=Late Night Menu\} =\textgreater \{style=none\} \\ 
+\{cuisine=Greek\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Japanese,occasion=Prix Fixe Menus\} =\textgreater \{style=none\} \\ 
+\{cuisine=Mexican,occasion=Dancing\} =\textgreater \{style=none\} & \{cuisine=Italian,occasion=Short Drive\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Margaritas\} =\textgreater \{style=none\} & \{cuisine=Mexican,occasion=Margaritas\} =\textgreater \{style=none\} \\ 
+\{cuisine=Japanese,occasion=Weekend Dining\} =\textgreater \{style=none\} & \{cuisine=Indian,occasion=Prix Fixe Menus\} =\textgreater \{style=none\} \\ 
+\{cuisine=Greek,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Vietnamese\} =\textgreater \{style=none\} \\ 
+\{cuisine=Jewish,occasion=Catering for Special Events\} =\textgreater \{price=below \$15\} & \{cuisine=Mexican,occasion=Dancing\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Mexican,occasion=Weekend Jazz Brunch\} =\textgreater \{style=none\} & \{cuisine=Thai,occasion=Weekend Dining\} =\textgreater \{style=none\} \\ 
+\{cuisine=Mexican,occasion=Short Drive\} =\textgreater \{style=none\} & \{cuisine=Caribbean,occasion=Weekend Dining\} =\textgreater \{style=none\} \\ 
+\{cuisine=Seafood,occasion=Open on Sundays\} =\textgreater \{style=none\} & \{cuisine=Seafood,occasion=Open on Mondays\} =\textgreater \{style=none\} \\ 
+\{cuisine=Thai,occasion=Takeout Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Chinese,occasion=Catering for Special Events\} =\textgreater \{style=none\} \\ 
+\{cuisine=Japanese,occasion=Weekend Dining\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Dim Sum,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Lebanese\} =\textgreater \{style=Middle Eastern\} & \{cuisine=Spanish,occasion=Entertainment\} =\textgreater \{style=none\} \\ 
+\{cuisine=Thai,occasion=Weekend Lunch\} =\textgreater \{style=none\} & \{cuisine=Italian,occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Coffee and Dessert,occasion=Fine for Dining Alone\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Seafood,occasion=Weekend Jazz Brunch\} =\textgreater \{price=\$15-\$30\} \\ 

@@ -1,0 +1,21 @@
+\{price=below \$15,style=Cafeterias\} =\textgreater \{cuisine=American\} & \{price=\$30-\$50,style=Caviar\} =\textgreater \{cuisine=Russian\} \\ 
+\{price=\$15-\$30,style=Pizzerias\} =\textgreater \{cuisine=Italian\} & \{price=\$15-\$30,style=Coffee Houses\} =\textgreater \{cuisine=Italian\} \\ 
+\{price=\$15-\$30,style=Southern Comfort\} =\textgreater \{cuisine=American\} & \{price=over \$50,style=Californian\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$30-\$50,style=Hamburgers\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Brasserie\} =\textgreater \{cuisine=French\} \\ 
+\{price=below \$15,style=Hamburgers\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Health Food\} =\textgreater \{cuisine=Vegetarian\} \\ 
+\{price=\$30-\$50,style=Grills\} =\textgreater \{cuisine=American\} & \{price=over \$50,style=Continental\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$15-\$30,style=Health Food\} =\textgreater \{cuisine=Vegetarian\} & \{price=below \$15,style=Pizza\} =\textgreater \{cuisine=Italian\} \\ 
+\{price=\$15-\$30,style=Pizza\} =\textgreater \{cuisine=Italian\} & \{price=over \$50,style=Cab\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$15-\$30,style=Grills\} =\textgreater \{cuisine=American\} & \{price=\$30-\$50,style=Soulfood\} =\textgreater \{cuisine=American\} \\ 
+\{price=below \$15,style=Eclectic\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Tacos\} =\textgreater \{cuisine=Mexican\} \\ 
+\{price=below \$15,style=Deli\} =\textgreater \{cuisine=Jewish\} & \{price=\$30-\$50,style=Brasserie\} =\textgreater \{cuisine=French\} \\ 
+\{price=over \$50,style=High Tea\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Diners\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Oyster Bars\} =\textgreater \{cuisine=Seafood\} & \{price=over \$50,style=Power Brokers\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$30-\$50,style=Southern\} =\textgreater \{cuisine=American\} & \{price=\$30-\$50,style=High Tea\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Hamburgers\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Southern\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=High Tea\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Coffee Shops\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Pastries\} =\textgreater \{cuisine=Coffee and Dessert\} & \{price=\$30-\$50,style=Steakhouses\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Soulfood\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Coffee Houses\} =\textgreater \{cuisine=Italian\} \\ 
+\{price=\$15-\$30,style=Diners\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Pastry Shops\} =\textgreater \{cuisine=Wine and Beer\} \\ 
+\{price=below \$15,style=Pastry Shops\} =\textgreater \{cuisine=Fountain and Ice Cream\} & \{price=below \$15,style=Southwestern\} =\textgreater \{cuisine=Mexican\} \\ 
+\{price=\$15-\$30,style=Eclectic\} =\textgreater \{cuisine=American\} & None \\ 

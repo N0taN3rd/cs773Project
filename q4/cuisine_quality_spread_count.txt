@@ -1,0 +1,78 @@
+cuisine,Excellent Food,Extraordinary Food,Fair Food,Good Food,Near-perfect Food
+Afghanistan,9,12,0,0,0
+African,17,0,0,0,0
+American,1692,1055,20,1165,122
+Argentinean,5,1,0,4,0
+Armenian,1,0,0,1,0
+Asian,8,5,0,4,7
+Austrian,6,6,0,0,0
+Bar-B-Q,153,49,4,79,0
+Belgian,1,3,0,0,0
+Brazilian,20,0,0,15,0
+Burmese,2,2,0,1,0
+Burritos,11,0,0,6,0
+Cajun,82,75,6,49,1
+Cambodian,0,6,0,0,0
+Canadian,0,0,0,3,0
+Caribbean,86,29,0,36,0
+Chinese,319,217,0,72,2
+Coffee and Dessert,86,35,1,42,0
+Creole,52,63,0,45,0
+Cuban,44,11,0,15,0
+Czech,12,0,0,0,0
+Dim Sum,63,55,0,6,0
+Egyptian,0,0,0,9,0
+Ethiopian,17,7,0,1,0
+Filipino,4,0,0,2,0
+Fountain and Ice Cream,240,254,0,112,44
+French,441,680,8,120,155
+German,66,14,0,16,0
+Greek,97,29,0,36,0
+Guatemalan,4,0,0,0,0
+Hamburgers & Beer,19,10,2,88,0
+Hot Dogs,4,0,0,0,0
+Hungarian,20,4,0,0,0
+Indian,86,68,0,33,0
+Indonesian,25,5,0,1,0
+Irish,3,4,6,14,0
+Italian,1607,787,3,497,48
+Jamaican,0,0,0,3,0
+Japanese,130,147,0,34,11
+Jewish,65,21,0,28,0
+Korean,26,15,0,14,4
+Latin,12,11,0,5,0
+Lebanese,11,4,0,12,0
+Malaysian,4,0,0,0,0
+Mediterranean,95,83,0,33,0
+Mexican,406,111,10,295,6
+Moroccan,16,2,0,3,0
+Nicaraguan,1,0,0,5,0
+Pacific New Wave,10,48,0,4,5
+Pacific Rim,0,6,0,0,0
+Persian,8,0,0,1,0
+Peruvian,11,4,0,1,0
+Polish,32,2,0,5,0
+Polynesian,6,0,0,3,0
+Portuguese,23,3,0,0,0
+Puerto Rican,0,0,0,2,0
+Romanian,5,0,0,0,0
+Roumanian,0,0,0,4,0
+Russian,30,7,0,27,2
+Salvadoran,32,2,0,20,0
+Scandinavian,0,7,0,1,0
+Seafood,485,262,4,240,17
+Spanish,126,42,7,12,0
+Sushi,0,3,0,0,0
+Swiss,15,0,0,1,0
+Tapas,32,35,0,26,0
+Thai,112,107,0,13,1
+Tibetan,2,0,0,0,0
+Tunisian,3,0,0,0,0
+Turkish,2,7,0,7,0
+Ukrainian,2,0,0,0,0
+Ukranian,4,0,0,0,0
+Vegetarian,86,25,0,75,0
+Venezuelan,10,0,0,0,0
+Vietnamese,49,53,0,10,0
+Wine and Beer,110,133,0,51,18
+Yugoslavian,2,0,0,0,0

@@ -1,0 +1,50 @@
+\{cuisine=Dim Sum\} =\textgreater \{style=none\} & \{style=Grills\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Hamburgers \& Beer\} =\textgreater \{price=\$15-\$30\} & \{occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Tapas\} =\textgreater \{price=\$15-\$30\} & \{style=Carry in Wine and Beer\} =\textgreater \{price=below \$15\} \\ 
+\{occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Greek\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=People Keep Coming Back\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Caribbean\} =\textgreater \{style=none\} \\ 
+\{cuisine=Caribbean\} =\textgreater \{price=\$15-\$30\} & \{occasion=Open on Sundays\} =\textgreater \{style=none\} \\ 
+\{cuisine=Indian\} =\textgreater \{style=none\} & \{cuisine=Indian\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Open on Mondays\} =\textgreater \{style=none\} & \{cuisine=Coffee and Dessert\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Spanish\} =\textgreater \{style=none\} & \{cuisine=Spanish\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Quiet for Conversation\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Very Busy - Reservations a Must\} =\textgreater \{style=none\} \\ 
+\{occasion=Long Drive\} =\textgreater \{style=none\} & \{occasion=Long Drive\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Thai\} =\textgreater \{style=none\} & \{cuisine=Thai\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Creative\} =\textgreater \{style=none\} & \{atmosphere=Creative\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Vegetarian\} =\textgreater \{price=below \$15\} & \{atmosphere=Classic Hotel Dining\} =\textgreater \{price=\$30-\$50\} \\ 
+\{atmosphere=Classic Hotel Dining\} =\textgreater \{cuisine=American\} & \{cuisine=Cajun\} =\textgreater \{style=none\} \\ 
+\{cuisine=Cajun\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Fair Decor\} =\textgreater \{price=below \$15\} \\ 
+\{atmosphere=Fair Decor\} =\textgreater \{style=none\} & \{cuisine=Mediterranean\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Up and Coming\} =\textgreater \{style=none\} & \{atmosphere=Up and Coming\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Short Drive\} =\textgreater \{style=none\} & \{occasion=Short Drive\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Game\} =\textgreater \{price=\$30-\$50\} & \{occasion=Game\} =\textgreater \{style=none\} \\ 
+\{style=Southwestern\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Quirky\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Quirky\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Singles Scene\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Singles Scene\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Fabulous Wine Lists\} =\textgreater \{price=\$30-\$50\} \\ 
+\{style=Diners\} =\textgreater \{price=below \$15\} & \{style=Diners\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Place for Singles\} =\textgreater \{style=none\} & \{atmosphere=Place for Singles\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=Coffee Shops\} =\textgreater \{price=below \$15\} & \{style=Coffee Shops\} =\textgreater \{cuisine=American\} \\ 
+\{style=Steakhouses\} =\textgreater \{cuisine=American\} & \{style=Steakhouses\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Japanese\} =\textgreater \{style=none\} & \{cuisine=Japanese\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Relaxed Senior Scene\} =\textgreater \{style=none\} & \{atmosphere=Relaxed Senior Scene\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Good Out of Town Business\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Great for People Watching\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Weekend Jazz Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Bar-B-Q\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Romantic\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Romantic\} =\textgreater \{style=none\} \\ 
+\{style=Eclectic\} =\textgreater \{cuisine=American\} & \{style=Eclectic\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=For the Young and Young at Heart\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Warm spots by the fire\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Business Scene\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Hip Place To Be\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=No Reservations\} =\textgreater \{price=\$15-\$30\} & \{price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{occasion=After Hours Dining\} =\textgreater \{price=\$15-\$30\} & \{occasion=Dancing\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Good for Younger Kids\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Extraordinary Service\} =\textgreater \{price=\$30-\$50\} \\ 
+\{style=Pizza\} =\textgreater \{cuisine=Italian\} & \{style=Pizza\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Special Brunch Menu\} =\textgreater \{cuisine=American\} & \{occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Extraordinary Decor\} =\textgreater \{price=\$30-\$50\} & \{style=Californian\} =\textgreater \{price=\$30-\$50\} \\ 
+\{occasion=Late Night Menu\} =\textgreater \{style=none\} & \{occasion=Late Night Menu\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Catering for Special Events\} =\textgreater \{style=none\} & \{occasion=Catering for Special Events\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=High Tea\} =\textgreater \{price=\$30-\$50\} & \{style=High Tea\} =\textgreater \{cuisine=American\} \\ 
+\{occasion=none\} =\textgreater \{style=none\} & \{occasion=none\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Chinese\} =\textgreater \{style=none\} & \{cuisine=Chinese\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Prix Fixe Menus\} =\textgreater \{price=\$30-\$50\} & \{occasion=Prix Fixe Menus\} =\textgreater \{style=none\} \\ 
+\{style=Hamburgers\} =\textgreater \{cuisine=American\} & \{style=Hamburgers\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Good Food\} =\textgreater \{style=none\} & \{atmosphere=Good Food\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Delivery Available\} =\textgreater \{style=none\} & \{occasion=Delivery Available\} =\textgreater \{price=\$15-\$30\} \\ 

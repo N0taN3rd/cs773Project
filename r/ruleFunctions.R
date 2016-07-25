@@ -19,7 +19,7 @@ ruleGen.c50 <- function(d,
 }
 
 ruleGen.apriori <-
-  function(data, minLen = 2, maxLen = 50,
+  function(data, minLen = 2, maxLen = 15,
            sup = 0.005, conf = 0.005, targ = 'rules',
            rH = NULL, lH = NULL, deflt = 'lhs',list=F) {
     appear <- NULL
@@ -101,7 +101,7 @@ ruleGen.appearance_pair_list <- function(df,notFromHelper=F) {
   }
 }
 
-ruleGen.rules_apriori_lh <- function(data,feature_pair,notFromHelper=F,sup=0.0005, conf = 0.0005,minLen = 2, maxLen = 50, list=F)  {
+ruleGen.rules_apriori_lh <- function(data,feature_pair,notFromHelper=F,sup=0.0005, conf = 0.0005,minLen = 2, maxLen = 15, list=F)  {
   rlh <- ruleGen.appearance_pair_list(feature_pair, notFromHelper = notFromHelper)
   ruleGen.apriori(
     data,
@@ -115,7 +115,7 @@ ruleGen.rules_apriori_lh <- function(data,feature_pair,notFromHelper=F,sup=0.000
   )
 }
 
-ruleGen.rules_apriori_lhGrouped <- function(data,lhs_grouped,notFromHelper=F,sup=0.0005, conf = 0.0005,minLen = 2, maxLen = 50, list=F)  {
+ruleGen.rules_apriori_lhGrouped <- function(data,lhs_grouped,notFromHelper=F,sup=0.0005, conf = 0.0005,minLen = 2, maxLen = 15, list=F)  {
 
   ruleGen.apriori(
     data,

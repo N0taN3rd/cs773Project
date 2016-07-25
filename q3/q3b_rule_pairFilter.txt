@@ -1,0 +1,40 @@
+\{atmosphere=Authentic,price=below \$15\} =\textgreater \{style=none\} & \{atmosphere=Cafe/Garden Dining,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=An Out Of The Way Find,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Good Food,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=An Out Of The Way Find,price=\$30-\$50\} =\textgreater \{style=none\} & \{atmosphere=Very Busy - Reservations a Must,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Great for People Watching,price=below \$15\} =\textgreater \{cuisine=American\} & \{atmosphere=Buffet Dining,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Need To Dress,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Romantic,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Good Service,price=\$30-\$50\} =\textgreater \{style=none\} & \{atmosphere=Old World Cafe Charm,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Extraordinary Food,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Little Known But Well Liked,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Need To Dress,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=No Smoking Allowed,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Very Busy - Reservations a Must,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Fabulous Views,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Fair Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Little Known But Well Liked,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Near-perfect Service,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Little Known But Well Liked,price=below \$15\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Parking/Valet,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Quirky,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Creative,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=An Historic Spot,price=below \$15\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Quiet for Conversation,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Place for Singles,price=below \$15\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Excellent Decor,price=\$30-\$50\} =\textgreater \{style=none\} & \{atmosphere=Excellent Service,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Good Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Excellent Food,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Extraordinary Service,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Good Decor,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Extraordinary Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Wheelchair Access,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Near-perfect Food,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Warm spots by the fire,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Excellent Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Pub Feel,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Creative,price=\$30-\$50\} =\textgreater \{style=none\} & \{atmosphere=Good Food,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Hip Place To Be,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Up and Coming,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=No Smoking Allowed,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=An Historic Spot,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Good Service,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Fabulous Wine Lists,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Excellent Food,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Singles Scene,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Quiet for Conversation,price=over \$50\} =\textgreater \{style=none\} & \{atmosphere=Focus on Dessert,price=below \$15\} =\textgreater \{cuisine=Fountain and Ice Cream\} \\ 
+\{atmosphere=Excellent Service,price=\$30-\$50\} =\textgreater \{style=none\} & \{atmosphere=Parking/Valet,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Health Conscious Menus,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Classic Hotel Dining,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Relaxed Senior Scene,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Near-perfect Decor,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Up and Coming,price=\$30-\$50\} =\textgreater \{style=none\} & \{atmosphere=No Reservations,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Authentic,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Singles Scene,price=below \$15\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Fabulous Wine Lists,price=over \$50\} =\textgreater \{style=Power Brokers\} & \{atmosphere=Quiet for Conversation,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Place for Singles,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Good for Younger Kids,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Classic Hotel Dining,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Romantic,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=Place for Singles,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Fabulous Views,price=\$15-\$30\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Extraordinary Service,price=over \$50\} =\textgreater \{style=none\} & \{atmosphere=Fabulous Wine Lists,price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{atmosphere=An Out Of The Way Find,price=\$30-\$50\} =\textgreater \{cuisine=American\} & \{atmosphere=Credit cards are not accepted,price=below \$15\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Relaxed Senior Scene,price=over \$50\} =\textgreater \{style=none\} & \{atmosphere=Near-perfect Decor,price=\$30-\$50\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=Classic Hotel Dining,price=\$15-\$30\} =\textgreater \{cuisine=American\} & \{atmosphere=Hip Place To Be,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Extraordinary Food,price=over \$50\} =\textgreater \{style=none\} & None \\ 

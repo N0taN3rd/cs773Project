@@ -1,0 +1,50 @@
+\{style=Tacos\} =\textgreater \{price=below \$15\} & \{cuisine=German\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Tapas\} =\textgreater \{price=\$15-\$30\} & \{occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Near-perfect Decor\} =\textgreater \{price=\$30-\$50\} & \{style=Health Food\} =\textgreater \{cuisine=Vegetarian\} \\ 
+\{style=Health Food\} =\textgreater \{price=below \$15\} & \{style=Bakeries\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Greek\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Need To Dress\} =\textgreater \{price=\$30-\$50\} \\ 
+\{atmosphere=Pub Feel\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Hamburgers \& Beer\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Jewish\} =\textgreater \{style=Deli\} & \{style=Deli\} =\textgreater \{cuisine=Jewish\} \\ 
+\{cuisine=Jewish\} =\textgreater \{price=below \$15\} & \{atmosphere=People Keep Coming Back\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=People Keep Coming Back\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Very Busy - Reservations a Must\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Creole\} =\textgreater \{price=below \$15\} & \{occasion=Short Drive\} =\textgreater \{price=below \$15\} \\ 
+\{style=Brasserie\} =\textgreater \{cuisine=French\} & \{style=Brasserie\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=Deli\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Cajun\} =\textgreater \{price=below \$15\} \\ 
+\{occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Up and Coming\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Quiet for Conversation\} =\textgreater \{price=\$30-\$50\} & \{style=Middle Eastern\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Fair Decor\} =\textgreater \{price=below \$15\} & \{atmosphere=Quirky\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=Grills\} =\textgreater \{cuisine=American\} & \{style=Grills\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=Carry in Wine and Beer\} =\textgreater \{price=below \$15\} & \{atmosphere=Singles Scene\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Game\} =\textgreater \{style=Power Brokers\} & \{occasion=Game\} =\textgreater \{price=\$30-\$50\} \\ 
+\{atmosphere=Place for Singles\} =\textgreater \{cuisine=American\} & \{atmosphere=Place for Singles\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Coffee and Dessert\} =\textgreater \{price=\$15-\$30\} & \{occasion=Pre-theater Dining\} =\textgreater \{price=\$30-\$50\} \\ 
+\{atmosphere=Classic Hotel Dining\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Classic Hotel Dining\} =\textgreater \{cuisine=American\} \\ 
+\{style=Soulfood\} =\textgreater \{price=below \$15\} & \{cuisine=Vegetarian\} =\textgreater \{price=below \$15\} \\ 
+\{atmosphere=Romantic\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Bar-B-Q\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Focus on Dessert\} =\textgreater \{cuisine=Fountain and Ice Cream\} & \{occasion=none\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Fabulous Wine Lists\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=No Reservations\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Good Out of Town Business\} =\textgreater \{price=\$30-\$50\} & \{occasion=Dancing\} =\textgreater \{cuisine=American\} \\ 
+\{atmosphere=For the Young and Young at Heart\} =\textgreater \{price=\$15-\$30\} & \{occasion=After Hours Dining\} =\textgreater \{price=\$15-\$30\} \\ 
+\{price=over \$50\} =\textgreater \{cuisine=French\} & \{price=over \$50\} =\textgreater \{style=Power Brokers\} \\ 
+\{atmosphere=Extraordinary Service\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Good for Younger Kids\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Late Night Menu\} =\textgreater \{price=\$15-\$30\} & \{style=Southwestern\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Prix Fixe Menus\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Extraordinary Decor\} =\textgreater \{price=\$30-\$50\} \\ 
+\{style=Diners\} =\textgreater \{price=below \$15\} & \{style=Diners\} =\textgreater \{cuisine=American\} \\ 
+\{occasion=Special Brunch Menu\} =\textgreater \{cuisine=American\} & \{occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Mexican\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Good Food\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Business Scene\} =\textgreater \{price=\$30-\$50\} & \{style=Coffee Shops\} =\textgreater \{price=below \$15\} \\ 
+\{style=Coffee Shops\} =\textgreater \{cuisine=American\} & \{style=Steakhouses\} =\textgreater \{cuisine=American\} \\ 
+\{style=Steakhouses\} =\textgreater \{price=\$15-\$30\} & \{occasion=Open for Breakfast\} =\textgreater \{price=below \$15\} \\ 
+\{occasion=Delivery Available\} =\textgreater \{price=\$15-\$30\} & \{occasion=Entertainment\} =\textgreater \{price=\$30-\$50\} \\ 
+\{style=Eclectic\} =\textgreater \{cuisine=American\} & \{style=Eclectic\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Extraordinary Food\} =\textgreater \{price=\$30-\$50\} & \{atmosphere=Good Service\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Good Decor\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Excellent Decor\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=Pizza\} =\textgreater \{cuisine=Italian\} & \{style=Pizza\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Wheelchair Access\} =\textgreater \{price=\$15-\$30\} \\ 
+\{style=Californian\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Seafood\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Dining Outdoors\} =\textgreater \{price=\$15-\$30\} & \{style=High Tea\} =\textgreater \{price=\$30-\$50\} \\ 
+\{style=High Tea\} =\textgreater \{cuisine=American\} & \{occasion=Takeout Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{atmosphere=Excellent Food\} =\textgreater \{price=\$15-\$30\} & \{style=Hamburgers\} =\textgreater \{cuisine=American\} \\ 
+\{style=Hamburgers\} =\textgreater \{price=\$15-\$30\} & \{atmosphere=Excellent Service\} =\textgreater \{price=\$15-\$30\} \\ 
+\{occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} & \{style=Cab\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=French\} =\textgreater \{price=\$30-\$50\} & \{style=Traditional\} =\textgreater \{price=\$15-\$30\} \\ 

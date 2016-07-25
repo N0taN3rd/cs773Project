@@ -37,27 +37,34 @@ a_rules_pair_noneStyle <-
 a_rules_pair_noneStyle  <-
   subset(a_rules_no_noneStyle, confidence >= 0.49)
 
+a_rules <- helpers.orderConfidence(a_rules)
 write.csv(
-  a_rules,
+  helpers.select_rules_quality(a_rules),
   file = file.path(q3Dir, 'q3a_rule.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
+a_rules_no_noneStyle <- helpers.orderConfidence(a_rules_no_noneStyle)
 write.csv(
-  a_rules_no_noneStyle,
+ helpers.select_rules_quality(a_rules_no_noneStyle),
   file = file.path(q3Dir, 'q3a_rule_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
+a_rules_filter <- helpers.orderConfidence(a_rules_filter)
 write.csv(
-  a_rules_filter,
+ helpers.select_rules_quality(a_rules_filter),
   file = file.path(q3Dir, 'q3a_rule_pairFilter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
+a_rules_pair_noneStyle <- helpers.orderConfidence(a_rules_pair_noneStyle)
 write.csv(
-  a_rules_pair_noneStyle,
-  file = file.path(q3Dir, 'q3a_rule_NNS.csv'),
+ helpers.select_rules_quality(a_rules_pair_noneStyle),
+  file = file.path(q3Dir, 'q3a_rule_NNS_pair.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
@@ -82,27 +89,35 @@ b_rulesNSN_filter <-
                          b_rules_no_noneStyle$lhs %in% b_pairs$lhs2, ]
 b_rulesNSN_filter <- subset(b_rulesNSN_filter , confidence >= 0.49)
 
+
+b_rules <- helpers.orderConfidence(b_rules)
 write.csv(
-  b_rules,
+ helpers.select_rules_quality(b_rules),
   file = file.path(q3Dir, 'q3b_rule.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
+b_rules_no_noneStyle <- helpers.orderConfidence(b_rules_no_noneStyle)
 write.csv(
-  b_rules_no_noneStyle,
+ helpers.select_rules_quality(b_rules_no_noneStyle),
   file = file.path(q3Dir, 'q3b_rule_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
+b_rules_filter <- helpers.orderConfidence(b_rules_filter)
 write.csv(
-  b_rules_filter,
+ helpers.select_rules_quality(b_rules_filter),
   file = file.path(q3Dir, 'q3b_rule_pairFilter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
+b_rulesNSN_filter <- helpers.orderConfidence(b_rulesNSN_filter)
 write.csv(
-  b_rulesNSN_filter,
-  file = file.path(q3Dir, 'q3b_rule_NNS.csv'),
+ helpers.select_rules_quality(b_rulesNSN_filter),
+  file = file.path(q3Dir, 'q3b_rule_NNS_filter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
@@ -125,27 +140,33 @@ c_rulesNSN_filter <-
   c_rules_no_noneStyle[c_rules_no_noneStyle$lhs %in% c_pairs$lhs1 |
                          c_rules_no_noneStyle$lhs %in% c_pairs$lhs2, ]
 
+c_rules <- helpers.orderConfidence(c_rules)
+c_rules_no_noneStyle <- helpers.orderConfidence(c_rules_no_noneStyle)
+c_rules_filter <- helpers.orderConfidence(c_rules_filter)
+c_rulesNSN_filter <- helpers.orderConfidence(c_rulesNSN_filter)
+
 write.csv(
-  c_rules,
+ helpers.select_rules_quality(c_rules),
   file = file.path(q3Dir, 'q3c_rule.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
+
 write.csv(
-  c_rules_no_noneStyle,
+ helpers.select_rules_quality(c_rules_no_noneStyle),
   file = file.path(q3Dir, 'q3c_rule_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  c_rules_filter,
+ helpers.select_rules_quality(c_rules_filter),
   file = file.path(q3Dir, 'q3c_rule_pairFilter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  c_rulesNSN_filter,
-  file = file.path(q3Dir, 'q3c_rule_NNS.csv'),
+ helpers.select_rules_quality(c_rulesNSN_filter),
+  file = file.path(q3Dir, 'q3c_rule_NNS_filter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
@@ -170,26 +191,32 @@ d_rulesNSN_filter <-
                          d_rules_no_noneStyle$lhs %in% d_pairs$lh2, ]
 d_rulesNSN_filter <- subset(d_rulesNSN_filter, confidence >= 0.49)
 
+
+d_rules <- helpers.orderConfidence(d_rules)
+d_rules_no_noneStyle <- helpers.orderConfidence(d_rules_no_noneStyle)
+d_rules_filter <- helpers.orderConfidence(d_rules_filter)
+d_rulesNSN_filter <- helpers.orderConfidence(d_rulesNSN_filter)
+
 write.csv(
-  d_rules,
+ helpers.select_rules_quality(d_rules),
   file = file.path(q3Dir, 'q3d_rule.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  d_rules_no_noneStyle,
+ helpers.select_rules_quality(d_rules_no_noneStyle),
   file = file.path(q3Dir, 'q3d_rule_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  d_rules_filter,
+ helpers.select_rules_quality(d_rules_filter),
   file = file.path(q3Dir, 'q3d_rule_pairFilter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  d_rulesNSN_filter,
+ helpers.select_rules_quality(d_rulesNSN_filter),
   file = file.path(q3Dir, 'q3d_rule_pairFilter_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
@@ -215,27 +242,33 @@ e_rulesNSN_filter <-
                          e_rules_no_noneStyle$lhs %in% e_pairs$lhs2, ]
 e_rulesNSN_filter <- subset(e_rulesNSN_filter, confidence >= 0.49)
 
+
+e_rules <- helpers.orderConfidence(e_rules)
+e_rules_no_noneStyle <- helpers.orderConfidence(e_rules_no_noneStyle)
+e_rules_filter <- helpers.orderConfidence(e_rules_filter)
+e_rulesNSN_filter <- helpers.orderConfidence(e_rulesNSN_filter)
+
 write.csv(
-  e_rules,
+ helpers.select_rules_quality(e_rules),
   file = file.path(q3Dir, 'q3e_rule.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  e_rules_no_noneStyle,
+ helpers.select_rules_quality(e_rules_no_noneStyle),
   file = file.path(q3Dir, 'q3e_rule_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  e_rules_filter,
+ helpers.select_rules_quality(e_rules_filter),
   file = file.path(q3Dir, 'q3e_rule_pairFilter.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  e_rulesNSN_filter,
-  file = file.path(q3Dir, 'q3e_rule_NNS.csv'),
+ helpers.select_rules_quality(e_rulesNSN_filter),
+  file = file.path(q3Dir, 'q3e_rule_NNS_filtered.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
@@ -250,13 +283,13 @@ all_data_rule_noStyleNone <-
   subset(all_data_rule_noStyleNone, confidence >= 0.49)
 
 write.csv(
-  all_data_rules,
+ helpers.select_rules_quality(all_data_rules),
   file = file.path(q3Dir, 'q3All_rule.csv'),
   fileEncoding = 'utf8',
   row.names = F
 )
 write.csv(
-  all_data_rule_noStyleNone,
+ helpers.select_rules_quality(all_data_rule_noStyleNone),
   file = file.path(q3Dir, 'q3All_rule_NNS.csv'),
   fileEncoding = 'utf8',
   row.names = F

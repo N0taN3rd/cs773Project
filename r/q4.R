@@ -1,4 +1,6 @@
 library(lsr)
+library(foreach)
+library(iterators)
 cwd <- getwd()
 setwd(cwd)
 source(file = file.path(cwd, 'r', 'helpers.R'))
@@ -32,6 +34,13 @@ cfq_lm <-
 
 cfq_lmSum <- capture.output(summary(cfq_lm))
 cat(cfq_lmSum,file = file.path(cwd,'q4','cuisine_quality_spread_summary.txt'),sep="\n")
+
+write.csv(
+  cuisine_fq_spread,
+  file = file.path(cwd,'q4','cuisine_quality_spread_count.txt'),
+  fileEncoding = 'utf8',
+  row.names = F
+)
 
 plot(cfq_lm)
 

@@ -1,0 +1,50 @@
+\{cuisine=Mexican,occasion=Margaritas\} =\textgreater \{price=\$15-\$30\} & \{cuisine=French,occasion=Walk\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Seafood,occasion=Early Dining\} =\textgreater \{price=\$15-\$30\} & \{cuisine=French,occasion=Early Dining\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=French,occasion=See the Game\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Fountain and Ice Cream,occasion=Open on Sundays\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Fountain and Ice Cream,occasion=Open on Mondays\} =\textgreater \{price=below \$15\} & \{cuisine=Salvadoran,occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Salvadoran,occasion=Dining Outdoors\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Salvadoran,occasion=Weekend Dining\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Pacific New Wave,occasion=Weekend Jazz Brunch\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Caribbean,occasion=Weekend Jazz Brunch\} =\textgreater \{style=Central\} \\ 
+\{cuisine=Caribbean,occasion=Weekend Lunch\} =\textgreater \{style=Central\} & \{cuisine=German,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=German,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} & \{cuisine=German,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Tapas,occasion=Dining Outdoors\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Tapas,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Tapas,occasion=Weekend Dining\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Bar-B-Q,occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Italian,occasion=Dining After the Theater\} =\textgreater \{style=Pizza\} & \{cuisine=Seafood,occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Fountain and Ice Cream,occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Italian,occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Spanish,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Greek,occasion=After Hours Dining\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Greek,occasion=Late Night Menu\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Greek,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Greek,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Hamburgers \& Beer,occasion=Dancing\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Hamburgers \& Beer,occasion=Entertainment\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Creole,occasion=Short Drive\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Creole,occasion=Open for Breakfast\} =\textgreater \{price=below \$15\} & \{cuisine=Creole,occasion=Delivery Available\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Creole,occasion=Entertainment\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Creole,occasion=Takeout Available\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Cajun,occasion=Short Drive\} =\textgreater \{price=below \$15\} & \{cuisine=Cajun,occasion=Open for Breakfast\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Cajun,occasion=Delivery Available\} =\textgreater \{price=below \$15\} & \{cuisine=Cajun,occasion=Entertainment\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Wine and Beer,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Fountain and Ice Cream,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=French,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Italian,occasion=Parties and Occasions\} =\textgreater \{style=Power Brokers\} \\ 
+\{cuisine=Bar-B-Q,occasion=Pre-theater Dining\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Seafood,occasion=Pre-theater Dining\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Vegetarian,occasion=Fine for Dining Alone\} =\textgreater \{price=below \$15\} & \{cuisine=Bar-B-Q,occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Mexican,occasion=Weekend Jazz Brunch\} =\textgreater \{style=Traditional\} & \{cuisine=Mexican,occasion=Weekend Jazz Brunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Italian,occasion=Weekend Jazz Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Wine and Beer,occasion=After Hours Dining\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Mexican,occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Mexican,occasion=Entertainment\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Italian,occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} & \{cuisine=American,occasion=Parties and Occasions\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Vegetarian,occasion=Open for Breakfast\} =\textgreater \{price=below \$15\} & \{cuisine=Bar-B-Q,occasion=Catering for Special Events\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=American,occasion=Dining After the Theater\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Mexican,occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Greek,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Vegetarian,occasion=Catering for Special Events\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=French,occasion=Picnics\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Mexican,occasion=Weekend Brunch\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=American,occasion=See the Game\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Vegetarian,occasion=Weekend Brunch\} =\textgreater \{style=Health Food\} \\ 
+\{cuisine=Coffee and Dessert,occasion=Fine for Dining Alone\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Fountain and Ice Cream,occasion=Open on Sundays\} =\textgreater \{style=Coffee Shops\} \\ 
+\{cuisine=Fountain and Ice Cream,occasion=Open on Mondays\} =\textgreater \{style=Coffee Shops\} & \{cuisine=Jewish,occasion=Open for Breakfast\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Coffee and Dessert,occasion=Late Night Menu\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Jewish,occasion=Catering for Special Events\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Mexican,occasion=Entertainment\} =\textgreater \{style=Traditional\} & \{cuisine=Creole,occasion=Weekend Brunch\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Cajun,occasion=Weekend Brunch\} =\textgreater \{price=below \$15\} & \{cuisine=Tapas,occasion=Weekend Brunch\} =\textgreater \{style=Cab\} \\ 
+\{cuisine=Creole,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Cajun,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Italian,occasion=Weekend Lunch\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Jewish,occasion=Weekend Brunch\} =\textgreater \{price=below \$15\} \\ 
+\{cuisine=Vegetarian,occasion=Weekend Jazz Brunch\} =\textgreater \{price=below \$15\} & \{cuisine=Bar-B-Q,occasion=After Hours Dining\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Mexican,occasion=Margaritas\} =\textgreater \{style=Traditional\} & \{cuisine=Greek,occasion=Weekend Brunch\} =\textgreater \{style=Cab\} \\ 
+\{cuisine=Mexican,occasion=Private Rooms Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Mexican,occasion=Catering for Special Events\} =\textgreater \{style=Southwestern\} \\ 
+\{cuisine=Caribbean,occasion=Weekend Brunch\} =\textgreater \{style=Central\} & \{cuisine=Coffee and Dessert,occasion=Delivery Available\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Coffee and Dessert,occasion=Takeout Available\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Spanish,occasion=Weekend Dining\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Chinese,occasion=Delivery Available\} =\textgreater \{price=\$30-\$50\} & \{cuisine=French,occasion=Special Brunch Menu\} =\textgreater \{price=\$30-\$50\} \\ 
+\{cuisine=Fountain and Ice Cream,occasion=Prix Fixe Menus\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Spanish,occasion=Late Night Menu\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Coffee and Dessert,occasion=Special Brunch Menu\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Mexican,occasion=Private Parties\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=French,occasion=Entertainment\} =\textgreater \{price=\$30-\$50\} & \{cuisine=Seafood,occasion=Dining Outdoors\} =\textgreater \{price=\$15-\$30\} \\ 
+\{cuisine=Bar-B-Q,occasion=Dining Outdoors\} =\textgreater \{price=\$15-\$30\} & \{cuisine=Vegetarian,occasion=Weekend Brunch\} =\textgreater \{price=below \$15\} \\ 

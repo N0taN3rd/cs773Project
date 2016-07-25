@@ -12,6 +12,15 @@ helpers.filter_df <- function(data,...) {
   data %>% filter(...)
 }
 
+
+helpers.select_rules_quality <- function(data) {
+  data %>% select(rules,support,confidence,lift,conviction)
+}
+
+helpers.orderConfidence <- function(data) {
+  data[with(data,order(confidence,decreasing = T)),]
+}
+
 helpers.unqiue_all <- function(data) {
  
   ucuisine <- data %>% select(cuisine) %>% distinct 
@@ -285,6 +294,7 @@ helpers.q4 <- function(write = F) {
   
   cqD_spread <- cuisine_foodQualityD %>% group_by(cuisine,quality) %>% tally %>% spread(quality,n,fill = 0)
   
+  # cqD_spread %>% group_by(cuisine) %>% mutate(fit = lm())
   
   # cuisine_foodQuality$cuisine <- levels(cuisine_foodQuality$cuisine)
   # cuisine_foodQuality$quality <- levels(cuisine_foodQuality$quality)

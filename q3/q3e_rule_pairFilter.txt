@@ -1,0 +1,4 @@
+\{atmosphere=Fair Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Excellent Decor,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Good Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Good Decor,price=\$30-\$50\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Extraordinary Decor,price=\$15-\$30\} =\textgreater \{style=none\} & \{atmosphere=Excellent Decor,price=\$15-\$30\} =\textgreater \{style=none\} \\ 
+\{atmosphere=Near-perfect Decor,price=over \$50\} =\textgreater \{cuisine=French\} & \{atmosphere=Near-perfect Decor,price=\$30-\$50\} =\textgreater \{cuisine=American\} \\ 

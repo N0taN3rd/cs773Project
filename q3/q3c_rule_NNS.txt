@@ -1,0 +1,40 @@
+\{style=Noodle Houses\} =\textgreater \{cuisine=Japanese\} & \{style=Cafeterias\} =\textgreater \{cuisine=American\} \\ 
+\{style=Pizzerias\} =\textgreater \{cuisine=Italian\} & \{price=below \$15,style=Noodle Houses\} =\textgreater \{cuisine=Japanese\} \\ 
+\{price=below \$15,style=Cafeterias\} =\textgreater \{cuisine=American\} & \{price=\$30-\$50,style=Caviar\} =\textgreater \{cuisine=Russian\} \\ 
+\{price=below \$15,style=Oyster Bars\} =\textgreater \{cuisine=Seafood\} & \{price=\$15-\$30,style=Pizzerias\} =\textgreater \{cuisine=Italian\} \\ 
+\{price=below \$15,style=Pastries\} =\textgreater \{cuisine=Coffee and Dessert\} & \{price=\$15-\$30,style=Coffee Houses\} =\textgreater \{cuisine=Italian\} \\ 
+\{price=\$15-\$30,style=Southern Comfort\} =\textgreater \{cuisine=American\} & \{price=over \$50,style=Californian\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$30-\$50,style=Southwestern\} =\textgreater \{cuisine=American\} & \{price=\$30-\$50,style=Pizza\} =\textgreater \{cuisine=Italian\} \\ 
+\{price=\$30-\$50,style=Hamburgers\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Brasserie\} =\textgreater \{cuisine=French\} \\ 
+\{price=below \$15,style=Hamburgers\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Health Food\} =\textgreater \{cuisine=Vegetarian\} \\ 
+\{style=Health Food\} =\textgreater \{cuisine=Vegetarian\} & \{price=\$30-\$50,style=Grills\} =\textgreater \{cuisine=American\} \\ 
+\{style=Caviar\} =\textgreater \{cuisine=Russian\} & \{price=over \$50,style=Continental\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$15-\$30,style=Health Food\} =\textgreater \{cuisine=Vegetarian\} & \{price=below \$15,style=Pizza\} =\textgreater \{cuisine=Italian\} \\ 
+\{style=Brasserie\} =\textgreater \{cuisine=French\} & \{price=below \$15,style=Continental\} =\textgreater \{cuisine=American\} \\ 
+\{style=Pizza\} =\textgreater \{cuisine=Italian\} & \{price=\$15-\$30,style=Pizza\} =\textgreater \{cuisine=Italian\} \\ 
+\{style=Grills\} =\textgreater \{cuisine=American\} & \{style=Oyster Bars\} =\textgreater \{cuisine=Seafood\} \\ 
+\{style=Omelettes\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Omelettes\} =\textgreater \{cuisine=American\} \\ 
+\{style=International\} =\textgreater \{cuisine=Fountain and Ice Cream\} & \{price=\$15-\$30,style=International\} =\textgreater \{cuisine=Fountain and Ice Cream\} \\ 
+\{price=over \$50,style=Cab\} =\textgreater \{cuisine=French\} & \{price=\$15-\$30,style=Grills\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$30-\$50,style=Soulfood\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Eclectic\} =\textgreater \{cuisine=American\} \\ 
+\{style=Tacos\} =\textgreater \{cuisine=Mexican\} & \{price=below \$15,style=Tacos\} =\textgreater \{cuisine=Mexican\} \\ 
+\{price=below \$15,style=Deli\} =\textgreater \{cuisine=Jewish\} & \{price=\$30-\$50,style=Brasserie\} =\textgreater \{cuisine=French\} \\ 
+\{price=over \$50,style=High Tea\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Diners\} =\textgreater \{cuisine=American\} \\ 
+\{style=Coffee Houses\} =\textgreater \{cuisine=Italian\} & \{style=Hamburgers\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Oyster Bars\} =\textgreater \{cuisine=Seafood\} & \{style=Pastries\} =\textgreater \{cuisine=Coffee and Dessert\} \\ 
+\{price=over \$50,style=Power Brokers\} =\textgreater \{cuisine=French\} & \{style=Diners\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$30-\$50,style=Southern\} =\textgreater \{cuisine=American\} & \{price=over \$50\} =\textgreater \{cuisine=French\} \\ 
+\{price=\$30-\$50,style=High Tea\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Hamburgers\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Southern\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=High Tea\} =\textgreater \{cuisine=American\} \\ 
+\{style=Southern Comfort\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Coffee Shops\} =\textgreater \{cuisine=American\} \\ 
+\{price=\$15-\$30,style=Pastries\} =\textgreater \{cuisine=Coffee and Dessert\} & \{price=below \$15,style=Bakeries\} =\textgreater \{cuisine=Fountain and Ice Cream\} \\ 
+\{style=High Tea\} =\textgreater \{cuisine=American\} & \{price=\$30-\$50,style=Steakhouses\} =\textgreater \{cuisine=American\} \\ 
+\{style=Po' Boys\} =\textgreater \{cuisine=American\} & \{price=below \$15,style=Po' Boys\} =\textgreater \{cuisine=American\} \\ 
+\{price=below \$15,style=Power Brokers\} =\textgreater \{cuisine=American\} & \{price=\$15-\$30,style=Soulfood\} =\textgreater \{cuisine=American\} \\ 
+\{price=below \$15,style=Coffee Houses\} =\textgreater \{cuisine=Italian\} & \{style=Steakhouses\} =\textgreater \{cuisine=American\} \\ 
+\{style=Eclectic\} =\textgreater \{cuisine=American\} & \{style=Deli\} =\textgreater \{cuisine=Jewish\} \\ 
+\{price=\$15-\$30,style=Diners\} =\textgreater \{cuisine=American\} & \{style=Pastry Shops\} =\textgreater \{cuisine=Wine and Beer\} \\ 
+\{style=Pastry Shops\} =\textgreater \{cuisine=Fountain and Ice Cream\} & \{price=below \$15,style=Cafe/Espresso Bars\} =\textgreater \{cuisine=Wine and Beer\} \\ 
+\{price=below \$15,style=Cafe/Espresso Bars\} =\textgreater \{cuisine=Fountain and Ice Cream\} & \{price=below \$15,style=Pastry Shops\} =\textgreater \{cuisine=Wine and Beer\} \\ 
+\{price=below \$15,style=Pastry Shops\} =\textgreater \{cuisine=Fountain and Ice Cream\} & \{style=Coffee Shops\} =\textgreater \{cuisine=American\} \\ 
+\{price=below \$15,style=Southwestern\} =\textgreater \{cuisine=Mexican\} & \{price=\$15-\$30,style=Eclectic\} =\textgreater \{cuisine=American\} \\ 
